@@ -214,7 +214,7 @@ trailer_park_boys_quotes = [
     "through the doll and kill Bubbles. Give me the gun.\n\nRicky:\n[pauses, seethes] I gotta kill this puppet, "
     "Julian.",
     "Julian:\nListen, Ricky, you're only at school for one reason, and that's to sell drugs.",
-    "Ricky:\nKnock, Knock, Trevor.\n\nTrevor:\nI'm not gonna say, \"Who's there?\", man.\n\nRicky:You just did, you "
+    "Ricky:\nKnock, Knock, Trevor.\n\nTrevor:\nI'm not gonna say, \"Who's there?\", man.\n\nRicky:\nYou just did, you "
     "fucking idiot!\n\n[tears off his pants]",
     "[Ricky goes over the department store's public address system]\n\nRicky:\nMr. Lahey and Randy to the Fuck-off "
     "department. Mr. Lahey and Randy to the Fuck-off department and hurry the fuck up!",

@@ -1,3 +1,4 @@
+import datetime
 import os
 import sys
 from discord.ext import commands
@@ -6,6 +7,7 @@ from dotenv import load_dotenv
 import random
 from src.resources import quotes, joke
 import discord
+import discord.client
 
 """.env file"""
 load_dotenv()
@@ -14,13 +16,72 @@ TOKEN = os.getenv('KRONA_DISCORD_TOKEN')
 """Setting up bot"""
 client = discord.Client()
 bot = commands.Bot(command_prefix='#', description='')
+start_time = datetime.datetime.now()
+
+"""Helper function for datetime"""
+
+
+def timedelta_str(dt):
+    days = dt.days
+    hours, r = divmod(dt.seconds, 3600)
+    minutes, sec = divmod(r, 60)
+
+    if minutes == 1 and sec == 1:
+        return '{0} days, {1} hours, {2} minute and {3} second.'.format(days, hours, minutes, sec)
+    elif minutes > 1 and sec == 1:
+        return '{0} days, {1} hours, {2} minutes and {3} second.'.format(days, hours, minutes, sec)
+    elif minutes == 1 and sec > 1:
+        return '{0} days, {1} hours, {2} minute and {3} seconds.'.format(days, hours, minutes, sec)
+    else:
+        return '{0} days, {1} hours, {2} minutes and {3} seconds.'.format(days, hours, minutes, sec)
+
 
 """When the bot Connects to discord"""
 
 
 @client.event
 async def on_ready():
+    print('Username -> ' + client.user.name)
+    print('ID -> ' + str(client.user.id))
     print(f'{client.user} has connected to Discord!')
+
+    try:
+        # A secondary check to ensure nobody but the owner can run these commands.
+        async def self_check(ctx):
+            if 'CoYoFroYo' == ctx.message.author.id:
+                return True
+            else:
+                return False
+
+        # Messages every member in a server.
+        @commands.check(self_check)
+        @bot.command(pass_context=True)
+        async def message_all(ctx, *, message):
+            await ctx.message.delete()
+            for user in ctx.guild.members:
+                try:
+                    await user.send(message)
+                    print(f"{user.name} has received the message.")
+                except:
+                    print(f"{user.name} has NOT received the message.")
+            print("Action Completed: messaged_all")
+
+        @commands.check(self_check)
+        @bot.command(pass_context=True)
+        async def uptime(ctx):
+                """Displays bot uptime."""
+                global start_time
+                await ctx.send(timedelta_str(datetime.datetime.now() - start_time))
+
+        @commands.check(self_check)
+        @bot.command(pass_context=True)
+        async def source(ctx):
+            """Post a link to the bot source code."""
+            source = "https://github.com/cyork95/KronaBotFam"
+            await ctx.send(source)
+
+    except:
+        pass
 
 
 """Send a DM when someone new joins the server"""
@@ -87,9 +148,10 @@ async def on_message(message):
             await message.channel.send("[*] Congrats you're an admin... for now")
         elif not is_admin:
             await message.channel.send("[*] Sorry, you're not an admin. Why are you even doing this command? Shouldn't"
-                                       "you know?")
+                                       " you know?")
 
     elif message.content == "#krona_stop":
         sys.exit()
+
 
 client.run(TOKEN)

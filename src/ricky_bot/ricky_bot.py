@@ -4,7 +4,7 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 import random
-from src.resources import quotes, joke
+from src.resources import quotes
 
 load_dotenv()
 TOKEN = os.getenv('RICKY_DISCORD_TOKEN')
@@ -16,6 +16,8 @@ bot = commands.Bot(command_prefix='#', description='')
 
 @client.event
 async def on_ready():
+    print('Username -> ' + client.user.name)
+    print('ID -> ' + str(client.user.id))
     print(f'{client.user} has connected to Discord!')
 
 
