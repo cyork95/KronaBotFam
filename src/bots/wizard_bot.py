@@ -62,5 +62,12 @@ async def ping(ctx):
 async def change_status():
     await wizard.change_presence(activity=discord.Game(next(status)))
 
+@wizard.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send('Command Failed! Please pass in all required arguments.')
+    elif isinstance(error, commands.CommandNotFound):
+        pass
+
 
 wizard.run(TOKEN)

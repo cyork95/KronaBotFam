@@ -1,3 +1,4 @@
+import asyncio
 import random
 
 import discord
@@ -44,6 +45,14 @@ class Fun(commands.Cog):
         """Choose randomly from the options you give. [p]choose this | that"""
         await ctx.message.delete()
         await ctx.send('I choose: ``{}``'.format(random.choice(choices.split(","))))
+
+    @commands.command()
+    async def flip_coin(self, ctx):
+        """Flip a coin!"""
+        await ctx.message.delete()
+        await ctx.send('*Flipping...*')
+        await asyncio.sleep(3)
+        await ctx.send(content=random.choice(('Heads!', 'Tails!')))
 
 
 def setup(client):

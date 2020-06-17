@@ -25,7 +25,6 @@ async def on_ready():
 
 @ricky.command()
 async def tpb(ctx):
-    await ctx.message.delete()
     await ctx.send(random.choice(quotes.trailer_park_boys_quotes))
 
 @ricky.command(aliases=['joke'])

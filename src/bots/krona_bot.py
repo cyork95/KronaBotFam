@@ -17,6 +17,7 @@ status = cycle(['The Game of Bot', 'Discord Bot', 'Living my bot life'])
 """Loading the Cogs on Startup"""
 krona.load_extension(f'cogs.admin')
 krona.load_extension(f'cogs.recipe')
+krona.load_extension(f'cogs.cat')
 
 
 @krona.command()
