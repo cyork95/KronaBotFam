@@ -4,8 +4,6 @@ import discord
 from discord.ext import commands
 import re
 
-from src.bots.resources import quotes
-
 ball_response = [
     "It is certain.",
     "It is decidedly so.",
