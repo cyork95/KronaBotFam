@@ -5,7 +5,7 @@ import discord
 from discord.ext import commands, tasks
 from dotenv import load_dotenv
 import random
-from src.bots.resources import quotes, joke
+from .resources import quotes, joke
 
 load_dotenv()
 TOKEN = os.getenv('RICKY_DISCORD_TOKEN')
