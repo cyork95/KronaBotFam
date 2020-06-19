@@ -4,7 +4,6 @@ import random
 from discord.ext import commands
 
 
-
 class Recipe(commands.Cog):
     def __init__(self, client):
         self.client = client
@@ -34,6 +33,7 @@ class Recipe(commands.Cog):
             embed.add_field(name='Ingredients:', value=ingredients, inline=False)
             embed.add_field(name='Instructions:', value=instructions, inline=False)
             await ctx.channel.send(embed=embed)
+
 
 def setup(client):
     client.add_cog(Recipe(client))

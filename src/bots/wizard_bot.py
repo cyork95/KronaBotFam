@@ -1,12 +1,9 @@
-import datetime
 import os
 from itertools import cycle
 
 import discord
 from discord.ext import commands, tasks
 from dotenv import load_dotenv
-import random
-from src.resources import quotes, joke
 
 """Loads .env file"""
 load_dotenv()
@@ -18,6 +15,7 @@ status = cycle(['Doing Magic', 'Playing Magic', 'Rolling Dice'])
 
 """Loading the Cogs on Startup"""
 wizard.load_extension(f'cogs.fun')
+wizard.load_extension(f'cogs.silly')
 
 @wizard.command()
 @commands.has_permissions(administrator=True)

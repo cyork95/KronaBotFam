@@ -2,9 +2,7 @@ import discord
 from discord.ext import commands, tasks
 from itertools import cycle
 from dotenv import load_dotenv
-import random
 import os
-from src.resources import quotes, joke
 
 """Loads .env file"""
 load_dotenv()
@@ -88,6 +86,7 @@ async def on_message_delete(message):
     channel = message.channel
     bot_message = channel, '{}: {}'.format(author, content)
     print(bot_message)
+
 
 @krona.event
 async def on_command_error(ctx, error):

@@ -1,11 +1,10 @@
 import asyncio
 import random
-
 import discord
 from discord.ext import commands
 import re
 
-from src.resources import quotes
+from src.bots.resources import quotes
 
 
 class Fun(commands.Cog):

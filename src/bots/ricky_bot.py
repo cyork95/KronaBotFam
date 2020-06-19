@@ -5,7 +5,7 @@ import discord
 from discord.ext import commands, tasks
 from dotenv import load_dotenv
 import random
-from src.resources import quotes, joke
+from src.bots.resources import quotes, joke
 
 load_dotenv()
 TOKEN = os.getenv('RICKY_DISCORD_TOKEN')
@@ -36,6 +36,11 @@ async def tell_joke(ctx):
         await ctx.send("Sorry I can't think of a joke right now try again sometime!")
     else:
         await ctx.send(joke_call['setup'] + '\n' + joke_call['punchline'])
+
+@ricky.command()
+async def ping(ctx):
+    await ctx.message.delete()
+    await ctx.send(f'Pong! My latency is: {round(wizard.latency * 1000)}ms')
 
 @tasks.loop(seconds=60)
 async def change_status():
