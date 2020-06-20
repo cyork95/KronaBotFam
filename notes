@@ -3,7 +3,7 @@ Project Setup:
 		discord.py
 		python-dotenv
 		recipe-scrapers
-		**Pillow**
+
 Krona
 	krona_load (extension)
 	krona_unload (extension)

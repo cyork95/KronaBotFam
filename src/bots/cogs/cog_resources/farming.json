@@ -1,0 +1,274 @@
+{
+    "plastids": {
+        "BestLocationName": "Piscinas (Saturn)",
+        "OtherLocations": [
+            "Ophelia (Uranus)",
+            "Phobos",
+            "Pluto",
+            "Akkad (Eris)"
+        ]
+    },
+    "oxium": {
+        "BestLocationName": "IO (Jupiter)",
+        "OtherLocations": [
+            "Outer Terminus (Pluto)",
+            "Gulliver (Phobos)"
+        ]
+    },
+    "neurodes": {
+        "BestLocationName": "Plato (Lua)",
+        "OtherLocations": [
+            "Orokin Derelict Assassinations (Lephantis)",
+            "Neuroptic Masses (Earth)"
+        ]
+    },
+    "neural sensor": {
+        "BestLocationName": "Elara and Sinai (Jupiter)",
+        "OtherLocations": [
+            "Taveuni (Kuva Fortress)"
+        ]
+    },
+    "hexenon": {
+        "BestLocationName": "Cameria or Sinai (Jupiter)",
+        "OtherLocations": [
+
+        ]
+    },
+    "polymer bundle": {
+        "BestLocationName": "Assur (Uranus)",
+        "OtherLocations": [
+            "Ophelia (Uranus)",
+            "Mercury"
+        ]
+    },
+    "argon crystal": {
+        "BestLocationName": "Mot (Void)",
+        "OtherLocations": [
+            "Ani (Void)",
+            "Void nodes"
+        ]
+    },
+    "gallium": {
+        "BestLocationName": "Kadesh (Mars)",
+        "OtherLocations": [
+            "Mars nodes"
+        ]
+    },
+    "orokin cell": {
+        "BestLocationName": "Gabii (Ceres)",
+        "OtherLocations": [
+            "Helen (Saturn)",
+            "Telesto (Saturn)"
+        ]
+    },
+    "ferrite": {
+        "BestLocationName": "Void Survival",
+        "OtherLocations": [
+            "Any Void Mission"
+        ]
+    },
+     "axidrol alloy": {
+        "BestLocationName": "Foundry",
+        "OtherLocations": [
+            "Recipe from Smokefinger in Fortuna"
+        ]
+    },
+     "fieldron sample": {
+        "BestLocationName": "Kelashin (Neptune)",
+        "OtherLocations": [
+
+        ]
+    },
+     "detonite ampule": {
+        "BestLocationName": "Gabii (Ceres)",
+        "OtherLocations": [
+
+        ]
+    },
+     "mutagen sample": {
+        "BestLocationName": "Orokin Derelict Survival",
+        "OtherLocations": [
+
+        ]
+    },
+     "cryotic": {
+        "BestLocationName": "Excavation",
+        "OtherLocations": [
+
+        ]
+    },
+    "travocyte alloy": {
+        "BestLocationName": "Foundry",
+        "OtherLocations": [
+            "Recipe from Smokefinger in Fortuna"
+        ]
+    },
+    "vernedo alloy": {
+        "BestLocationName": "Foundry",
+        "OtherLocations": [
+            "Recipe from Smokefinger in Fortuna"
+        ]
+    },
+    "tellurium": {
+        "BestLocationName": "Ophelia (Uranus)",
+        "OtherLocations": [
+
+        ]
+    },
+    "plustrals": {
+        "BestLocationName": "Railjack",
+        "OtherLocations": [
+
+        ]
+    },
+    "tracons": {
+        "BestLocationName": "Railjack",
+        "OtherLocations": [
+
+        ]
+    },
+    "braccid": {
+        "BestLocationName": "Railjack",
+        "OtherLocations": [
+
+        ]
+    },
+    "copernics": {
+        "BestLocationName": "Railjack",
+        "OtherLocations": [
+
+        ]
+    },
+    "titanium": {
+        "BestLocationName": "Railjack",
+        "OtherLocations": [
+
+        ]
+    },
+    "asturite": {
+        "BestLocationName": "Railjack",
+        "OtherLocations": [
+
+        ]
+    },
+    "synthula": {
+        "BestLocationName": "Dojo Research",
+        "OtherLocations": [
+
+        ]
+    },
+    "gallos rods": {
+        "BestLocationName": "Railjack",
+        "OtherLocations": [
+
+        ]
+    },
+    "nullstones": {
+        "BestLocationName": "Railjack",
+        "OtherLocations": [
+
+        ]
+    },
+    "rubido": {
+        "BestLocationName": "Stickney (Phobos)",
+        "OtherLocations": [
+
+        ]
+    },
+    "nano spores": {
+        "BestLocationName": "Titan (Saturn)",
+        "OtherLocations": [
+
+        ]
+    },
+     "salvage": {
+        "BestLocationName": "Elara (Jupiter)",
+        "OtherLocations": [
+
+        ]
+    },
+     "morphics": {
+        "BestLocationName": "Wahiba (Mars)",
+        "OtherLocations": [
+
+        ]
+    },
+    "alloy plate": {
+        "BestLocationName": "Gabii (Ceres)",
+        "OtherLocations": [
+
+        ]
+    },
+    "carbides": {
+        "BestLocationName": "Railjack",
+        "OtherLocations": [
+
+        ]
+    },
+    "control module": {
+        "BestLocationName": "Ani (Void)",
+        "OtherLocations": [
+            "Other Void Survival"
+        ]
+    },
+    "isos": {
+        "BestLocationName": "Railjack",
+        "OtherLocations": [
+
+        ]
+    },
+    "komms": {
+        "BestLocationName": "Railjack",
+        "OtherLocations": [
+
+        ]
+    },
+    "kuva": {
+        "BestLocationName": "Kuva Siphon (Mission)",
+        "OtherLocations": [
+
+        ]
+    },
+    "cubic diodes": {
+        "BestLocationName": "Larzac (Europa)",
+        "OtherLocations": [
+
+        ]
+    },
+    "circuits": {
+        "BestLocationName": "Gabii (Ceres)",
+        "OtherLocations": [
+
+        ]
+    },
+    "kesslers": {
+        "BestLocationName": "Railjack",
+        "OtherLocations": [
+
+        ]
+    },
+    "fresnals": {
+        "BestLocationName": "Railjack",
+        "OtherLocations": [
+
+        ]
+    },
+    "antiserum injector": {
+        "BestLocationName": "Foundry",
+        "OtherLocations": [
+            "Clan Research"
+        ]
+    },
+    "credits": {
+        "BestLocationName": "Index",
+        "OtherLocations": [
+
+        ]
+    },
+    "vitus essence": {
+        "BestLocationName": "Arbitration",
+        "OtherLocations": [
+
+        ]
+    }
+}

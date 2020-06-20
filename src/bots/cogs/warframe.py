@@ -4,9 +4,38 @@ import discord
 from discord.ext import commands
 import requests
 from datetime import datetime
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+
+from src.bots.cogs.cog_warframe_items import warframe_arcanes, warframe_bow, warframe_frame, warframe_melee, \
+    warframe_mods, warframe_relics, warframe_rifle, warframe_sentinel, warframe_secondary, warframe_arch_gun, \
+    warframe_sigil, warframe_arch_melee, warframe_archwing, warframe_gear, warframe_sentinel_weapons, warframe_fish
 
 with open('./cogs/cog_resources/languages.json') as json_file:
     lang = json.load(json_file)
+
+with open('./cogs/cog_resources/sortiedata.json') as json_file:
+    sortie_data = json.load(json_file)
+
+with open('./cogs/cog_resources/missiontypes.json') as json_file:
+    mission_types = json.load(json_file)
+
+with open('./cogs/cog_resources/solnodes.json') as json_file:
+    sol_nodes = json.load(json_file)
+
+with open('./cogs/cog_resources/farming.json') as json_file:
+    farming_data = json.load(json_file)
+
+sched = AsyncIOScheduler()  # needed cause discord.py uses async
+sched.start()  # starts scheduler for cron task
+gftla = []
+gftlb = []
+af = []
+bf = []
+inva = []
+invb = []
+redtext = []
+OldBaro = ""
+invasionitem = ['Orokin Reactor', 'Orokin Catalyst']
 
 
 class Warframe(commands.Cog):
@@ -170,9 +199,9 @@ class Warframe(commands.Cog):
                               url='https://xbox.warframe.market/items/' + search.replace(' ', '_'),
                               description=str(int(item)) + ' Platinum')
         embed.set_thumbnail(
-            url='https://xbox.arframe.market/static/assets/' + image['payload']['item']['items_in_set'][-1]['icon'])
+            url='https://api.warframe.market/static/assets/' + image['payload']['item']['items_in_set'][-1]['icon'])
         embed.set_footer(text='Data retrieved from warframe.market',
-                         icon_url='https://xbox.warframe.market/favicon.png')
+                         icon_url='https://api.warframe.market/favicon.png')
         await ctx.send(embed=embed)
 
     @price.error
@@ -204,8 +233,9 @@ class Warframe(commands.Cog):
 
     @commands.command(name="sortie")
     async def sortie(self, ctx):
+        await ctx.message.delete()
         sortie = request_sortie()
-        timestamp = (datetime.datetime.fromtimestamp(int(sortie['expiry']) / 1000))
+        timestamp = (datetime.fromtimestamp(int(sortie['expiry']) / 1000))
         arb = discord.Embed(title=sortie['boss'],
                             colour=discord.Colour(0x900f0f),
                             timestamp=timestamp)
@@ -226,8 +256,104 @@ class Warframe(commands.Cog):
         await ctx.send(embed=arb)
 
     @sortie.error
-    async def sortieerror(self, ctx, error):
+    async def sortie_error(self, ctx, error):
         await ctx.send(error)
+
+    @commands.command(name="arby")
+    async def arbitration(self, ctx):
+        current_arbi = requests.get('https://10o.io/kuvalog.json').json()[0]
+        timestamp = datetime.fromisoformat(current_arbi['start'][:-1])
+        arb = discord.Embed(title=current_arbi['solnodedata']['type'] + " - " + current_arbi['solnodedata']['enemy'],
+                            description=current_arbi['solnodedata']['tile'], colour=discord.Colour(0x900f0f),
+                            timestamp=timestamp)
+        arb.set_thumbnail(url='https://i.imgur.com/2Lyw9yo.png')
+        await ctx.send(embed=arb)
+
+    @commands.command(name='farm', help='Display preferred place to farm for resources', usage='<resource name>')
+    async def farm_resources(self, ctx, item: str):
+        if item.lower() in farming_data:
+            item_json = farming_data[item]
+            embed_card = discord.Embed(title=f'{item.title()}')
+            embed_card.add_field(name='Best Location', value=item_json['BestLocationName'], inline=False)
+            if len(item_json['OtherLocations']) > 0:
+                embed_card.add_field(name='Other Locations', value=', '.join(item_json['OtherLocations']), inline=False)
+            await ctx.send(embed=embed_card)
+        else:
+            await ctx.send("We need to add the resource that you requested (if it exists).")
+
+    @commands.command(name='search', help='search for any item', usage='<item name>')
+    async def search(self, ctx, *, item: str):
+        item = item.lower()
+        request = requests.get(f'https://api.warframestat.us/items/search/{item}')
+        is_prime = False
+        if 'prime' in item:
+            is_prime = True
+        request.raise_for_status()
+        response = request.json()
+        if len(response) > 0:
+            result = response[0]
+            if result['category'] == 'Primary':
+                if result['type'] == 'Bow':
+                    embedCard = warframe_bow.display(result, is_prime)
+                    await ctx.send(embed=embedCard)
+                else:
+                    embedCard = warframe_rifle.display(result, is_prime)
+                    await ctx.send(embed=embedCard)
+            elif result['category'] == 'Secondary':
+                embedCard = warframe_secondary.display(result, is_prime)
+                await ctx.send(embed=embedCard)
+            elif result['category'] == 'Relics':
+                embedCard = warframe_relics.display(result)
+                await ctx.send(embed=embedCard)
+            elif result['category'] == 'Arcanes':
+                embedCard = warframe_arcanes.display(result)
+                await ctx.send(embed=embedCard)
+            elif result['category'] == 'Warframes':
+                embedCard = warframe_frame.display(result, is_prime)
+                await ctx.send(embed=embedCard)
+            elif result['category'] == 'Melee':
+                embedCard = warframe_melee.display(result, is_prime)
+                await ctx.send(embed=embedCard)
+            elif result['category'] == 'Sentinels':
+                embedCard = warframe_sentinel.display(result, is_prime)
+                await ctx.send(embed=embedCard)
+            elif result['category'] == 'Mods':
+                embedCard = warframe_mods.display(result)
+                await ctx.send(embed=embedCard)
+            elif result['category'] == 'Sigils':
+                embedCard = warframe_sigil.display(result)
+                await ctx.send(embed=embedCard)
+            elif result['category'] == 'Arch-Gun':
+                embedCard = warframe_arch_gun.display(result, is_prime)
+                await ctx.send(embed=embedCard)
+            elif result['category'] == 'Arch-Melee':
+                embedCard = warframe_arch_melee.display(result, is_prime)
+                await ctx.send(embed=embedCard)
+            elif result['category'] == 'Archwing':
+                embedCard = warframe_archwing.display(result, is_prime)
+                await ctx.send(embed=embedCard)
+            elif result['category'] == 'Gear':
+                embedCard = warframe_gear.display(result)
+                await ctx.send(embed=embedCard)
+            elif result['category'] == 'Fish':
+                embedCard = warframe_fish.display(result)
+                await ctx.send(embed=embedCard)
+            elif result['category'] == 'Sentinel Weapons':
+                embedCard = warframe_sentinel_weapons.display(result, is_prime)
+                await ctx.send(embed=embedCard)
+
+            else:
+                await ctx.send("Can't find that item.")
+
+        else:
+            await ctx.send(f"No results found for the item {item}")
+
+    @search.error
+    async def cycle_error(self, ctx, error):
+        if isinstance(error, commands.MissingRequiredArgument):
+            await ctx.send('Please provide item to be searched for')
+        else:
+            print(error)
 
 
 def request_sortie():
@@ -235,28 +361,28 @@ def request_sortie():
     sortie = {"id": sortie['_id']['$oid'],
               "activation": sortie['Activation']['$date']['$numberLong'],
               "expiry": sortie['Expiry']['$date']['$numberLong'],
-              "boss": sortieData['bosses'][sortie['Boss']]['name'],
+              "boss": sortie_data['bosses'][sortie['Boss']]['name'],
               "missions": [
                   {
-                      "missionType": missionTypes[sortie['Variants'][0]['missionType']],
-                      "modifierType": sortieData['modifierTypes'][sortie['Variants'][0]['modifierType']],
-                      "modifierDescription": sortieData['modifierDescription'][
+                      "missionType": mission_types[sortie['Variants'][0]['missionType']],
+                      "modifierType": sortie_data['modifierTypes'][sortie['Variants'][0]['modifierType']],
+                      "modifierDescription": sortie_data['modifierDescription'][
                           sortie['Variants'][0]['modifierType']],
-                      "node": solNodes[sortie['Variants'][0]['node']]
+                      "node": sol_nodes[sortie['Variants'][0]['node']]
                   },
                   {
-                      "missionType": missionTypes[sortie['Variants'][1]['missionType']],
-                      "modifierType": sortieData['modifierTypes'][sortie['Variants'][1]['modifierType']],
-                      "modifierDescription": sortieData['modifierDescription'][
+                      "missionType": mission_types[sortie['Variants'][1]['missionType']],
+                      "modifierType": sortie_data['modifierTypes'][sortie['Variants'][1]['modifierType']],
+                      "modifierDescription": sortie_data['modifierDescription'][
                           sortie['Variants'][1]['modifierType']],
-                      "node": solNodes[sortie['Variants'][1]['node']]
+                      "node": sol_nodes[sortie['Variants'][1]['node']]
                   },
                   {
-                      "missionType": missionTypes[sortie['Variants'][2]['missionType']],
-                      "modifierType": sortieData['modifierTypes'][sortie['Variants'][2]['modifierType']],
-                      "modifierDescription": sortieData['modifierDescription'][
+                      "missionType": mission_types[sortie['Variants'][2]['missionType']],
+                      "modifierType": sortie_data['modifierTypes'][sortie['Variants'][2]['modifierType']],
+                      "modifierDescription": sortie_data['modifierDescription'][
                           sortie['Variants'][2]['modifierType']],
-                      "node": solNodes[sortie['Variants'][2]['node']]
+                      "node": sol_nodes[sortie['Variants'][2]['node']]
                   }
               ]
               }
