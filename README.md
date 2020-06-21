@@ -26,7 +26,7 @@ RickyBot is mostly a joke bot and just says quotes from Trailer Park Boys.
 WizardBot mostly just wants to have fun. He play some games with people and perform some magic.
 
 ####OrokinBot
-<[Commands]()>
+<[Commands](orokinbot_commands.txt)>
 
 OrokinBot is you guide for all things Warframe. He has a lot of commands to help you play the game.
 
