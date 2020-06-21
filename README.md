@@ -37,7 +37,7 @@ Anyone who wants a bot for their discord server is welcome to use this repositor
 KronaBotFam is a self-driven project where I test my skills to use APIs, json, and various python skills. I have mostly 
 built this project out of personal interest.
 
-#How can you use KronaBotFam?
+# How can you use KronaBotFam?
 To use KronaBotFam, you will python 3.8.3. You will also need the following python packages:
 ##### discord.py
 ##### python-dotenv
@@ -46,9 +46,10 @@ To use KronaBotFam, you will python 3.8.3. You will also need the following pyth
 You will also need to sign up for the [Discord Developer Portal](https://discord.com/developers/applications) account 
 and follow the instructions there for creating an application and adding a bot.
 
-#KronaBotFam licensing
+# KronaBotFam licensing
 KronaBotFam is using the MIT License so feel free to do with it as you wish.
 
-#Wish to get in contact regarding KronaBotFam?
+# Wish to get in contact regarding KronaBotFam?
+
 For business inquiries please see my website: https://sites.google.com/view/cody-yorks-portfolio/home
 
