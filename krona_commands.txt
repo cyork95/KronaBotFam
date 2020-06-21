@@ -1,17 +1,17 @@
-Command			Parameters			Cog			Description
+Command			   Parameters			    Cog			Description
 -----------------------------------------------------------
-krona_load		(extension)						This takes a cog and loads it to use the commands of that cog.
-krona_unload	(extension)						This takes a cog and unloads it so it can no longer be used.
-krona_reload	(extension)						This refreshes a cog if there was a code change.
-krona_ping										Returns the bot latency
-lazy											Returns a message to the lazy discord people
-clear			[amount]			admin		Deletes the specified number of chats. Default is 2 messages.
-kick			(member) [reason]	admin		Kicks the specified member for an optional reason.
-ban				(member) [reason]	admin		Bans the specified member for an optional reason.
-unban			(member)			admin		Unbans the member
-mute			(member)			admin		Mutes the member.
-unmute			(member)			admin		Unmutes the member.
-add_role		(member) (role)		admin		Adds a role to the specified user.
+krona_load		(extension)						    This takes a cog and loads it to use the commands of that cog.
+krona_unload	(extension)						    This takes a cog and unloads it so it can no longer be used.
+krona_reload	(extension)						    This refreshes a cog if there was a code change.
+krona_ping										          Returns the bot latency
+lazy											              Returns a message to the lazy discord people
+clear			    [amount]			    admin		Deletes the specified number of chats. Default is 2 messages.
+kick			    (member) [reason]	admin		Kicks the specified member for an optional reason.
+ban				    (member) [reason]	admin		Bans the specified member for an optional reason.
+unban			    (member)			    admin		Unbans the member
+mute			    (member)			    admin		Mutes the member.
+unmute			  (member)			    admin		Unmutes the member.
+add_role		  (member) (role)		admin		Adds a role to the specified user.
 remove_role		(member) (role)		admin		Removes a role from the specified user.
-get_recipe							recipe		Gets a random recipe.
-random_cat							cat			Gets a radnom cat picture.
+get_recipe							        recipe		Gets a random recipe.
+random_cat							        cat			Gets a radnom cat picture.
