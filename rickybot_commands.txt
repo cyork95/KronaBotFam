@@ -1,0 +1,5 @@
+Command			Parameters			Cog			Description
+-----------------------------------------------------------
+tpb												Gets a random Trailer park boys quote from my quote list.
+tell_joke										Gets a random joke from the joke api.
+ricky_ping										Gets RickyBot's latency.

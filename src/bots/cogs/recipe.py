@@ -34,6 +34,13 @@ class Recipe(commands.Cog):
             embed.add_field(name='Instructions:', value=instructions, inline=False)
             await ctx.channel.send(embed=embed)
 
+    @get_recipe.error
+    async def get_recipe_error(self, ctx, error):
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add parameters you don\'t need?')
+        await ctx.send(embed=embed)
+
 
 def setup(client):
     client.add_cog(Recipe(client))

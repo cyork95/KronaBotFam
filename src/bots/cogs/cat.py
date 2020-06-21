@@ -26,6 +26,13 @@ class Cats(commands.Cog):
                                                                  f"{self.client.user.avatar}.png?size=64")
         await ctx.send(embed=em)
 
+    @random_cat.error
+    async def random_cat_error(self, ctx, error):
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add parameters you don\'t need?')
+        await ctx.send(embed=embed)
+
 
 def setup(client):
     client.add_cog(Cats(client))

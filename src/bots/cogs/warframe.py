@@ -25,18 +25,6 @@ with open('./cogs/cog_resources/solnodes.json') as json_file:
 with open('./cogs/cog_resources/farming.json') as json_file:
     farming_data = json.load(json_file)
 
-sched = AsyncIOScheduler()  # needed cause discord.py uses async
-sched.start()  # starts scheduler for cron task
-gftla = []
-gftlb = []
-af = []
-bf = []
-inva = []
-invb = []
-redtext = []
-OldBaro = ""
-invasionitem = ['Orokin Reactor', 'Orokin Catalyst']
-
 
 class Warframe(commands.Cog):
     def __init__(self, client):
@@ -57,7 +45,10 @@ class Warframe(commands.Cog):
 
     @earth.error
     async def earth_error(self, ctx, error):
-        await ctx.send(error)
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add parameters?')
+        await ctx.send(embed=embed)
 
     @commands.command()
     async def baro(self, ctx):
@@ -81,7 +72,10 @@ class Warframe(commands.Cog):
 
     @baro.error
     async def baro_error(self, ctx, error):
-        await ctx.send(error)
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add parameters?')
+        await ctx.send(embed=embed)
 
     @commands.command(aliases=['vallis', 'orb'])
     async def orb_vallis(self, ctx):
@@ -96,7 +90,10 @@ class Warframe(commands.Cog):
 
     @orb_vallis.error
     async def orb_vallis_error(self, ctx, error):
-        await ctx.send(error)
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add parameters?')
+        await ctx.send(embed=embed)
 
     @commands.command(aliases=['endless', 'ef'])
     async def endless_fissure(self, ctx):
@@ -118,7 +115,10 @@ class Warframe(commands.Cog):
 
     @endless_fissure.error
     async def endless_fissure_error(self, ctx, error):
-        await ctx.send(error)
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add parameters?')
+        await ctx.send(embed=embed)
 
     @commands.command(aliases=['f'])
     async def fissure(self, ctx):
@@ -136,7 +136,10 @@ class Warframe(commands.Cog):
 
     @fissure.error
     async def fissure_error(self, ctx, error):
-        await ctx.send(error)
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add parameters?')
+        await ctx.send(embed=embed)
 
     @commands.command()
     async def darvo(self, ctx):
@@ -162,7 +165,10 @@ class Warframe(commands.Cog):
 
     @darvo.error
     async def darvo_error(self, ctx, error):
-        await ctx.send(error)
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add parameters?')
+        await ctx.send(embed=embed)
 
     @commands.command(name='price', description='warframe.market price checker', brief='warframe.market price checker',
                       usage='<item>')
@@ -229,7 +235,10 @@ class Warframe(commands.Cog):
 
     @nw.error
     async def nw_error(self, ctx, error):
-        await ctx.send(content=error)
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add parameters?')
+        await ctx.send(embed=embed)
 
     @commands.command(name="sortie")
     async def sortie(self, ctx):
@@ -257,7 +266,10 @@ class Warframe(commands.Cog):
 
     @sortie.error
     async def sortie_error(self, ctx, error):
-        await ctx.send(error)
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add parameters?')
+        await ctx.send(embed=embed)
 
     @commands.command(name="arby")
     async def arbitration(self, ctx):
@@ -268,6 +280,13 @@ class Warframe(commands.Cog):
                             timestamp=timestamp)
         arb.set_thumbnail(url='https://i.imgur.com/2Lyw9yo.png')
         await ctx.send(embed=arb)
+
+    @arbitration.error
+    async def arbitration_error(self, ctx, error):
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add parameters?')
+        await ctx.send(embed=embed)
 
     @commands.command(name='farm', help='Display preferred place to farm for resources', usage='<resource name>')
     async def farm_resources(self, ctx, item: str):
@@ -280,6 +299,13 @@ class Warframe(commands.Cog):
             await ctx.send(embed=embed_card)
         else:
             await ctx.send("We need to add the resource that you requested (if it exists).")
+
+    @farm_resources.error
+    async def farm_resources_error(self, ctx, error):
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you put the actual resource name?')
+        await ctx.send(embed=embed)
 
     @commands.command(name='search', help='search for any item', usage='<item name>')
     async def search(self, ctx, *, item: str):
@@ -349,11 +375,11 @@ class Warframe(commands.Cog):
             await ctx.send(f"No results found for the item {item}")
 
     @search.error
-    async def cycle_error(self, ctx, error):
-        if isinstance(error, commands.MissingRequiredArgument):
-            await ctx.send('Please provide item to be searched for')
-        else:
-            print(error)
+    async def search_error(self, ctx, error):
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you put the actual item name?')
+        await ctx.send(embed=embed)
 
 
 def request_sortie():

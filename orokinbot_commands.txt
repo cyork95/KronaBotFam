@@ -1,0 +1,22 @@
+Command			Parameters															Cog						Description
+-----------------------------------------------------------------------------------------------------------------------
+orokin_load		(extension)																					This takes a cog and loads it to use the commands of that cog.
+orokin_unload	(extension)																					This takes a cog and unloads it so it can no longer be used.
+orokin_reload	(extension)																					This refreshes a cog if there was a code change.
+orokin_ping																									Returns the bot latency
+earth																				warframe				Returns Earth's Day/Night cycle
+baro																				warframe				Returns all information regarding baro
+orb_vallis																			warframe				Returns the Warm/Cold cycle
+ef																					warframe				Returns the endless fissure missions
+f																					warframe				Returns all the fissure missions
+darvo																				warframe				Returns all information regarding the daily deal
+price			(item name)															warframe				Returns the community price in platinum of the item name given.
+nw																					warframe				Returns the weekly nightwave info
+sortie																				warframe				Returns the daily sortie missions.
+arby																				warframe				Returns the arbitration mission
+farm			(resource name)														warframe				Returns the best places to farm for a particular resource given
+search			(item name)															warframe				Returns information on the item given
+spector			(Warframe) (Weapon Name or TotalDMG) (CurrentLevel) (MissionLevel)	warframe_calculators	Returns the Specter details given the fields provided.
+enemy			(enemy name) (primary or melee) (current level) (mission level)		warframe_calculators	Returns the Enemy details given the fields provided.
+ehp				(total health) (total armour) (total shields)						warframe_calculators	Returns the Effective Health
+status			(base status) (status to add)										warframe_calculators	Returns the total status

@@ -338,7 +338,7 @@ class WarframeCalculators(commands.Cog):
     async def enemy_error(self, ctx, error):
         print(error)
         embed = discord.Embed(title='Syntax Error',
-                              description='!enemy "Enemy" <primary/melee> <CurrentLevel> <Mission Level>\n`Primary` = '
+                              description='>enemy "Enemy" <primary/melee> <CurrentLevel> <Mission Level>\n`Primary` = '
                                           'Normal weapon\n`Melee` = Disarmed\nUse the base mission level. Ex. Mot = '
                                           '40\nSome enemies may not have known weapon references and will show 0 damage'
                                           '.\n!enemy "Corrupted Heavy Gunner" primary 1000 40',

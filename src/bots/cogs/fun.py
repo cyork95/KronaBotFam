@@ -74,6 +74,7 @@ fav_quotes = [
     "\"The only person you are destined to become is the person you decide to be.\" -Ralph Waldo Emerson"
 ]
 
+
 class Fun(commands.Cog):
     def __init__(self, client):
         self.client = client
@@ -101,16 +102,37 @@ class Fun(commands.Cog):
         embed.add_field(name="Total:", value=sum(dice_roll_ints))
         await ctx.send("", embed=embed)
 
+    @dice.error
+    async def dice_error(self, ctx, error):
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you give the number of dice and then the number of sides?')
+        await ctx.send(embed=embed)
+
     @commands.command(aliases=['8ball'])
     async def eight_ball(self, ctx, *, question):
         await ctx.message.delete()
-        await ctx.send(f'Question:    {question}\nAnswer:    {random.choice(quotes.ball_response)}')
+        await ctx.send(f'Question:    {question}\nAnswer:    {random.choice(ball_response)}')
+
+    @eight_ball.error
+    async def eight_ball_error(self, ctx, error):
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you give it a question?')
+        await ctx.send(embed=embed)
 
     @commands.command(pass_context=True, aliases=['pick'])
     async def choose(self, ctx, *, choices: str):
         """Choose randomly from the options you give. [p]choose this | that"""
         await ctx.message.delete()
         await ctx.send('I choose: ``{}``'.format(random.choice(choices.split(","))))
+
+    @choose.error
+    async def choose_error(self, ctx, error):
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you make sure to have only a \",\" separating the choices?')
+        await ctx.send(embed=embed)
 
     @commands.command()
     async def flip_coin(self, ctx):
@@ -119,6 +141,13 @@ class Fun(commands.Cog):
         await ctx.send('*Flipping...*')
         await asyncio.sleep(3)
         await ctx.send(content=random.choice(('Heads!', 'Tails!')))
+
+    @flip_coin.error
+    async def flip_coin_error(self, ctx, error):
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add any extra parameters?')
+        await ctx.send(embed=embed)
 
 
 def setup(client):

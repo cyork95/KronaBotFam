@@ -17,12 +17,21 @@ status = cycle(['Doing Magic', 'Playing Magic', 'Rolling Dice'])
 wizard.load_extension(f'cogs.fun')
 wizard.load_extension(f'cogs.silly')
 
+
 @wizard.command()
 @commands.has_permissions(administrator=True)
 async def wizard_load(ctx, extension):
     await ctx.message.delete()
     wizard.load_extension(f'cogs.{extension}')
     ctx.send(f'The extension {extension} was loaded!')
+
+
+@wizard_load.error
+async def wizard_load_error(self, ctx, error):
+    embed = discord.Embed(title='Syntax Error',
+                          colour=discord.Colour(0x9013fe),
+                          description='Did you mistype the extension name?')
+    await ctx.send(embed=embed)
 
 
 @wizard.command()
@@ -33,6 +42,14 @@ async def wizard_unload(ctx, extension):
     await ctx.send(f'The extension {extension} was unloaded!')
 
 
+@wizard_unload.error
+async def wizard_unload_error(self, ctx, error):
+    embed = discord.Embed(title='Syntax Error',
+                          colour=discord.Colour(0x9013fe),
+                          description='Did you mistype the extension name?')
+    await ctx.send(embed=embed)
+
+
 @wizard.command()
 @commands.has_permissions(administrator=True)
 async def wizard_reload(ctx, extension):
@@ -40,6 +57,14 @@ async def wizard_reload(ctx, extension):
     wizard.unload_extension(f'cogs.{extension}')
     wizard.load_extension(f'cogs.{extension}')
     await ctx.send(f'The extension {extension} was reloaded!')
+
+
+@wizard_reload.error
+async def krona_reload_error(self, ctx, error):
+    embed = discord.Embed(title='Syntax Error',
+                          colour=discord.Colour(0x9013fe),
+                          description='Did you mistype the extension name?')
+    await ctx.send(embed=embed)
 
 
 @wizard.event
@@ -52,13 +77,23 @@ async def on_ready():
 
 
 @wizard.command()
-async def ping(ctx):
+async def wizard_ping(ctx):
     await ctx.message.delete()
     await ctx.send(f'Pong! My latency is: {round(wizard.latency * 1000)}ms')
+
+
+@wizard_ping.error
+async def wizard_ping_error(self, ctx, error):
+    embed = discord.Embed(title='Syntax Error',
+                          colour=discord.Colour(0x9013fe),
+                          description='Did you add parameters you don\'t need?')
+    await ctx.send(embed=embed)
+
 
 @tasks.loop(seconds=60)
 async def change_status():
     await wizard.change_presence(activity=discord.Game(next(status)))
+
 
 @wizard.event
 async def on_command_error(ctx, error):

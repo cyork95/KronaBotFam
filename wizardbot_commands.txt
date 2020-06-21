@@ -1,0 +1,12 @@
+Command			Parameters							Cog			Description
+---------------------------------------------------------------------------
+wizard_load		(extension)										This takes a cog and loads it to use the commands of that cog.
+wizard_unload	(extension)										This takes a cog and unloads it so it can no longer be used.
+wizard_reload	(extension)										This refreshes a cog if there was a code change.
+wizard_ping														Returns the bot latency
+dice			(number of dice) (number of sides) 	fun			Returns the dice rolls given the number of dice and the number of sides
+eight_ball		(question)							fun			Takes a question and then rolls an 8ball for it.
+choose			[choice 1],[choice 2],[choice 3]...	fun			Takes any number of choices and randomely chooses one.
+flip_coin											fun			Flips a coin.
+christmas											silly		Returns if its christmas.
+halloween 											silly		Returns if its halloween.
