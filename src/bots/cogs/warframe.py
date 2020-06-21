@@ -289,13 +289,15 @@ class Warframe(commands.Cog):
         await ctx.send(embed=embed)
 
     @commands.command(name='farm', help='Display preferred place to farm for resources', usage='<resource name>')
-    async def farm_resources(self, ctx, item: str):
-        if item.lower() in farming_data:
+    async def farm_resources(self, ctx, *, item: str):
+        if item in farming_data:
             item_json = farming_data[item]
             embed_card = discord.Embed(title=f'{item.title()}')
             embed_card.add_field(name='Best Location', value=item_json['BestLocationName'], inline=False)
             if len(item_json['OtherLocations']) > 0:
                 embed_card.add_field(name='Other Locations', value=', '.join(item_json['OtherLocations']), inline=False)
+            else:
+                pass
             await ctx.send(embed=embed_card)
         else:
             await ctx.send("We need to add the resource that you requested (if it exists).")
