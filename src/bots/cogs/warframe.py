@@ -4,11 +4,10 @@ import discord
 from discord.ext import commands
 import requests
 from datetime import datetime
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-from src.bots.cogs.cog_warframe_items import warframe_arcanes, warframe_bow, warframe_frame, warframe_melee, \
-    warframe_mods, warframe_relics, warframe_rifle, warframe_sentinel, warframe_secondary, warframe_arch_gun, \
-    warframe_sigil, warframe_arch_melee, warframe_archwing, warframe_gear, warframe_sentinel_weapons, warframe_fish
+from src.bots.cogs import warframe_arcanes, warframe_arch_gun, warframe_arch_melee, warframe_archwing, warframe_bow, \
+    warframe_fish, warframe_frame, warframe_gear, warframe_melee, warframe_mods, warframe_relics, warframe_rifle, \
+    warframe_secondary, warframe_sentinel, warframe_sentinel_weapons, warframe_sigil
 
 with open('./cogs/cog_resources/languages.json') as json_file:
     lang = json.load(json_file)

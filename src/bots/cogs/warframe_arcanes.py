@@ -12,3 +12,5 @@ def display(result):
     if 'drops' in result:
         embed_card.add_field(name=f"Drop Locations", value=get_drop_locations(result['drops']), inline=False)
     return embed_card
+
+
