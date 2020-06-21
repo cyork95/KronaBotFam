@@ -42,6 +42,7 @@ To use KronaBotFam, you will python 3.8.3. You will also need the following pyth
 ##### discord.py
 ##### python-dotenv
 ##### recipe-scrapers
+##### apscheduler
 
 You will also need to sign up for the [Discord Developer Portal](https://discord.com/developers/applications) account 
 and follow the instructions there for creating an application and adding a bot.
