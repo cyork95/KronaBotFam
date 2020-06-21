@@ -15,6 +15,7 @@ status = cycle(['Warframe', 'Discord Bot', 'Living my bot life'])
 """Loading the Cogs on Startup"""
 orokin.load_extension(f'cogs.warframe')
 orokin.load_extension(f'cogs.warframe_calculators')
+orokin.load_extension(f'cogs.warframe_search')
 
 @orokin.command()
 @commands.has_permissions(administrator=True)

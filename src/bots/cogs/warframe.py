@@ -5,10 +5,6 @@ from discord.ext import commands
 import requests
 from datetime import datetime
 
-from src.bots.cogs import warframe_arcanes, warframe_arch_gun, warframe_arch_melee, warframe_archwing, warframe_bow, \
-    warframe_fish, warframe_frame, warframe_gear, warframe_melee, warframe_mods, warframe_relics, warframe_rifle, \
-    warframe_secondary, warframe_sentinel, warframe_sentinel_weapons, warframe_sigil
-
 with open('./cogs/cog_resources/languages.json') as json_file:
     lang = json.load(json_file)
 
@@ -306,80 +302,6 @@ class Warframe(commands.Cog):
         embed = discord.Embed(title='Syntax Error',
                               colour=discord.Colour(0x9013fe),
                               description='Did you put the actual resource name?')
-        await ctx.send(embed=embed)
-
-    @commands.command(name='search', help='search for any item', usage='<item name>')
-    async def search(self, ctx, *, item: str):
-        item = item.lower()
-        request = requests.get(f'https://api.warframestat.us/items/search/{item}')
-        is_prime = False
-        if 'prime' in item:
-            is_prime = True
-        request.raise_for_status()
-        response = request.json()
-        if len(response) > 0:
-            result = response[0]
-            if result['category'] == 'Primary':
-                if result['type'] == 'Bow':
-                    embedCard = warframe_bow.display(result, is_prime)
-                    await ctx.send(embed=embedCard)
-                else:
-                    embedCard = warframe_rifle.display(result, is_prime)
-                    await ctx.send(embed=embedCard)
-            elif result['category'] == 'Secondary':
-                embedCard = warframe_secondary.display(result, is_prime)
-                await ctx.send(embed=embedCard)
-            elif result['category'] == 'Relics':
-                embedCard = warframe_relics.display(result)
-                await ctx.send(embed=embedCard)
-            elif result['category'] == 'Arcanes':
-                embedCard = warframe_arcanes.display(result)
-                await ctx.send(embed=embedCard)
-            elif result['category'] == 'Warframes':
-                embedCard = warframe_frame.display(result, is_prime)
-                await ctx.send(embed=embedCard)
-            elif result['category'] == 'Melee':
-                embedCard = warframe_melee.display(result, is_prime)
-                await ctx.send(embed=embedCard)
-            elif result['category'] == 'Sentinels':
-                embedCard = warframe_sentinel.display(result, is_prime)
-                await ctx.send(embed=embedCard)
-            elif result['category'] == 'Mods':
-                embedCard = warframe_mods.display(result)
-                await ctx.send(embed=embedCard)
-            elif result['category'] == 'Sigils':
-                embedCard = warframe_sigil.display(result)
-                await ctx.send(embed=embedCard)
-            elif result['category'] == 'Arch-Gun':
-                embedCard = warframe_arch_gun.display(result, is_prime)
-                await ctx.send(embed=embedCard)
-            elif result['category'] == 'Arch-Melee':
-                embedCard = warframe_arch_melee.display(result, is_prime)
-                await ctx.send(embed=embedCard)
-            elif result['category'] == 'Archwing':
-                embedCard = warframe_archwing.display(result, is_prime)
-                await ctx.send(embed=embedCard)
-            elif result['category'] == 'Gear':
-                embedCard = warframe_gear.display(result)
-                await ctx.send(embed=embedCard)
-            elif result['category'] == 'Fish':
-                embedCard = warframe_fish.display(result)
-                await ctx.send(embed=embedCard)
-            elif result['category'] == 'Sentinel Weapons':
-                embedCard = warframe_sentinel_weapons.display(result, is_prime)
-                await ctx.send(embed=embedCard)
-
-            else:
-                await ctx.send("Can't find that item.")
-
-        else:
-            await ctx.send(f"No results found for the item {item}")
-
-    @search.error
-    async def search_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you put the actual item name?')
         await ctx.send(embed=embed)
 
 
