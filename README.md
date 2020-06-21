@@ -10,22 +10,22 @@ to retrieve information that can be used in the server.
 Currently there are four bots in the Krona bot family see each bot below for a description and link to the commands 
 they can each perform.
 
-####Krona
+Krona
 <[Commands](krona_commands.txt)>
 
 Krona is the discord admin bot and would perform the main duties you would expect an admin bot to perform.
 
-####RickyBot
+RickyBot
 <[Commands](rickybot_commands.txt)>
 
 RickyBot is mostly a joke bot and just says quotes from Trailer Park Boys.
 
-####WizardBot
+WizardBot
 <[Commands](wizardbot_commands.txt)>
 
 WizardBot mostly just wants to have fun. He play some games with people and perform some magic.
 
-####OrokinBot
+OrokinBot
 <[Commands](orokinbot_commands.txt)>
 
 OrokinBot is you guide for all things Warframe. He has a lot of commands to help you play the game.
