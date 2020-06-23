@@ -1,21 +1,22 @@
+
 import json
 import discord
 from discord.ext import commands
 
 
-with open('./cogs/cog_resources/Primary.json') as json_file:
+with open('./cogs/cog_resources/primary.json') as json_file:
     primary = json.load(json_file)
 
-with open('./cogs/cog_resources/Secondary.json') as json_file:
+with open('./cogs/cog_resources/melee.json') as json_file:
     secondary = json.load(json_file)
 
-with open('./cogs/cog_resources/Secondary.json') as json_file:
+with open('./cogs/cog_resources/secondary.json') as json_file:
     melee = json.load(json_file)
 
 with open('./cogs/cog_resources/warframes.json') as json_file:
     warframes = json.load(json_file)
 
-with open('./cogs/cog_resources/Enemy.json') as json_file:
+with open('./cogs/cog_resources/enemy.json') as json_file:
     enemy = json.load(json_file)
 
 
