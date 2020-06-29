@@ -1,0 +1,389 @@
+{
+  "blockingAngle": 55,
+  "buildPrice": 20000,
+  "buildQuantity": 1,
+  "buildTime": 43200,
+  "category": "Melee",
+  "channeling": 1.5,
+  "comboDuration": 5,
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/StalkerTwoGreatswordBlueprint",
+      "name": "Blueprint",
+      "description": "The Stalker's sword as bestowed on him by the Sentient Hunhow.",
+      "itemCount": 1,
+      "imageName": "blueprint.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Shadow Stalker nce: 50.00 nce: 50.00",
+          "type": "Enemy Blueprint Tables",
+          "rarity": "Rare",
+          "chance": 0.0553
+        },
+        {
+          "location": "Shadow Stalker nce: 50.00 nce: 50.00",
+          "type": "Enemy Blueprint Tables",
+          "rarity": "Rare",
+          "chance": 0.0553
+        }
+      ]
+    },
+    {
+      "name": "Broken War",
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerTwo/StalkerTwoSmallSword",
+      "damagePerShot": [
+        18.700001,
+        18.700001,
+        149.60001,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "totalDamage": 187,
+      "description": "A fragment of Stalker's War sword, a symbol of his defeat.",
+      "criticalChance": 0.34999999,
+      "criticalMultiplier": 2.2,
+      "procChance": 0.19999999,
+      "fireRate": 1,
+      "masteryReq": 10,
+      "productCategory": "Melee",
+      "slot": 5,
+      "omegaAttenuation": 0.94999999,
+      "blockingAngle": 55,
+      "comboDuration": 5,
+      "followThrough": 0.60000002,
+      "range": 2.5,
+      "slamAttack": 561,
+      "slamRadialDamage": 187,
+      "slamRadius": 7,
+      "slideAttack": 187,
+      "heavyAttackDamage": 935,
+      "heavySlamAttack": 748,
+      "heavySlamRadialDamage": 748,
+      "heavySlamRadius": 8,
+      "windUp": 0.60000002,
+      "itemCount": 1,
+      "imageName": "broken-war.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Shadow Stalker nce: 50.00 nce: 50.00",
+          "type": "Enemy Blueprint Tables",
+          "rarity": "Rare",
+          "chance": 0.0553
+        },
+        {
+          "location": "Shadow Stalker nce: 50.00 nce: 50.00",
+          "type": "Enemy Blueprint Tables",
+          "rarity": "Rare",
+          "chance": 0.0553
+        }
+      ],
+      "channeling": 1.5,
+      "damage": "187.0",
+      "damageTypes": {
+        "impact": 18.7,
+        "slash": 149.6,
+        "puncture": 18.7
+      },
+      "polarities": [
+        "Madurai",
+        "Naramon"
+      ],
+      "stancePolarity": "Madurai",
+      "tags": [],
+      "type": "Sword",
+      "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/b/b2/StalkerTwoSword.png/revision/latest?cb=20151204013307",
+      "wikiaUrl": "http://warframe.fandom.com/wiki/Broken_War",
+      "disposition": 3
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
+      "name": "Nitain Extract",
+      "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.This resource can be acquired from Nightwave offerings.",
+      "itemCount": 5,
+      "imageName": "nitain-extract.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Mars - Gradivus",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0067,
+          "rotation": "C"
+        },
+        {
+          "location": "Mercury - Neruda",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0067,
+          "rotation": "C"
+        },
+        {
+          "location": "Mercury - Terminus",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0067,
+          "rotation": "C"
+        },
+        {
+          "location": "Venus - Ishtar",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0067,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Ker",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.01,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Thon",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.01,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Adrastea",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.01,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Carpo",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.01,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Calypso",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.01,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Pallene",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.01,
+          "rotation": "C"
+        },
+        {
+          "location": "Hallowed Flame Endurance Caches",
+          "type": "Transient Rewards",
+          "rarity": "Rare",
+          "chance": 0.0101
+        },
+        {
+          "location": "Hallowed Flame Mission Caches",
+          "type": "Transient Rewards",
+          "rarity": "Rare",
+          "chance": 0.0101
+        },
+        {
+          "location": "Void - Marduk",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0101,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Lua - Plato",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0129,
+          "rotation": "C"
+        },
+        {
+          "location": "Kuva - Fortress",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Neptune - Halimede",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Thalassa",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Charon",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Cypress",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Phithale",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Rusalka",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Uranus - Portia",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Void - Stribog",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Level 15 - 25 Ghoul Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0412
+        },
+        {
+          "location": "Level 40 - 50 Ghoul Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0412
+        },
+        {
+          "location": "Level 15 - 25 Ghoul Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.059500000000000004
+        },
+        {
+          "location": "Level 40 - 50 Ghoul Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.059500000000000004
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+      "name": "Polymer Bundle",
+      "description": "A hard, thermoplastic casing. Manufactured by Corpus.Locations: Mercury, Venus, and Uranus.",
+      "itemCount": 2300,
+      "imageName": "polymer-bundle.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+      "name": "Rubedo",
+      "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+      "itemCount": 1400,
+      "imageName": "rubedo.png",
+      "tradable": false
+    }
+  ],
+  "consumeOnBuild": true,
+  "criticalChance": 0.25999999,
+  "criticalMultiplier": 2.5999999,
+  "damage": "250.0",
+  "damagePerShot": [
+    120,
+    60,
+    70.000008,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "damageTypes": {
+    "impact": 120,
+    "slash": 70,
+    "puncture": 60
+  },
+  "description": "The Stalker's sword as bestowed on him by the Sentient Hunhow.",
+  "disposition": 1,
+  "fireRate": 0.91666669,
+  "followThrough": 0.60000002,
+  "heavyAttackDamage": 1500,
+  "heavySlamAttack": 1250,
+  "heavySlamRadialDamage": 1250,
+  "heavySlamRadius": 9,
+  "imageName": "war.png",
+  "masteryReq": 10,
+  "name": "War",
+  "omegaAttenuation": 0.69999999,
+  "polarities": [
+    "Naramon"
+  ],
+  "procChance": 0.25999999,
+  "productCategory": "Melee",
+  "range": 3.2,
+  "skipBuildTimePrice": 35,
+  "slamAttack": 750,
+  "slamRadialDamage": 250,
+  "slamRadius": 8,
+  "slideAttack": 500,
+  "slot": 5,
+  "stancePolarity": "Vazarin",
+  "tags": [],
+  "totalDamage": 250,
+  "tradable": false,
+  "type": "Heavy Blade",
+  "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerTwo/StalkerTwoGreatSword",
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/fd/StalkerTwoGreatSword.png/revision/latest?cb=20151204013307",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/War",
+  "windUp": 1.1
+}

@@ -1,0 +1,355 @@
+{
+  "abilities": [
+    {
+      "name": "Spores",
+      "description": "Inflict a target with a pox of <DT_CORROSIVE>Corrosive spores. Spread spores to nearby enemies by destroying them or killing their host. The longer the Spore spreads, its damage will increase."
+    },
+    {
+      "name": "Molt",
+      "description": "Shedding her skin like a snake, Saryn leaves a decoy behind to draw fire from enemies."
+    },
+    {
+      "name": "Toxic Lash",
+      "description": "While active, attacks deal additional <DT_POISON>Toxin Damage; this effect is doubled for Melee Strikes. Instantly burst spores when attacking afflicted enemies."
+    },
+    {
+      "name": "Miasma",
+      "description": "Release a poisonous miasma that deals <DT_VIRAL>Viral Damage to enemies in range. Foes afflicted by spores are more susceptible to the mist."
+    }
+  ],
+  "armor": 225,
+  "aura": "vazarin",
+  "buildPrice": 25000,
+  "buildQuantity": 1,
+  "buildTime": 259200,
+  "category": "Warframes",
+  "color": 3947584,
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynBlueprint",
+      "name": "Blueprint",
+      "description": "Saryn's venomous attacks are horrifyingly effective against organic and synthetic enemies, and her ability to 'shed' her skin makes her very elusive.",
+      "itemCount": 1,
+      "imageName": "blueprint.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynChassisComponent",
+      "name": "Chassis",
+      "description": "Chassis component of the Saryn Warframe.",
+      "itemCount": 1,
+      "imageName": "chassis.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Sedna - Merrow",
+          "type": "Mission Rewards",
+          "rarity": "Common",
+          "chance": 0.3872
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynHelmetComponent",
+      "name": "Neuroptics",
+      "description": "Neuroptics component of the Saryn Warframe.",
+      "itemCount": 1,
+      "imageName": "neuroptics.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Sedna - Merrow",
+          "type": "Mission Rewards",
+          "rarity": "Common",
+          "chance": 0.3872
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+      "name": "Orokin Cell",
+      "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+      "itemCount": 1,
+      "imageName": "orokin-cell.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Neptune - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "B"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Annihilation"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0714
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0833
+        },
+        {
+          "location": "Kuva - Fortress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1079,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Lua - Plato",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1082,
+          "rotation": "C"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.125
+        },
+        {
+          "location": "Neptune - Halimede",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Thalassa",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Charon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Cypress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Phithale",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Rusalka",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Uranus - Portia",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Hallowed Flame Mission Caches",
+          "type": "Transient Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1265
+        },
+        {
+          "location": "Ceres - Ker",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Thon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Adrastea",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Carpo",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Calypso",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Pallene",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Derelict - Orokin",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1936,
+          "rotation": "Sabotage"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynSystemsComponent",
+      "name": "Systems",
+      "description": "Systems component of the Saryn Warframe.",
+      "itemCount": 1,
+      "imageName": "systems.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Sedna - Merrow",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.2256
+        }
+      ]
+    }
+  ],
+  "conclave": true,
+  "consumeOnBuild": true,
+  "description": "Saryn's venomous attacks are horrifyingly effective against organic and synthetic enemies, and her ability to 'shed' her skin makes her very elusive.",
+  "health": 125,
+  "imageName": "saryn.png",
+  "introduced": "7",
+  "masteryReq": 0,
+  "name": "Saryn",
+  "passiveDescription": "Status Effects inflicted upon enemies last |DURATION|% longer.",
+  "polarities": [
+    "naramon",
+    "vazarin"
+  ],
+  "power": 150,
+  "productCategory": "Suits",
+  "sex": "Female",
+  "shield": 100,
+  "skipBuildTimePrice": 50,
+  "sprint": 0.95,
+  "sprintSpeed": 0.94999999,
+  "stamina": 3,
+  "tradable": false,
+  "type": "Warframe",
+  "uniqueName": "/Lotus/Powersuits/Saryn/Saryn",
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/d9/SarynNewLook.png/revision/latest?cb=20141124023331",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Saryn"
+}

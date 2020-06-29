@@ -1,0 +1,661 @@
+{
+  "abilities": [
+    {
+      "name": "Tesla Nervos",
+      "description": "Deploy a roller drone that attaches itself to enemies and delivers bursts of arcing electricity to anything in the immediate area."
+    },
+    {
+      "name": "Minelayer",
+      "description": "Cycle through four deployable mines: Tether Coil, Flechette Orb, Vector Pad and Overdriver."
+    },
+    {
+      "name": "Photon Strike",
+      "description": "Drop a targeting beacon that calls in a devastating laser artillery strike."
+    },
+    {
+      "name": "Bastille",
+      "description": "Erect a containment field to capture enemies and suspended them in stasis, stripping their armor. Hold to collapse all Bastilles into a single damaging vortex."
+    }
+  ],
+  "armor": 200,
+  "aura": "naramon",
+  "buildPrice": 25000,
+  "buildQuantity": 1,
+  "buildTime": 259200,
+  "category": "Warframes",
+  "color": 1583150,
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeBlueprint",
+      "name": "Blueprint",
+      "description": "Transform the battlefield into a weapon with this gilded tactician. Features unique mod polarities for extended customization.",
+      "itemCount": 1,
+      "primeSellingPrice": 65,
+      "imageName": "blueprint.png",
+      "tradable": true,
+      "ducats": 65,
+      "drops": [
+        {
+          "location": "Lith F2 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Lith F2 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Lith F2 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Lith F2 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        },
+        {
+          "location": "Meso V6 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Meso V6 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Meso V6 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Meso V6 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Neo V2 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Neo V2 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Neo V2 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Neo V2 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeChassisComponent",
+      "name": "Chassis",
+      "description": "Chassis component of the Vauban Prime Warframe.",
+      "primeSellingPrice": 25,
+      "itemCount": 1,
+      "imageName": "prime-chassis.png",
+      "tradable": true,
+      "drops": [
+        {
+          "location": "Axi V1 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Axi V1 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Axi V1 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Axi V1 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        },
+        {
+          "location": "Lith V4 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Lith V4 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Lith V4 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Lith V4 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        },
+        {
+          "location": "Meso V4 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Meso V4 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Meso V4 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Meso V4 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        },
+        {
+          "location": "Neo A4 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Neo A4 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Neo A4 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Neo A4 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        },
+        {
+          "location": "Neo V6 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Neo V6 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Neo V6 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Neo V6 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        }
+      ],
+      "ducats": 25
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeHelmetComponent",
+      "name": "Neuroptics",
+      "description": "Neuroptics component of the Vauban Prime Warframe.",
+      "primeSellingPrice": 100,
+      "itemCount": 1,
+      "imageName": "prime-neuroptics.png",
+      "tradable": true,
+      "drops": [
+        {
+          "location": "Lith V7 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Lith V7 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Lith V7 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Lith V7 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        },
+        {
+          "location": "Meso N2 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Meso N2 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Meso N2 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Meso N2 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        },
+        {
+          "location": "Neo V3 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Neo V3 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Neo V3 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Neo V3 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        },
+        {
+          "location": "Neo V5 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Neo V5 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Neo V5 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Neo V5 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        }
+      ],
+      "ducats": 100
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Alertium",
+      "name": "Nitain Extract",
+      "description": "Each vial is produced by the painstaking expression of billions of rare, ocean-vent dwelling microorganisms.This resource can be acquired from Nightwave offerings.",
+      "itemCount": 5,
+      "imageName": "nitain-extract.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Mars - Gradivus",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0067,
+          "rotation": "C"
+        },
+        {
+          "location": "Mercury - Neruda",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0067,
+          "rotation": "C"
+        },
+        {
+          "location": "Mercury - Terminus",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0067,
+          "rotation": "C"
+        },
+        {
+          "location": "Venus - Ishtar",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0067,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Ker",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.01,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Thon",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.01,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Adrastea",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.01,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Carpo",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.01,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Calypso",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.01,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Pallene",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.01,
+          "rotation": "C"
+        },
+        {
+          "location": "Hallowed Flame Endurance Caches",
+          "type": "Transient Rewards",
+          "rarity": "Rare",
+          "chance": 0.0101
+        },
+        {
+          "location": "Hallowed Flame Mission Caches",
+          "type": "Transient Rewards",
+          "rarity": "Rare",
+          "chance": 0.0101
+        },
+        {
+          "location": "Void - Marduk",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0101,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Lua - Plato",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0129,
+          "rotation": "C"
+        },
+        {
+          "location": "Kuva - Fortress",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Neptune - Halimede",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Thalassa",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Charon",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Cypress",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Phithale",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Rusalka",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Uranus - Portia",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "C"
+        },
+        {
+          "location": "Void - Stribog",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.02,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Level 15 - 25 Ghoul Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0412
+        },
+        {
+          "location": "Level 40 - 50 Ghoul Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0412
+        },
+        {
+          "location": "Level 15 - 25 Ghoul Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.059500000000000004
+        },
+        {
+          "location": "Level 40 - 50 Ghoul Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.059500000000000004
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeSystemsComponent",
+      "name": "Systems",
+      "description": "Systems component of the Vauban Prime Warframe.",
+      "primeSellingPrice": 100,
+      "itemCount": 1,
+      "imageName": "prime-systems.png",
+      "tradable": true,
+      "drops": [
+        {
+          "location": "Lith V2 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Lith V2 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Lith V2 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Lith V2 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        },
+        {
+          "location": "Lith V8 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Lith V8 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Lith V8 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Lith V8 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        },
+        {
+          "location": "Neo N2 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Neo N2 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Neo N2 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Neo N2 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        }
+      ],
+      "ducats": 100
+    }
+  ],
+  "conclave": false,
+  "consumeOnBuild": true,
+  "description": "Transform the battlefield into a weapon with this gilded tactician. Features unique mod polarities for extended customization.",
+  "estimatedVaultDate": "2018 03 20",
+  "health": 100,
+  "imageName": "vauban-prime.png",
+  "introduced": "18.12",
+  "masteryReq": 0,
+  "name": "Vauban Prime",
+  "passiveDescription": "Deal |DAMAGE|% Extra Damage to incapacitated enemies.",
+  "polarities": [
+    "naramon",
+    "madurai",
+    "vazarin"
+  ],
+  "power": 150,
+  "productCategory": "Suits",
+  "releaseDate": "2016 05 17",
+  "sex": "Male",
+  "shield": 100,
+  "skipBuildTimePrice": 50,
+  "sprint": 1,
+  "sprintSpeed": 1,
+  "stamina": 3,
+  "tradable": true,
+  "type": "Warframe",
+  "uniqueName": "/Lotus/Powersuits/Trapper/TrapperPrime",
+  "vaultDate": "2018 03 20",
+  "vaulted": true,
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/6/69/VaubanPrimeNewLook.png/revision/latest?cb=20160528082318",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Vauban_Prime"
+}

@@ -1,0 +1,346 @@
+{
+  "accuracy": 100,
+  "ammo": 210,
+  "buildPrice": 15000,
+  "buildQuantity": 1,
+  "buildTime": 43200,
+  "category": "Secondary",
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/LiDaggerBlueprint",
+      "name": "Blueprint",
+      "description": "A flash of red ribbon is the last thing most victims of these throwing-daggers see.",
+      "itemCount": 1,
+      "imageName": "blueprint.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+      "name": "Ferrite",
+      "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
+      "itemCount": 2500,
+      "imageName": "ferrite.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Gallium",
+      "name": "Gallium",
+      "description": "Soft metal used in microelectronics and energy weapons.Locations: Mars and Uranus.",
+      "itemCount": 5,
+      "imageName": "gallium.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Neptune - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "B"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Annihilation"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Kuva - Fortress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1079,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Lua - Plato",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1082,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Halimede",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Thalassa",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Charon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Cypress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Phithale",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Rusalka",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Uranus - Portia",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Ker",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Thon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Adrastea",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Carpo",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Mars - Gradivus",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Mercury - Neruda",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Mercury - Terminus",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Calypso",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Pallene",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Venus - Ishtar",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+      "name": "Plastids",
+      "description": "A disgusting nanite-infested tissue mass.Locations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+      "itemCount": 800,
+      "imageName": "plastids.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+      "name": "Salvage",
+      "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+      "itemCount": 4000,
+      "imageName": "salvage.png",
+      "tradable": false
+    }
+  ],
+  "consumeOnBuild": true,
+  "criticalChance": 0.30000001,
+  "criticalMultiplier": 2,
+  "damage": "82.0",
+  "damagePerShot": [
+    8.1999998,
+    49.200001,
+    24.599997,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "damageTypes": {
+    "impact": 8.2,
+    "slash": 24.6,
+    "puncture": 49.2
+  },
+  "description": "A flash of red ribbon is the last thing most victims of these throwing-daggers see.",
+  "disposition": 4,
+  "fireRate": 2.5000002,
+  "flight": "???",
+  "imageName": "spira.png",
+  "magazineSize": 10,
+  "marketCost": 175,
+  "masteryReq": 8,
+  "multishot": 1,
+  "name": "Spira",
+  "noise": "Silent",
+  "omegaAttenuation": 1.25,
+  "polarities": [
+    "Madurai",
+    "Madurai"
+  ],
+  "procChance": 0.079999983,
+  "productCategory": "Pistols",
+  "projectile": "Projectile",
+  "reloadTime": 1,
+  "skipBuildTimePrice": 45,
+  "slot": 0,
+  "tags": [
+    "Tenno"
+  ],
+  "totalDamage": 82,
+  "tradable": false,
+  "trigger": "Auto",
+  "type": "Thrown",
+  "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/LiDagger/LiDagger",
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/c/c5/LiDagger.png/revision/latest?cb=20150924014336",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Spira"
+}

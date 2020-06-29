@@ -1,0 +1,331 @@
+{
+  "abilities": [
+    {
+      "name": "Banish",
+      "description": "Casts a wave of Rift energy that damages hostiles while pushing enemies and allies out of Limbo's current plane of existence."
+    },
+    {
+      "name": "Stasis",
+      "description": "Freezes Rift-bound enemies. While active, enemy projectiles are arrested in mid-air, resuming its trajectory when stasis ends."
+    },
+    {
+      "name": "Rift Surge",
+      "description": "Surges nearby Rift-bound enemies with Rift energy. When killed the Rift Surge is transferred to a nearby enemy outside the rift. Surged enemies that leave the Rift perform a radial Banish."
+    },
+    {
+      "name": "Cataclysm",
+      "description": "A violent blast of Void energy tears open a pocket of rift plane which can sustain itself for a short period before collapsing in another lethal blast."
+    }
+  ],
+  "armor": 100,
+  "aura": "naramon",
+  "buildPrice": 25000,
+  "buildQuantity": 1,
+  "buildTime": 259200,
+  "category": "Warframes",
+  "color": 2370346,
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianBlueprint",
+      "name": "Blueprint",
+      "description": "Limbo manipulates the very planes of existence to divide his enemies and conquer them in the rift.",
+      "itemCount": 1,
+      "imageName": "blueprint.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianChassisComponent",
+      "name": "Chassis",
+      "description": "Chassis component of the Limbo Warframe.",
+      "itemCount": 1,
+      "imageName": "chassis.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianHelmetComponent",
+      "name": "Neuroptics",
+      "description": "Neuroptics component of the Limbo Warframe.",
+      "itemCount": 1,
+      "imageName": "neuroptics.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+      "name": "Orokin Cell",
+      "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+      "itemCount": 3,
+      "imageName": "orokin-cell.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Neptune - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "B"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Annihilation"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0714
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0833
+        },
+        {
+          "location": "Kuva - Fortress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1079,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Lua - Plato",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1082,
+          "rotation": "C"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.125
+        },
+        {
+          "location": "Neptune - Halimede",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Thalassa",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Charon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Cypress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Phithale",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Rusalka",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Uranus - Portia",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Hallowed Flame Mission Caches",
+          "type": "Transient Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1265
+        },
+        {
+          "location": "Ceres - Ker",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Thon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Adrastea",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Carpo",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Calypso",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Pallene",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Derelict - Orokin",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1936,
+          "rotation": "Sabotage"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianSystemsComponent",
+      "name": "Systems",
+      "description": "Systems component of the Limbo Warframe.",
+      "itemCount": 1,
+      "imageName": "systems.png",
+      "tradable": false
+    }
+  ],
+  "conclave": true,
+  "consumeOnBuild": true,
+  "description": "Limbo manipulates the very planes of existence to divide his enemies and conquer them in the rift.",
+  "health": 100,
+  "imageName": "limbo.png",
+  "introduced": "15",
+  "masteryReq": 0,
+  "name": "Limbo",
+  "passiveDescription": "Dodge to enter and exit the Rift. Entering leaves behind a small Rift portal lasting |DURATION|s. Energy slowly recharges in the Rift, and each enemy killed in there also gives |ENERGY| Energy.",
+  "polarities": [
+    "madurai",
+    "madurai"
+  ],
+  "power": 150,
+  "productCategory": "Suits",
+  "sex": "Male",
+  "shield": 75,
+  "skipBuildTimePrice": 50,
+  "sprint": 1.15,
+  "sprintSpeed": 1.15,
+  "stamina": 3,
+  "tradable": false,
+  "type": "Warframe",
+  "uniqueName": "/Lotus/Powersuits/Magician/Magician",
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/1/14/LimboNewLook.png/revision/latest?cb=20141124023126",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Limbo"
+}

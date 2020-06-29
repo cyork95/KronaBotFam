@@ -1,0 +1,331 @@
+{
+  "abilities": [
+    {
+      "name": "Tail Wind",
+      "description": "From the ground, charge and release to launch Zephyr into an airborne hover. From the air, tap to dash forward, or aim down to dive bomb enemies below."
+    },
+    {
+      "name": "Airburst",
+      "description": "Generate a burst of massively dense air that explodes on contact and sends enemies flying. Launch Airbursts into Tornadoes to make them grow."
+    },
+    {
+      "name": "Turbulence",
+      "description": "Creates a wind shield around Zephyr, redirecting all incoming projectiles."
+    },
+    {
+      "name": "Tornado",
+      "description": "Create deadly tornadoes that seek out and engulf enemies. Tornadoes deal the elemental Damage Type they absorb the most. Shoot enemies engulfed in Tornadoes to do additional damage."
+    }
+  ],
+  "armor": 100,
+  "aura": "vazarin",
+  "buildPrice": 25000,
+  "buildQuantity": 1,
+  "buildTime": 259200,
+  "category": "Warframes",
+  "color": 14471877,
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguBlueprint",
+      "name": "Blueprint",
+      "description": "Specializing in air attacks and mobility, Zephyr dominates from above.",
+      "itemCount": 1,
+      "imageName": "blueprint.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguChassisComponent",
+      "name": "Chassis",
+      "description": "Chassis component of the Zephyr Warframe.",
+      "itemCount": 1,
+      "imageName": "chassis.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguHelmetComponent",
+      "name": "Neuroptics",
+      "description": "Neuroptics component of the Zephyr Warframe.",
+      "itemCount": 1,
+      "imageName": "neuroptics.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+      "name": "Orokin Cell",
+      "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+      "itemCount": 1,
+      "imageName": "orokin-cell.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Neptune - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "B"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Annihilation"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0714
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0833
+        },
+        {
+          "location": "Kuva - Fortress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1079,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Lua - Plato",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1082,
+          "rotation": "C"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.125
+        },
+        {
+          "location": "Neptune - Halimede",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Thalassa",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Charon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Cypress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Phithale",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Rusalka",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Uranus - Portia",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Hallowed Flame Mission Caches",
+          "type": "Transient Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1265
+        },
+        {
+          "location": "Ceres - Ker",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Thon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Adrastea",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Carpo",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Calypso",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Pallene",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Derelict - Orokin",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1936,
+          "rotation": "Sabotage"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguSystemsComponent",
+      "name": "Systems",
+      "description": "Systems component of the Zephyr Warframe.",
+      "itemCount": 1,
+      "imageName": "systems.png",
+      "tradable": false
+    }
+  ],
+  "conclave": true,
+  "consumeOnBuild": true,
+  "description": "Specializing in air attacks and mobility, Zephyr dominates from above.",
+  "health": 150,
+  "imageName": "zephyr.png",
+  "introduced": "12",
+  "masteryReq": 0,
+  "name": "Zephyr",
+  "passiveDescription": "Move faster while Airborne and fall |PERCENT|% slower.",
+  "polarities": [
+    "madurai",
+    "naramon"
+  ],
+  "power": 100,
+  "productCategory": "Suits",
+  "sex": "Female",
+  "shield": 150,
+  "skipBuildTimePrice": 50,
+  "sprint": 1.15,
+  "sprintSpeed": 1.15,
+  "stamina": 3,
+  "tradable": false,
+  "type": "Warframe",
+  "uniqueName": "/Lotus/Powersuits/Tengu/Tengu",
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/fc/ZephyrNewLook.png/revision/latest?cb=20141124023407",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Zephyr"
+}

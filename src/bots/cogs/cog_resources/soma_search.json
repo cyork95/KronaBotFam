@@ -1,0 +1,210 @@
+{
+  "name": "Soma",
+  "uniqueName": "/Lotus/Weapons/Tenno/Rifle/TennoAR",
+  "damagePerShot": [1.2, 4.8000002, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  "totalDamage": 12,
+  "description": "Accuracy coupled with a massive magazine makes the Soma assault rifle a formidable weapon.",
+  "criticalChance": 0.30000001,
+  "criticalMultiplier": 3,
+  "procChance": 0.069999993,
+  "fireRate": 15.000001,
+  "masteryReq": 6,
+  "productCategory": "LongGuns",
+  "slot": 1,
+  "accuracy": 28.571428,
+  "omegaAttenuation": 1.05,
+  "noise": "Alarming",
+  "trigger": "Auto",
+  "magazineSize": 100,
+  "reloadTime": 3,
+  "multishot": 1,
+  "buildPrice": 15000,
+  "buildTime": 43200,
+  "skipBuildTimePrice": 50,
+  "buildQuantity": 1,
+  "consumeOnBuild": true,
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/TennoARBlueprint",
+      "name": "Blueprint",
+      "description": "Accuracy coupled with a massive magazine makes the Soma assault rifle a formidable weapon.",
+      "itemCount": 1,
+      "imageName": "blueprint.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+      "name": "Morphics",
+      "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
+      "itemCount": 7,
+      "imageName": "morphics.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Neptune - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "B"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Annihilation"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Mars - Gradivus",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Mercury - Neruda",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Mercury - Terminus",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Venus - Ishtar",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Plastids",
+      "name": "Plastids",
+      "description": "A disgusting nanite-infested tissue mass.Locations: Phobos, Saturn, Uranus, Pluto, and Eris.",
+      "itemCount": 850,
+      "imageName": "plastids.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Rubedo",
+      "name": "Rubedo",
+      "description": "A jagged crystalline ore. Gives off radiant energy.Locations: Earth, Lua, Phobos, Europa, Pluto, Sedna, and the Void.",
+      "itemCount": 1200,
+      "imageName": "rubedo.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+      "name": "Salvage",
+      "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+      "itemCount": 8000,
+      "imageName": "salvage.png",
+      "tradable": false
+    }
+  ],
+  "type": "Rifle",
+  "imageName": "soma.png",
+  "category": "Primary",
+  "tradable": false,
+  "ammo":540,
+  "damage":"12.0",
+  "damageTypes":{"impact":1.2,"slash":6,"puncture":4.8},
+  "marketCost":265,
+  "polarities":["Madurai","Madurai"],
+  "projectile":"Hitscan",
+  "tags":["Tenno"],
+  "wikiaThumbnail":"https://vignette.wikia.nocookie.net/warframe/images/a/a5/U10DesignCouncilTennoAR.png/revision/latest?cb=20130914111405",
+  "wikiaUrl":"http://warframe.fandom.com/wiki/Soma",
+  "disposition":3
+}

@@ -1,0 +1,240 @@
+{
+  "accuracy": 15.384615,
+  "ammo": 420,
+  "buildPrice": 20000,
+  "buildQuantity": 1,
+  "buildTime": 43200,
+  "category": "Secondary",
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/GrineerLightPistolBlueprint",
+      "name": "Blueprint",
+      "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small Magazine Capacity, the Viper has a very high Fire Rate and ultra-fast reload times thanks to a simplified magazine design.",
+      "itemCount": 1,
+      "imageName": "blueprint.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+      "name": "Ferrite",
+      "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
+      "itemCount": 600,
+      "imageName": "ferrite.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Morphic",
+      "name": "Morphics",
+      "description": "An amorphous solid. Possibly Orokin technology.Locations: Mercury, Mars, Phobos, Europa, and Pluto.",
+      "itemCount": 1,
+      "imageName": "morphics.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Neptune - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "B"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Annihilation"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Mars - Gradivus",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Mercury - Neruda",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Mercury - Terminus",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Venus - Ishtar",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Nanospores",
+      "name": "Nano Spores",
+      "description": "Fibrous technocyte tumour. Handle Infested tissue with caution.Locations: Saturn, Neptune, Eris, and Orokin Derelicts.",
+      "itemCount": 900,
+      "imageName": "nano-spores.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+      "name": "Salvage",
+      "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+      "itemCount": 300,
+      "imageName": "salvage.png",
+      "tradable": false
+    }
+  ],
+  "consumeOnBuild": true,
+  "criticalChance": 0.15000001,
+  "criticalMultiplier": 1.5,
+  "damage": "17.0",
+  "damagePerShot": [
+    10.200001,
+    1.7,
+    5.0999994,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "damageTypes": {
+    "impact": 10.2,
+    "slash": 5.1,
+    "puncture": 1.7
+  },
+  "description": "A full-auto pistol known as the most compact and lightweight weapon of the Grineer arsenal. Though it has a small Magazine Capacity, the Viper has a very high Fire Rate and ultra-fast reload times thanks to a simplified magazine design.",
+  "disposition": 5,
+  "fireRate": 14.383334,
+  "imageName": "viper.png",
+  "itemCount": 1,
+  "magazineSize": 14,
+  "marketCost": 75,
+  "masteryReq": 4,
+  "multishot": 1,
+  "name": "Viper",
+  "noise": "Alarming",
+  "omegaAttenuation": 1.45,
+  "polarities": [
+    "Madurai"
+  ],
+  "procChance": 0.11000001,
+  "productCategory": "Pistols",
+  "projectile": "Hitscan",
+  "reloadTime": 0.69999999,
+  "skipBuildTimePrice": 25,
+  "slot": 0,
+  "tags": [
+    "Grineer"
+  ],
+  "totalDamage": 17,
+  "tradable": false,
+  "trigger": "Auto",
+  "type": "Pistol",
+  "uniqueName": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerLightPistol",
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/9/99/Viper.png/revision/latest?cb=20130426074750",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Viper"
+}

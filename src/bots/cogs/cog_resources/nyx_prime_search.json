@@ -1,0 +1,568 @@
+{
+  "abilities": [
+    {
+      "name": "Mind Control",
+      "description": "Nyx invades the psyche of a target, confusing enemies and making them fight for the Tenno cause. Targets then fired upon by Nyx receive a damage multiplier."
+    },
+    {
+      "name": "Psychic Bolts",
+      "description": "Nyx launches a cluster of force bolts at enemies, using telekinesis to adjust flight paths and seek nearby targets. Hits strip some enemy defenses."
+    },
+    {
+      "name": "Chaos",
+      "description": "With a powerful psychic blast, Nyx causes mass hysteria on the battlefield by confusing all enemies to attack random factions."
+    },
+    {
+      "name": "Absorb",
+      "description": "Nyx absorbs all incoming damage and channels that collected energy into an explosive radial discharge."
+    }
+  ],
+  "armor": 125,
+  "aura": "naramon",
+  "buildPrice": 25000,
+  "buildQuantity": 1,
+  "buildTime": 259200,
+  "category": "Warframes",
+  "color": 10854532,
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeBlueprint",
+      "name": "Blueprint",
+      "description": "Infiltrate the minds of your enemies with Nyx Prime. Featuring altered mod polarities for greater customization.",
+      "itemCount": 1,
+      "primeSellingPrice": 15,
+      "imageName": "blueprint.png",
+      "tradable": true,
+      "ducats": 15,
+      "drops": [
+        {
+          "location": "Lith B4 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Lith B4 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Lith B4 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Lith B4 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        },
+        {
+          "location": "Lith S2 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Lith S2 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Lith S2 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Lith S2 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        },
+        {
+          "location": "Neo V1 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Neo V1 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Neo V1 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Neo V1 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeChassisComponent",
+      "name": "Chassis",
+      "description": "Chassis component of the Nyx Prime Warframe.",
+      "primeSellingPrice": 65,
+      "itemCount": 1,
+      "imageName": "prime-chassis.png",
+      "tradable": true,
+      "drops": [
+        {
+          "location": "Neo N1 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Neo N1 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Neo N1 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Neo N1 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        },
+        {
+          "location": "Neo R1 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Neo R1 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Neo R1 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Neo R1 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        }
+      ],
+      "ducats": 65
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeHelmetComponent",
+      "name": "Neuroptics",
+      "description": "Neuroptics component of the Nyx Prime Warframe.",
+      "primeSellingPrice": 100,
+      "itemCount": 1,
+      "imageName": "prime-neuroptics.png",
+      "tradable": true,
+      "drops": [
+        {
+          "location": "Meso N1 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Meso N1 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Meso N1 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Meso N1 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        },
+        {
+          "location": "Meso N6 Intact",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.02
+        },
+        {
+          "location": "Meso N6 Exceptional",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.04
+        },
+        {
+          "location": "Meso N6 Flawless",
+          "type": "Relics",
+          "rarity": "Rare",
+          "chance": 0.06
+        },
+        {
+          "location": "Meso N6 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.1
+        }
+      ],
+      "ducats": 100
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+      "name": "Orokin Cell",
+      "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+      "itemCount": 1,
+      "imageName": "orokin-cell.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Neptune - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "B"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Annihilation"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0714
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0833
+        },
+        {
+          "location": "Kuva - Fortress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1079,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Lua - Plato",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1082,
+          "rotation": "C"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.125
+        },
+        {
+          "location": "Neptune - Halimede",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Thalassa",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Charon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Cypress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Phithale",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Rusalka",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Uranus - Portia",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Hallowed Flame Mission Caches",
+          "type": "Transient Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1265
+        },
+        {
+          "location": "Ceres - Ker",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Thon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Adrastea",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Carpo",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Calypso",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Pallene",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Derelict - Orokin",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1936,
+          "rotation": "Sabotage"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeSystemsComponent",
+      "name": "Systems",
+      "description": "Systems component of the Nyx Prime Warframe.",
+      "primeSellingPrice": 45,
+      "itemCount": 1,
+      "imageName": "prime-systems.png",
+      "tradable": true,
+      "drops": [
+        {
+          "location": "Axi S3 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Axi S3 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Axi S3 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Axi S3 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Neo S2 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Neo S2 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Neo S2 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Neo S2 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        }
+      ],
+      "ducats": 45
+    }
+  ],
+  "conclave": true,
+  "consumeOnBuild": true,
+  "description": "Infiltrate the minds of your enemies with Nyx Prime. Featuring altered mod polarities for greater customization.",
+  "estimatedVaultDate": "2016 08 23",
+  "health": 100,
+  "imageName": "nyx-prime.png",
+  "introduced": "14.8",
+  "masteryReq": 0,
+  "name": "Nyx Prime",
+  "passiveDescription": "Enemies are |PERCENT|% less accurate when targeting Nyx Prime.",
+  "polarities": [
+    "madurai",
+    "naramon",
+    "vazarin"
+  ],
+  "power": 150,
+  "productCategory": "Suits",
+  "releaseDate": "2014 09 23",
+  "sex": "Female",
+  "shield": 125,
+  "skipBuildTimePrice": 50,
+  "sprint": 1.125,
+  "sprintSpeed": 1.125,
+  "stamina": 3,
+  "tradable": true,
+  "type": "Warframe",
+  "uniqueName": "/Lotus/Powersuits/Jade/NyxPrime",
+  "vaultDate": "2016 08 23",
+  "vaulted": true,
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/aa/NyxPrimeNewLook.png/revision/latest?cb=20141124023232",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Nyx_Prime"
+}

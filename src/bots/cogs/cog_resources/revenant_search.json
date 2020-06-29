@@ -1,0 +1,481 @@
+{
+  "abilities": [
+    {
+      "name": "Enthrall",
+      "description": "Convert a target into a zealous thrall. Thralls turn on their allies and enthrall through damage. On death, they disintegrate into a damaging pillar of energy. The thrall horde remains under Revenants spell until this ability runs out."
+    },
+    {
+      "name": "Mesmer Skin",
+      "description": "Become enveloped in Sentient energy, redirecting damage and stunning all those who dare attack. Stunned enemies can be Enthralled at no energy cost."
+    },
+    {
+      "name": "Reave",
+      "description": "Dash through enemies as a wall of sentient energy, leeching shields and health from any encountered, enhanced for thralls."
+    },
+    {
+      "name": "Danse Macabre",
+      "description": "Erupt with a multitude of Eidolon energy beams and sweep a circle of death around Revenant. The beams will modify their Damage Type to target select defenses, while incoming damage is redirected back into the beams. Hold fire to boost Status Effects and Damage, at the cost of increased energy consumption. Thralls killed by this ability leave overshield pickups."
+    }
+  ],
+  "armor": 125,
+  "aura": "naramon",
+  "buildPrice": 25000,
+  "buildQuantity": 1,
+  "buildTime": 259200,
+  "category": "Warframes",
+  "color": 3228743,
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RevenantBlueprint",
+      "name": "Blueprint",
+      "description": "Rise from the broken remains of the Eidolon to seduce an army of zealous thralls.",
+      "itemCount": 1,
+      "imageName": "blueprint.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent",
+      "name": "Chassis",
+      "description": "Chassis component of the Revenant Warframe.",
+      "itemCount": 1,
+      "imageName": "chassis.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Level 30 - 50 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0851
+        },
+        {
+          "location": "Level 30 - 50 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0833
+        },
+        {
+          "location": "Level 30 - 50 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1905
+        },
+        {
+          "location": "Level 30 - 50 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0851
+        },
+        {
+          "location": "Level 30 - 50 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0833
+        },
+        {
+          "location": "Level 30 - 50 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1905
+        },
+        {
+          "location": "Level 30 - 50 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0833
+        },
+        {
+          "location": "Level 30 - 50 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0816
+        },
+        {
+          "location": "Level 30 - 50 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent",
+      "name": "Neuroptics",
+      "description": "Neuroptics component of the Revenant Warframe.",
+      "itemCount": 1,
+      "imageName": "neuroptics.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Level 40 - 60 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0676
+        },
+        {
+          "location": "Level 40 - 60 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.102
+        },
+        {
+          "location": "Level 40 - 60 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0676
+        },
+        {
+          "location": "Level 40 - 60 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.102
+        },
+        {
+          "location": "Level 40 - 60 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0676
+        },
+        {
+          "location": "Level 40 - 60 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.102
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+      "name": "Orokin Cell",
+      "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+      "itemCount": 1,
+      "imageName": "orokin-cell.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Neptune - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "B"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Annihilation"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0714
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0833
+        },
+        {
+          "location": "Kuva - Fortress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1079,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Lua - Plato",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1082,
+          "rotation": "C"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.125
+        },
+        {
+          "location": "Neptune - Halimede",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Thalassa",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Charon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Cypress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Phithale",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Rusalka",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Uranus - Portia",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Hallowed Flame Mission Caches",
+          "type": "Transient Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1265
+        },
+        {
+          "location": "Ceres - Ker",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Thon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Adrastea",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Carpo",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Calypso",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Pallene",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Derelict - Orokin",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1936,
+          "rotation": "Sabotage"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RevenantSystemsComponent",
+      "name": "Systems",
+      "description": "Systems component of the Revenant Warframe.",
+      "itemCount": 1,
+      "imageName": "systems.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0842
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0825
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.20510000000000003
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0968
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0947
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.2195
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0851
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0833
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1905
+        }
+      ]
+    }
+  ],
+  "conclave": false,
+  "consumeOnBuild": true,
+  "description": "Rise from the broken remains of the Eidolon to seduce an army of zealous thralls.",
+  "health": 100,
+  "imageName": "revenant.png",
+  "introduced": "23.5",
+  "masteryReq": 0,
+  "name": "Revenant",
+  "passiveDescription": "Shield depletion smashes enemies within |RADIUS|m with a |DAMAGE| Damage knockdown shockwave.",
+  "polarities": [
+    "madurai",
+    "vazarin"
+  ],
+  "power": 125,
+  "productCategory": "Suits",
+  "sex": "Male",
+  "shield": 225,
+  "skipBuildTimePrice": 50,
+  "sprint": 1,
+  "sprintSpeed": 1,
+  "stamina": 3,
+  "tradable": false,
+  "type": "Warframe",
+  "uniqueName": "/Lotus/Powersuits/Revenant/Revenant",
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/0/07/Revenant.png/revision/latest?cb=20180827015802",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Revenant"
+}

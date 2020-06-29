@@ -1,0 +1,538 @@
+{
+  "abilities": [
+    {
+      "name": "Quiver",
+      "description": "Cycle through and shoot one of four tactical arrows: Cloak, Dashwire, Noise and Sleep. In the Conclave, use the Null-Shield and Slow Arrows."
+    },
+    {
+      "name": "Navigator",
+      "description": "Assume control of any projectile launched by Ivara and guide it to the target."
+    },
+    {
+      "name": "Prowl",
+      "description": "Become invisible and steal loot from unsuspecting enemies or take out prey with deadly headshots."
+    },
+    {
+      "name": "Artemis Bow",
+      "description": "Summon a mighty bow and unleash a volley of devastating arrows."
+    }
+  ],
+  "armor": 100,
+  "aura": "naramon",
+  "buildPrice": 25000,
+  "buildQuantity": 1,
+  "buildTime": 259200,
+  "category": "Warframes",
+  "color": 3812902,
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RangerBlueprint",
+      "name": "Blueprint",
+      "description": "With her quiver of tactical arrows, this huntress prowls unseen and strikes without warning.",
+      "itemCount": 1,
+      "imageName": "blueprint.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Uranus - Rosalind",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Nereid",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Oceanum",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        },
+        {
+          "location": "Eris - Cyath",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        },
+        {
+          "location": "Eris - Gnathos",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Kappa",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Tikoloshe",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RangerChassisComponent",
+      "name": "Chassis",
+      "description": "Chassis component of the Ivara Warframe.",
+      "itemCount": 1,
+      "imageName": "chassis.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Jupiter - Amalthea",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0564,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Dione",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0564,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Aegaeon",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0564,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Bode",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0564,
+          "rotation": "C"
+        },
+        {
+          "location": "Europa - Valac",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0564,
+          "rotation": "C"
+        },
+        {
+          "location": "Lua - Pavlov",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0737,
+          "rotation": "C"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RangerHelmetComponent",
+      "name": "Neuroptics",
+      "description": "Neuroptics component of the Ivara Warframe.",
+      "itemCount": 1,
+      "imageName": "neuroptics.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Uranus - Rosalind",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Nereid",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Oceanum",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        },
+        {
+          "location": "Eris - Cyath",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        },
+        {
+          "location": "Eris - Gnathos",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Kappa",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Tikoloshe",
+          "type": "Mission Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752,
+          "rotation": "C"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+      "name": "Orokin Cell",
+      "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+      "itemCount": 1,
+      "imageName": "orokin-cell.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Neptune - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "B"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Annihilation"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0714
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0833
+        },
+        {
+          "location": "Kuva - Fortress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1079,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Lua - Plato",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1082,
+          "rotation": "C"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.125
+        },
+        {
+          "location": "Neptune - Halimede",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Thalassa",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Charon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Cypress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Phithale",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Rusalka",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Uranus - Portia",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Hallowed Flame Mission Caches",
+          "type": "Transient Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1265
+        },
+        {
+          "location": "Ceres - Ker",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Thon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Adrastea",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Carpo",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Calypso",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Pallene",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Derelict - Orokin",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1936,
+          "rotation": "Sabotage"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RangerSystemsComponent",
+      "name": "Systems",
+      "description": "Systems component of the Ivara Warframe.",
+      "itemCount": 1,
+      "imageName": "systems.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Mercury - Suisei",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1,
+          "rotation": "C"
+        },
+        {
+          "location": "Venus - Vesper",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1,
+          "rotation": "C"
+        },
+        {
+          "location": "Venus - Unda",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1,
+          "rotation": "C"
+        },
+        {
+          "location": "Earth - Cambria",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1,
+          "rotation": "C"
+        },
+        {
+          "location": "Mars - Arval",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Hapke",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1,
+          "rotation": "C"
+        },
+        {
+          "location": "Phobos - Grildrig",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1,
+          "rotation": "C"
+        },
+        {
+          "location": "Phobos - Shklovsky",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1,
+          "rotation": "C"
+        }
+      ]
+    }
+  ],
+  "conclave": true,
+  "consumeOnBuild": true,
+  "description": "With her quiver of tactical arrows, this huntress prowls unseen and strikes without warning.",
+  "exalted": [
+    "/Lotus/Powersuits/Ranger/ExaltedBow"
+  ],
+  "health": 75,
+  "imageName": "ivara.png",
+  "introduced": "18",
+  "masteryReq": 0,
+  "name": "Ivara",
+  "passiveDescription": "Senses nearby enemies within |RADIUS|m.",
+  "polarities": [
+    "vazarin",
+    "naramon"
+  ],
+  "power": 175,
+  "productCategory": "Suits",
+  "sex": "Female",
+  "shield": 100,
+  "skipBuildTimePrice": 50,
+  "sprint": 1.15,
+  "sprintSpeed": 1.15,
+  "stamina": 3,
+  "tradable": false,
+  "type": "Warframe",
+  "uniqueName": "/Lotus/Powersuits/Ranger/Ranger",
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/8/8c/IvaraNewLook.png/revision/latest?cb=20151204065626",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Ivara"
+}

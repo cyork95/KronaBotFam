@@ -1,0 +1,905 @@
+{
+  "abilities": [
+    {
+      "name": "Well Of Life",
+      "description": "Create a well of life on an enemy. Allies will gain health when damaging the target."
+    },
+    {
+      "name": "Energy Vampire",
+      "description": "Allies will gain energy over time when enemies are marked with Energy Vampire."
+    },
+    {
+      "name": "Link",
+      "description": "Any damage taken while Link is active will be channeled to a nearby enemy."
+    },
+    {
+      "name": "Blessing",
+      "description": "Restore the health and shields of allies within Trinity's affinity aura while giving them some damage resistance."
+    }
+  ],
+  "armor": 125,
+  "aura": "vazarin",
+  "buildPrice": 25000,
+  "buildQuantity": 1,
+  "buildTime": 259200,
+  "category": "Warframes",
+  "color": 1512722,
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeBlueprint",
+      "name": "Blueprint",
+      "description": "Become the bastion that defends allies using powerful healing abilities with Trinity Prime. Featuring altered mod polarities for greater customization.",
+      "itemCount": 1,
+      "primeSellingPrice": 45,
+      "imageName": "blueprint.png",
+      "tradable": true,
+      "ducats": 45,
+      "drops": [
+        {
+          "location": "Axi S1 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Axi S1 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Axi S1 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Axi S1 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Lith K1 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Lith K1 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Lith K1 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Lith K1 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Lith K4 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Lith K4 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Lith K4 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Lith K4 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Meso S4 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Meso S4 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Meso S4 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Meso S4 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Neo N6 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Neo N6 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Neo N6 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Neo N6 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeChassisComponent",
+      "name": "Chassis",
+      "description": "Chassis component of the Trinity Prime Warframe.",
+      "primeSellingPrice": 45,
+      "itemCount": 1,
+      "imageName": "prime-chassis.png",
+      "tradable": true,
+      "drops": [
+        {
+          "location": "Axi H1 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Axi H1 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Axi H1 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Axi H1 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Axi H2 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Axi H2 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Axi H2 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Axi H2 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Axi S7 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Axi S7 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Axi S7 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Axi S7 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Lith S4 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Lith S4 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Lith S4 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Lith S4 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Neo S1 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Neo S1 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Neo S1 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Neo S1 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        }
+      ],
+      "ducats": 45
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeHelmetComponent",
+      "name": "Neuroptics",
+      "description": "Neuroptics component of the Trinity Prime Warframe.",
+      "primeSellingPrice": 25,
+      "itemCount": 1,
+      "imageName": "prime-neuroptics.png",
+      "tradable": true,
+      "drops": [
+        {
+          "location": "Axi C1 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Axi C1 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Axi C1 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Axi C1 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        },
+        {
+          "location": "Axi V3 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Axi V3 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Axi V3 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Axi V3 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        },
+        {
+          "location": "Meso D5 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Meso D5 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Meso D5 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Meso D5 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        },
+        {
+          "location": "Neo D1 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.11
+        },
+        {
+          "location": "Neo D1 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.13
+        },
+        {
+          "location": "Neo D1 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.17
+        },
+        {
+          "location": "Neo D1 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Neo N7 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Neo N7 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Neo N7 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Neo N7 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        },
+        {
+          "location": "Neo S6 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Neo S6 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Neo S6 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Neo S6 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        }
+      ],
+      "ducats": 25
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+      "name": "Orokin Cell",
+      "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+      "itemCount": 1,
+      "imageName": "orokin-cell.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Neptune - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "B"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Annihilation"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0714
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0833
+        },
+        {
+          "location": "Kuva - Fortress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1079,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Lua - Plato",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1082,
+          "rotation": "C"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.125
+        },
+        {
+          "location": "Neptune - Halimede",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Thalassa",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Charon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Cypress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Phithale",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Rusalka",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Uranus - Portia",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Hallowed Flame Mission Caches",
+          "type": "Transient Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1265
+        },
+        {
+          "location": "Ceres - Ker",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Thon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Adrastea",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Carpo",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Calypso",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Pallene",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Derelict - Orokin",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1936,
+          "rotation": "Sabotage"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeSystemsComponent",
+      "name": "Systems",
+      "description": "Systems component of the Trinity Prime Warframe.",
+      "primeSellingPrice": 15,
+      "itemCount": 1,
+      "imageName": "prime-systems.png",
+      "tradable": true,
+      "drops": [
+        {
+          "location": "Axi A1 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Axi A1 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Axi A1 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Axi A1 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        },
+        {
+          "location": "Axi C2 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Axi C2 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Axi C2 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Axi C2 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        },
+        {
+          "location": "Axi V2 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Axi V2 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Axi V2 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Axi V2 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        },
+        {
+          "location": "Axi V3 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Axi V3 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Axi V3 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Axi V3 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        },
+        {
+          "location": "Axi V4 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Axi V4 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Axi V4 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Axi V4 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        },
+        {
+          "location": "Neo B1 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Neo B1 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Neo B1 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Neo B1 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        },
+        {
+          "location": "Neo N12 Intact",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.25329999999999997
+        },
+        {
+          "location": "Neo N12 Exceptional",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.23329999999999998
+        },
+        {
+          "location": "Neo N12 Flawless",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.2
+        },
+        {
+          "location": "Neo N12 Radiant",
+          "type": "Relics",
+          "rarity": "Uncommon",
+          "chance": 0.16670000000000001
+        }
+      ],
+      "ducats": 15
+    }
+  ],
+  "conclave": true,
+  "consumeOnBuild": true,
+  "description": "Become the bastion that defends allies using powerful healing abilities with Trinity Prime. Featuring altered mod polarities for greater customization.",
+  "estimatedVaultDate": "2017 08 29",
+  "health": 100,
+  "imageName": "trinity-prime.png",
+  "introduced": "17.6",
+  "masteryReq": 0,
+  "name": "Trinity Prime",
+  "passiveDescription": "Revive fallen allies |SPEED|% faster and from |RANGE|% farther away.",
+  "polarities": [
+    "vazarin",
+    "vazarin",
+    "madurai",
+    "naramon"
+  ],
+  "power": 150,
+  "productCategory": "Suits",
+  "releaseDate": "2015 10 06",
+  "sex": "Female",
+  "shield": 150,
+  "skipBuildTimePrice": 50,
+  "sprint": 1.1,
+  "sprintSpeed": 1.1,
+  "stamina": 3,
+  "tradable": true,
+  "type": "Warframe",
+  "uniqueName": "/Lotus/Powersuits/Trinity/TrinityPrime",
+  "vaultDate": "2017 08 29",
+  "vaulted": true,
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/7/78/TrinityPrimeMain.png/revision/latest?cb=20200208134535",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Trinity_Prime"
+}

@@ -1,0 +1,434 @@
+{
+  "accuracy": 16,
+  "ammo": 210,
+  "buildPrice": 25000,
+  "buildQuantity": 1,
+  "buildTime": 86400,
+  "category": "Secondary",
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+      "name": "Alloy Plate",
+      "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+      "itemCount": 200,
+      "imageName": "alloy-plate.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/GrnHeavyPistolBlueprint",
+      "name": "Blueprint",
+      "description": "The Kraken is a heavy pistol of Grineer design that fires two quick shots with a single pull of the trigger. Skilled marksmen will appreciate the value in this deadly accurate weapon.",
+      "itemCount": 1,
+      "imageName": "blueprint.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Neurode",
+      "name": "Neurodes",
+      "description": "Biotech sensor organ harvested from Infested entities.Locations: Earth, Lua, Eris, and Orokin Derelicts.",
+      "itemCount": 2,
+      "imageName": "neurodes.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Neptune - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "B"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Annihilation"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0714
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0833
+        },
+        {
+          "location": "Kuva - Fortress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1079,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Lua - Plato",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1082,
+          "rotation": "C"
+        },
+        {
+          "location": "Earth - Cervantes",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1218,
+          "rotation": "B"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.125
+        },
+        {
+          "location": "Neptune - Halimede",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Thalassa",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Charon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Cypress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Phithale",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Rusalka",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Uranus - Portia",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Ker",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Thon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Earth - Cervantes",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Adrastea",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Carpo",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Mars - Gradivus",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Mercury - Neruda",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Mercury - Terminus",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Calypso",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Pallene",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Venus - Ishtar",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Derelict - Orokin",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1518,
+          "rotation": "Sabotage"
+        },
+        {
+          "location": "Eris - Candiru",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1549,
+          "rotation": "C"
+        },
+        {
+          "location": "Eris - Lepis",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1549,
+          "rotation": "C"
+        },
+        {
+          "location": "Eris - Naeglar",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1549,
+          "rotation": "C"
+        },
+        {
+          "location": "Eris - Psoro",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1549,
+          "rotation": "C"
+        },
+        {
+          "location": "Eris - Viver",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1549,
+          "rotation": "C"
+        },
+        {
+          "location": "Void - Stribog",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1888,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Void - Marduk",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.2529,
+          "rotation": "rewards"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+      "name": "Polymer Bundle",
+      "description": "A hard, thermoplastic casing. Manufactured by Corpus.Locations: Mercury, Venus, and Uranus.",
+      "itemCount": 120,
+      "imageName": "polymer-bundle.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Salvage",
+      "name": "Salvage",
+      "description": "High value metals collected from war salvage.Locations: Mars, Jupiter, and Sedna.",
+      "itemCount": 750,
+      "imageName": "salvage.png",
+      "tradable": false
+    }
+  ],
+  "consumeOnBuild": true,
+  "criticalChance": 0.050000001,
+  "criticalMultiplier": 2,
+  "damage": "49.0",
+  "damagePerShot": [
+    36.75,
+    6.125,
+    6.125,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "damageTypes": {
+    "impact": 36.8,
+    "slash": 6.1,
+    "puncture": 6.1
+  },
+  "description": "The Kraken is a heavy pistol of Grineer design that fires two quick shots with a single pull of the trigger. Skilled marksmen will appreciate the value in this deadly accurate weapon.",
+  "disposition": 5,
+  "fireRate": 4.4155846,
+  "imageName": "kraken.png",
+  "itemCount": 1,
+  "magazineSize": 14,
+  "marketCost": 120,
+  "masteryReq": 0,
+  "multishot": 1,
+  "name": "Kraken",
+  "noise": "Alarming",
+  "omegaAttenuation": 1.53,
+  "parents": [
+    "Kulstar"
+  ],
+  "polarities": [],
+  "procChance": 0.13,
+  "productCategory": "Pistols",
+  "projectile": "Hitscan",
+  "reloadTime": 2.45,
+  "skipBuildTimePrice": 30,
+  "slot": 0,
+  "tags": [
+    "Grineer"
+  ],
+  "totalDamage": 49,
+  "tradable": false,
+  "trigger": "Burst",
+  "type": "Pistol",
+  "uniqueName": "/Lotus/Weapons/Grineer/GrineerPistol/GrnHeavyPistol",
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/d/d3/Kraken.png/revision/latest?cb=20170406043414",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Kraken"
+}

@@ -1,0 +1,209 @@
+{
+  "accuracy": 18.181818,
+  "ammo": 540,
+  "buildPrice": 30000,
+  "buildQuantity": 1,
+  "buildTime": 86400,
+  "category": "Primary",
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+      "name": "Alloy Plate",
+      "description": "Carbon steel plates used to reinforce Grineer armor.Locations: Venus, Phobos, Ceres, Jupiter, Pluto, and Sedna.",
+      "itemCount": 400,
+      "imageName": "alloy-plate.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/CorpusUMPBlueprint",
+      "name": "Blueprint",
+      "description": "Drawing from its huge quad-chambered magazine, the Tetra is capable of unleashing a sustained barrage of lethal energy bolts.",
+      "itemCount": 1,
+      "imageName": "blueprint.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/ControlModule",
+      "name": "Control Module",
+      "description": "Autonomy processor for Robotics. A Corpus design.Locations: Europa, Neptune, and the Void.",
+      "itemCount": 2,
+      "imageName": "control-module.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Neptune - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "B"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Annihilation"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/Ferrite",
+      "name": "Ferrite",
+      "description": "Alloy pellets used in Grineer manufacturing.Locations: Mercury, Earth, Lua, Neptune, and the Void.",
+      "itemCount": 900,
+      "imageName": "ferrite.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+      "name": "Polymer Bundle",
+      "description": "A hard, thermoplastic casing. Manufactured by Corpus.Locations: Mercury, Venus, and Uranus.",
+      "itemCount": 100,
+      "imageName": "polymer-bundle.png",
+      "tradable": false
+    }
+  ],
+  "consumeOnBuild": true,
+  "criticalChance": 0.039999999,
+  "criticalMultiplier": 1.5,
+  "damage": "32.0",
+  "damagePerShot": [
+    6.4000001,
+    25.6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "damageTypes": {
+    "impact": 6.4,
+    "puncture": 25.6
+  },
+  "description": "Drawing from its huge quad-chambered magazine, the Tetra is capable of unleashing a sustained barrage of lethal energy bolts.",
+  "disposition": 5,
+  "fireRate": 6.666667,
+  "flight": 100,
+  "imageName": "tetra.png",
+  "magazineSize": 60,
+  "marketCost": 125,
+  "masteryReq": 3,
+  "multishot": 1,
+  "name": "Tetra",
+  "noise": "Alarming",
+  "omegaAttenuation": 1.5,
+  "polarities": [],
+  "procChance": 0.19999999,
+  "productCategory": "LongGuns",
+  "projectile": "Projectile",
+  "reloadTime": 2,
+  "skipBuildTimePrice": 40,
+  "slot": 1,
+  "tags": [
+    "Corpus"
+  ],
+  "totalDamage": 32,
+  "tradable": false,
+  "trigger": "Auto",
+  "type": "Rifle",
+  "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CorpusUMP/CorpusUMP",
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/f/f7/DETetra.png/revision/latest?cb=20140122223131",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Tetra"
+}

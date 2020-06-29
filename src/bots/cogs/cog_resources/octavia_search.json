@@ -1,0 +1,133 @@
+{
+  "abilities": [
+    {
+      "name": "Mallet",
+      "description": "Rhythmically beats damage into nearby enemies and draws their fire. Damage inflicted on the Mallet increases its lethality."
+    },
+    {
+      "name": "Resonator",
+      "description": "Launches a rollerball that charms foes to follow it. Combines with the Mallet to create a roving ball of sonic destruction."
+    },
+    {
+      "name": "Metronome",
+      "description": "Grants buffs to those who consistently perform actions in time to Octavia's music. Timed jumps offer the Vivace speed buff. Crouching on the beat grants cloaking with the Nocturne buff. Firing rhythmically bestows Opera multishot buff. Timed melee swings give the Forte damage buff."
+    },
+    {
+      "name": "Amp",
+      "description": "Draws power from the decibel level of sound in the area and uses it to amplify a damage buff for Octavia and her allies. It also doubles the damage and range of nearby Mallets."
+    }
+  ],
+  "armor": 150,
+  "aura": "naramon",
+  "buildPrice": 25000,
+  "buildQuantity": 1,
+  "buildTime": 259200,
+  "category": "Warframes",
+  "color": 2171179,
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaBlueprint",
+      "name": "Blueprint",
+      "description": "Compose her song and then conduct the mighty Mandachord, turning bass, beat and melody into an anthem of devastation.",
+      "itemCount": 1,
+      "imageName": "blueprint.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaChassisComponent",
+      "name": "Chassis",
+      "description": "Chassis component of the Octavia Warframe.",
+      "itemCount": 1,
+      "imageName": "chassis.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Orokin Storage Container nce: 100.00 nce: 100.00",
+          "type": "Enemy Blueprint Tables",
+          "rarity": "Common",
+          "chance": 1
+        },
+        {
+          "location": "Orokin Storage Container nce: 100.00 nce: 100.00",
+          "type": "Enemy Blueprint Tables",
+          "rarity": "Common",
+          "chance": 1
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Keys/BardQuest/BardQuestSequencerItem",
+      "name": "Mandachord",
+      "description": "A rare Orokin instrument.",
+      "itemCount": 1,
+      "imageName": "mandachord.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaHelmetComponent",
+      "name": "Neuroptics",
+      "description": "Neuroptics component of the Octavia Warframe.",
+      "itemCount": 1,
+      "imageName": "neuroptics.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Derelict - Orokin",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.2256,
+          "rotation": "Survival"
+        },
+        {
+          "location": "Orokin Derelict Survival",
+          "type": "Key Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.2256
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaSystemsComponent",
+      "name": "Systems",
+      "description": "Systems component of the Octavia Warframe.",
+      "itemCount": 1,
+      "imageName": "systems.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Lua - Plato",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.2256,
+          "rotation": "A"
+        }
+      ]
+    }
+  ],
+  "conclave": true,
+  "consumeOnBuild": true,
+  "description": "Compose her song and then conduct the mighty Mandachord, turning bass, beat and melody into an anthem of devastation.",
+  "health": 100,
+  "imageName": "octavia.png",
+  "introduced": "20",
+  "masteryReq": 0,
+  "name": "Octavia",
+  "passiveDescription": "Replenish |ENERGY| energy over |DURATION|s for Octavia and allies within |RANGE|m when abilities are activated.",
+  "polarities": [
+    "naramon",
+    "naramon"
+  ],
+  "power": 150,
+  "productCategory": "Suits",
+  "sex": "Female",
+  "shield": 75,
+  "skipBuildTimePrice": 50,
+  "sprint": 1.05,
+  "sprintSpeed": 1.05,
+  "stamina": 3,
+  "tradable": false,
+  "type": "Warframe",
+  "uniqueName": "/Lotus/Powersuits/Bard/Bard",
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/a/a9/Octavia.png/revision/latest?cb=20190722173303",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Octavia"
+}

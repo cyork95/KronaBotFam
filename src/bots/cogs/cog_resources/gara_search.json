@@ -1,0 +1,499 @@
+{
+  "abilities": [
+    {
+      "name": "Shattered Lash",
+      "description": "Lash out with stream of shattered glass, or hold for an arcing strike."
+    },
+    {
+      "name": "Splinter Storm",
+      "description": "Gara's armor splinters into a maelstrom of shattered glass. Allies who contact the cloud are fortified against damage."
+    },
+    {
+      "name": "Spectrorage",
+      "description": "Trap enemies in a carousel of mirrors, forcing them to attack visions of their true selves. Destroyed mirrors damage their attackers, as does the collapse of the carousel."
+    },
+    {
+      "name": "Mass Vitrify",
+      "description": "Create an expanding ring of molten glass that slowly crystallizes enemies who enter. When the expansion is complete, the ring hardens to block weapons fire. The ring draws extra strength from the health and shields of crystallized enemies. Use Shattered Lash to smash the ring and send razor-sharp glass flying outward."
+    }
+  ],
+  "armor": 150,
+  "aura": "vazarin",
+  "buildPrice": 25000,
+  "buildQuantity": 1,
+  "buildTime": 259200,
+  "category": "Warframes",
+  "color": 6379861,
+  "components": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GlassBlueprint",
+      "name": "Blueprint",
+      "description": "The battlefield trembles before Gara's crystalline power, her ringing touch transforming opponents to targets of brittle beauty.",
+      "itemCount": 1,
+      "imageName": "blueprint.png",
+      "tradable": false
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GlassChassisComponent",
+      "name": "Chassis",
+      "description": "Chassis component of the Gara Warframe.",
+      "itemCount": 1,
+      "imageName": "chassis.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Level 5 - 15 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752
+        },
+        {
+          "location": "Level 5 - 15 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0737
+        },
+        {
+          "location": "Level 5 - 15 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.3056
+        },
+        {
+          "location": "Level 5 - 15 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752
+        },
+        {
+          "location": "Level 5 - 15 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0737
+        },
+        {
+          "location": "Level 5 - 15 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.3056
+        },
+        {
+          "location": "Level 5 - 15 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0752
+        },
+        {
+          "location": "Level 5 - 15 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0737
+        },
+        {
+          "location": "Level 5 - 15 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.3056
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GlassHelmetComponent",
+      "name": "Neuroptics",
+      "description": "Neuroptics component of the Gara Warframe.",
+      "itemCount": 1,
+      "imageName": "neuroptics.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0842
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0825
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.20510000000000003
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.086
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0842
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.19510000000000002
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.09570000000000001
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.09380000000000001
+        },
+        {
+          "location": "Level 20 - 40 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.2143
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+      "name": "Orokin Cell",
+      "description": "Ancient energy cell from the Orokin era.Locations: Ceres, Saturn, and Orokin Derelicts.",
+      "itemCount": 3,
+      "imageName": "orokin-cell.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Neptune - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "B"
+        },
+        {
+          "location": "Saturn - Annihilation",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Cephalon",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Lunaro",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Team",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "(Extra)"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Annihilation"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "Capture"
+        },
+        {
+          "location": "Saturn - Variant",
+          "type": "Mission Rewards",
+          "rarity": "Legendary",
+          "chance": 0.0025,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0714
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0833
+        },
+        {
+          "location": "Kuva - Fortress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1079,
+          "rotation": "rewards"
+        },
+        {
+          "location": "Lua - Plato",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1082,
+          "rotation": "C"
+        },
+        {
+          "location": "Level 40 - 60 Orb Vallis Bounty",
+          "type": "Solaris Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.125
+        },
+        {
+          "location": "Neptune - Halimede",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Neptune - Thalassa",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Charon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Pluto - Cypress",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Phithale",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Sedna - Rusalka",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Uranus - Portia",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1258,
+          "rotation": "C"
+        },
+        {
+          "location": "Hallowed Flame Mission Caches",
+          "type": "Transient Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1265
+        },
+        {
+          "location": "Ceres - Ker",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Ceres - Thon",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Adrastea",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Jupiter - Carpo",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Calypso",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Saturn - Pallene",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.151,
+          "rotation": "C"
+        },
+        {
+          "location": "Derelict - Orokin",
+          "type": "Mission Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.1936,
+          "rotation": "Sabotage"
+        }
+      ]
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GlassSystemsComponent",
+      "name": "Systems",
+      "description": "Systems component of the Gara Warframe.",
+      "itemCount": 1,
+      "imageName": "systems.png",
+      "tradable": false,
+      "drops": [
+        {
+          "location": "Level 10 - 30 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.09519999999999999
+        },
+        {
+          "location": "Level 10 - 30 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0916
+        },
+        {
+          "location": "Level 10 - 30 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.2182
+        },
+        {
+          "location": "Level 10 - 30 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.09519999999999999
+        },
+        {
+          "location": "Level 10 - 30 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0916
+        },
+        {
+          "location": "Level 10 - 30 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.2182
+        },
+        {
+          "location": "Level 10 - 30 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.09519999999999999
+        },
+        {
+          "location": "Level 10 - 30 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Rare",
+          "chance": 0.0916
+        },
+        {
+          "location": "Level 10 - 30 Cetus Bounty",
+          "type": "Cetus Bounty Rewards",
+          "rarity": "Uncommon",
+          "chance": 0.2182
+        }
+      ]
+    }
+  ],
+  "conclave": true,
+  "consumeOnBuild": true,
+  "description": "The battlefield trembles before Gara's crystalline power, her ringing touch transforming opponents to targets of brittle beauty.",
+  "health": 100,
+  "imageName": "gara.png",
+  "introduced": "22",
+  "masteryReq": 0,
+  "name": "Gara",
+  "passiveDescription": "A chance to create a radial blind lasting |DURATION|s when exposed to bright light.",
+  "polarities": [
+    "madurai",
+    "madurai"
+  ],
+  "power": 150,
+  "productCategory": "Suits",
+  "sex": "Female",
+  "shield": 100,
+  "skipBuildTimePrice": 50,
+  "sprint": 1.15,
+  "sprintSpeed": 1.15,
+  "stamina": 3,
+  "tradable": false,
+  "type": "Warframe",
+  "uniqueName": "/Lotus/Powersuits/Glass/Glass",
+  "wikiaThumbnail": "https://vignette.wikia.nocookie.net/warframe/images/2/2c/GaraNewLook.png/revision/latest?cb=20171026104236",
+  "wikiaUrl": "http://warframe.fandom.com/wiki/Gara"
+}
