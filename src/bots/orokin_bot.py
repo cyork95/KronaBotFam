@@ -26,28 +26,12 @@ async def orokin_load(ctx, extension):
     ctx.send(f'The extension {extension} was loaded!')
 
 
-@orokin_load.error
-async def orokin_load_error(ctx, error):
-    embed = discord.Embed(title='Syntax Error',
-                          colour=discord.Colour(0x9013fe),
-                          description='Did you mistype the extension name?')
-    await ctx.send(embed=embed)
-
-
 @orokin.command()
 @commands.has_permissions(administrator=True)
 async def orokin_unload(ctx, extension):
     await ctx.message.delete()
     orokin.unload_extension(f'cogs.{extension}')
     await ctx.send(f'The extension {extension} was unloaded!')
-
-
-@orokin_unload.error
-async def orokin_unload_error(ctx, error):
-    embed = discord.Embed(title='Syntax Error',
-                          colour=discord.Colour(0x9013fe),
-                          description='Did you mistype the extension name?')
-    await ctx.send(embed=embed)
 
 
 @orokin.command()
@@ -57,14 +41,6 @@ async def orokin_reload(ctx, extension):
     orokin.unload_extension(f'cogs.{extension}')
     orokin.load_extension(f'cogs.{extension}')
     await ctx.send(f'The extension {extension} was reloaded!')
-
-
-@orokin_reload.error
-async def orokin_reload_error(ctx, error):
-    embed = discord.Embed(title='Syntax Error',
-                          colour=discord.Colour(0x9013fe),
-                          description='Did you mistype the extension name?')
-    await ctx.send(embed=embed)
 
 
 @orokin.event
@@ -85,6 +61,5 @@ async def change_status():
 async def orokin_ping(ctx):
     await ctx.message.delete()
     await ctx.send(f'Pong! My latency is: {round(orokin.latency * 1000)}ms')
-
 
 orokin.run(TOKEN)

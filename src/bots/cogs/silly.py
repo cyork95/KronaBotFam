@@ -5,6 +5,7 @@ from discord.ext import commands
 
 HALLOWEEN = date(date.today().year, 10, 31)
 CHRISTMAS = date(date.today().year, 12, 25)
+NEW_YEAR = date(date.today().year + 1, 1, 1)
 
 
 class Silly(commands.Cog):
@@ -42,6 +43,15 @@ class Silly(commands.Cog):
                               colour=discord.Colour(0x9013fe),
                               description='BOO! You have too many parameters maybe.')
         await ctx.send(embed=embed)
+
+    @commands.command(aliases=['newyear', 'ny'])
+    async def is_it_new_year(self, ctx):
+        """When is the new year?"""
+        if date.today() == NEW_YEAR:
+            await ctx.send('It\'s New Years today! :tada:')
+        else:
+            msg = f'No, it is not New Years today. There are {(NEW_YEAR - date.today()).days} days until New Year.'
+            await ctx.send(msg)
 
 
 def setup(client):

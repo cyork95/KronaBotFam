@@ -1,10 +1,13 @@
-
 import json
 from urllib.request import Request, urlopen
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 import requests
 from datetime import datetime
+from .warframe_api import warframe_api as wf_api
+from .warframe_api_embeds import *
+import asyncio
+from dhooks import Webhook
 
 with open('./cogs/cog_resources/languages.json') as json_file:
     lang = json.load(json_file)
@@ -21,30 +24,149 @@ with open('./cogs/cog_resources/solnodes.json') as json_file:
 with open('./cogs/cog_resources/farming.json') as json_file:
     farming_data = json.load(json_file)
 
+xbox_api_wrapper = wf_api('xb1')
+
+hook = Webhook("https://discordapp.com/api/webhooks/729232543316181033/NKbfGyxaDJ2qRAbAd6GN515s18UDZmCCBP4TSgH2X"
+               "Gg1DLKpB3v3A4ntC1vdbSHvMtmV")
+
 
 class Warframe(commands.Cog):
     def __init__(self, client):
         self.client = client
+        self.darvo.start()
 
-    @commands.command()
-    async def earth(self, ctx):
+    @commands.command(aliases=['alert'])
+    async def alerts(self, ctx):
+        """This command returns the current Warframe Alerts"""
         await ctx.message.delete()
-        req = Request('https://api.warframestat.us/xb1/cetusCycle', headers={'User-Agent': 'Mozilla/5.0'})
-        webpage = urlopen(req).read()
-        data = json.loads(webpage)
-        if data['isDay']:
-            await ctx.send(
-                'It Is Currently **Day-time** On Earth With __{0}__ Left Until **Evening**.'.format(data['timeLeft']))
-        if not data['isDay']:
-            await ctx.send(
-                'It Is Currently **Night-time** On Earth With __{0}__ Left Until **Morning**.'.format(data['timeLeft']))
+        alert_json = xbox_api_wrapper.get_alert_info()
+        alert_embed = discord.Embed(title="Current Warframe Alerts")
+        alert_iterator = 0
+        if alert_json[alert_iterator]:
+            for item in alert_json:
+                alert_embed = get_alert_api_embed(alert_json[alert_iterator], alert_embed)
+                alert_iterator += 1
+        else:
+            alert_embed.add_field(name="No Alerts", value="There are currently no Xbox Warframe alerts.", inline=True)
+        await ctx.send(embed=alert_embed)
 
-    @earth.error
-    async def earth_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you add parameters?')
+    @commands.command(aliases=['cetus'])
+    async def earth(self, ctx):
+        """This command returns the Day/Night Cycle for Plains of Eidolon"""
+        await ctx.message.delete()
+        earth_cycle_json = xbox_api_wrapper.get_cetus_info()
+        if earth_cycle_json['isDay']:
+            await ctx.send(
+                'It Is Currently **Day-time** On Earth With __{0}__ Left Until **Evening**.'.format(
+                    earth_cycle_json['timeLeft']))
+        if not earth_cycle_json['isDay']:
+            await ctx.send(
+                'It Is Currently **Night-time** On Earth With __{0}__ Left Until **Morning**.'.format(
+                    earth_cycle_json['timeLeft']))
+
+    @commands.command(aliases=['cc', 'challenges'])
+    async def conclave_challenges(self, ctx):
+        """This command returns the current Conclave Challenges"""
+        await ctx.message.delete()
+        conclave_json = xbox_api_wrapper.get_conclave_challenge_info()
+        conclave_embed = discord.Embed(title=f"Conclave Challenges")
+        conclave_embed_overflow = discord.Embed(title=f"Conclave Challenges Continued")
+        conclave_iterator = 0
+        for conclave_item in conclave_json:
+            if conclave_iterator > 7:
+                conclave_embed_overflow = get_conclave_api_embed(conclave_json[conclave_iterator],
+                                                                 conclave_embed_overflow)
+                conclave_iterator += 1
+            else:
+                conclave_embed = get_conclave_api_embed(conclave_json[conclave_iterator], conclave_embed)
+                conclave_iterator += 1
+
+        await ctx.send(embed=conclave_embed)
+        await ctx.send(embed=conclave_embed_overflow)
+
+    @commands.command(aliases=['progress'])
+    async def construction_progress(self, ctx):
+        """This command returns Current Construction Progress on Xbox"""
+        await ctx.message.delete()
+        construction_json = xbox_api_wrapper.get_construction_progress_info()
+        construction_embed = discord.Embed(title=f"Construction Progress")
+        construction_embed.add_field(name="Fomorian Progress: ", value=construction_json['fomorianProgress'])
+        construction_embed.add_field(name="Razorback Progress: ", value=construction_json['razorbackProgress'])
+        await ctx.send(embed=construction_embed)
+
+    @commands.command(aliases=['events', 'event'])
+    async def current_events(self, ctx):
+        """This command returns the current Warframe Events"""
+        await ctx.message.delete()
+        event_json = xbox_api_wrapper.get_event_info()
+        event_embed = discord.Embed(title=f"Current Warframe Events")
+        event_iterator = 0
+        for event_item in event_json:
+            event_embed = get_event_api_embed(event_json[event_iterator], event_embed)
+            event_iterator += 1
+
+        await ctx.send(embed=event_embed)
+
+    @commands.command(aliases=['endless', 'ef'])
+    async def endless_fissure(self, ctx):
+        """This command shows the current endless fissure missions."""
+        await ctx.message.delete()
+        fissure_json = xbox_api_wrapper.get_fissure_info()
+        mission_types = ('Defense', 'Survival', 'Interception', 'Excavation')
+        embed = discord.Embed(title="Endless Fissures", description='Endless fissure missions currently available:')
+        for mission in fissure_json:
+            if mission['missionType'] in mission_types:
+                relic = mission['tier']
+                embed.add_field(name=f'{relic}:', value='**{0}**  *{1}*  __{2}__'.format(mission['missionType'],
+                                                                                         mission['node'],
+                                                                                         mission['eta']))
+            if 0 == mission['missionType']:
+                await ctx.send('No Endless Fissure Missions available at this time.')
         await ctx.send(embed=embed)
+
+    @commands.command(aliases=['f'])
+    async def fissure(self, ctx):
+        """This command shows the current Warframe fissure missions."""
+        await ctx.message.delete()
+        fissure_json = xbox_api_wrapper.get_fissure_info()
+        embed = discord.Embed(title="Fissures", description='Fissure missions currently available:')
+        for mission in fissure_json:
+            relic = mission['tier']
+            embed.add_field(name=f'{relic}:', value='**{0}**  *{1}*  __{2}__'.format(mission['missionType'],
+                                                                                     mission['node'],
+                                                                                     mission['eta']))
+        await ctx.send(embed=embed)
+
+    @commands.command(aliases=['flash', 'sales', 'flash_sales', 'sale', 'marketplace'])
+    async def marketplace_sales(self, ctx):
+        """This command returns the current Warframe Marketplace Sales"""
+        await ctx.message.delete()
+        sale_json = xbox_api_wrapper.get_flash_sale_info()
+        sale_embed = discord.Embed(title=f"Warframe Marketplace Flash Sales")
+        sale_embed_continued = discord.Embed(title=f"Warframe Marketplace Flash Sales Continued")
+        event_iterator = 0
+        for sale_item in sale_json:
+            if event_iterator > 24:
+                sale_embed_continued = get_sale_api_embed(sale_json[event_iterator], sale_embed_continued)
+            else:
+                sale_embed = get_sale_api_embed(sale_json[event_iterator], sale_embed)
+            event_iterator += 1
+
+        await ctx.send(embed=sale_embed)
+        await ctx.send(embed=sale_embed_continued)
+
+    @commands.command(aliases=['i'])
+    async def invasions(self, ctx):
+        """This command returns the current Warframe Invasions"""
+        await ctx.message.delete()
+        invasion_json = xbox_api_wrapper.get_invasion_info()
+        event_embed = discord.Embed(title=f"Current Warframe Events")
+        event_iterator = 0
+        for event_item in invasion_json:
+            event_embed = get_event_api_embed(invasion_json[event_iterator], event_embed)
+            event_iterator += 1
+
+        await ctx.send(embed=event_embed)
 
     @commands.command()
     async def baro(self, ctx):
@@ -86,81 +208,6 @@ class Warframe(commands.Cog):
 
     @orb_vallis.error
     async def orb_vallis_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you add parameters?')
-        await ctx.send(embed=embed)
-
-    @commands.command(aliases=['endless', 'ef'])
-    async def endless_fissure(self, ctx):
-        await ctx.message.delete()
-        req = Request('https://api.warframestat.us/xb1/fissures', headers={'User-Agent': 'Mozilla/5.0'})
-        webpage = urlopen(req).read()
-        data = json.loads(webpage)
-        missionTypes = ('Defense', 'Survival', 'Interception', 'Excavation')
-        embed = discord.Embed(title="Endless Fissures", description='Endless fissure missions currently available:')
-        for mission in data:
-            if mission['missionType'] in missionTypes:
-                relic = mission['tier']
-                embed.add_field(name=f'{relic}:', value='**{0}**  *{1}*  __{2}__'.format(mission['missionType'],
-                                                                                         mission['node'],
-                                                                                         mission['eta']))
-            if 0 == mission['missionType']:
-                await ctx.send('No Endless Fissure Missions available at this time.')
-        await ctx.send(embed=embed)
-
-    @endless_fissure.error
-    async def endless_fissure_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you add parameters?')
-        await ctx.send(embed=embed)
-
-    @commands.command(aliases=['f'])
-    async def fissure(self, ctx):
-        await ctx.message.delete()
-        req = Request('https://api.warframestat.us/xb1/fissures', headers={'User-Agent': 'Mozilla/5.0'})
-        webpage = urlopen(req).read()
-        data = json.loads(webpage)
-        embed = discord.Embed(title="Fissures", description='Fissure missions currently available:')
-        for mission in data:
-            relic = mission['tier']
-            embed.add_field(name=f'{relic}:', value='**{0}**  *{1}*  __{2}__'.format(mission['missionType'],
-                                                                                     mission['node'],
-                                                                                     mission['eta']))
-        await ctx.send(embed=embed)
-
-    @fissure.error
-    async def fissure_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you add parameters?')
-        await ctx.send(embed=embed)
-
-    @commands.command()
-    async def darvo(self, ctx):
-        await ctx.message.delete()
-        req = Request('https://api.warframestat.us/xb1/dailyDeals', headers={'User-Agent': 'Mozilla/5.0'})
-        webpage = urlopen(req).read()
-        dataPack = json.loads(webpage)
-        embed = discord.Embed(title="Darvo Deal")
-        for data in dataPack:
-            totalLeft = int(data['total'] - data['sold'])
-            if totalLeft == 0:
-                await ctx.send('Darvo has sold out.  {0} is no longer available at a lower price.'.format(data['item']))
-            else:
-                darvo_item = data['item']
-                original_price = data['originalPrice']
-                sale_price = data['salePrice']
-                time_left = data['eta']
-                embed.add_field(name='Item Name:', value=darvo_item)
-                embed.add_field(name='Original Price:', value=original_price)
-                embed.add_field(name='Sale Price:', value=sale_price)
-                embed.add_field(name='Time Left:', value=time_left)
-        await ctx.send(embed=embed)
-
-    @darvo.error
-    async def darvo_error(self, ctx, error):
         embed = discord.Embed(title='Syntax Error',
                               colour=discord.Colour(0x9013fe),
                               description='Did you add parameters?')
@@ -304,6 +351,19 @@ class Warframe(commands.Cog):
                               colour=discord.Colour(0x9013fe),
                               description='Did you put the actual resource name?')
         await ctx.send(embed=embed)
+
+    @tasks.loop(hours=9)
+    async def darvo(self):
+        """This command returns the Daily Darvo Deal in Warframe."""
+        darvo_json = xbox_api_wrapper.get_daily_deals_info()
+        darvo_embed = discord.Embed(title="Darvo Deal")
+        total_left = int(darvo_json[0]['total'] - darvo_json[0]['sold'])
+        if total_left == 0:
+            hook.send(
+                'Darvo has sold out.  {0} is no longer available at a lower price.'.format(darvo_json['item']))
+        else:
+            darvo_embed = get_darvo_api_embed(darvo_json[0], darvo_embed)
+            hook.send(embed=darvo_embed)
 
 
 def request_sortie():

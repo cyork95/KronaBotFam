@@ -1,5 +1,7 @@
 import asyncio
 import random
+
+import aiohttp
 import discord
 from discord.ext import commands
 import re
@@ -147,6 +149,98 @@ class Fun(commands.Cog):
         embed = discord.Embed(title='Syntax Error',
                               colour=discord.Colour(0x9013fe),
                               description='Did you add any extra parameters?')
+        await ctx.send(embed=embed)
+
+    @commands.command(aliases=['slots', 'bet'])
+    async def slot(self, ctx):
+        """ Roll the slot machine """
+        emojis = "🍎🍊🍐🍋🍉🍇🍓🍒"
+        a = random.choice(emojis)
+        b = random.choice(emojis)
+        c = random.choice(emojis)
+
+        slot_machine = f"**[ {a} {b} {c} ]\n{ctx.author.name}**,"
+
+        if a == b == c:
+            await ctx.send(f"{slot_machine} All matching, you won! 🎉")
+        elif (a == b) or (a == c) or (b == c):
+            await ctx.send(f"{slot_machine} 2 in a row, you won! 🎉")
+        else:
+            await ctx.send(f"{slot_machine} No match, you lost 😢")
+
+    @slot.error
+    async def slot_error(self, ctx, error):
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add any extra parameters?')
+        await ctx.send(embed=embed)
+
+    @commands.command(aliases=['xkcd', 'comic'])
+    async def random_comic(self, ctx):
+        """Get a comic from xkcd."""
+        async with aiohttp.ClientSession() as session:
+            async with session.get(f'http://xkcd.com/info.0.json') as resp:
+                data = await resp.json()
+                current_comic = data['num']
+        rand = random.randint(0, current_comic)  # max = current comic
+        async with aiohttp.ClientSession() as session:
+            async with session.get(f'http://xkcd.com/{rand}/info.0.json') as resp:
+                data = await resp.json()
+        em = discord.Embed(color=discord.Color.green())
+        em.title = f"XKCD Number {data['num']}- \"{data['title']}\""
+        em.set_footer(text=f"Published on {data['month']}/{data['day']}/{data['year']}")
+        em.set_image(url=data['img'])
+        await ctx.send(embed=em)
+
+    @random_comic.error
+    async def random_comic_error(self, ctx, error):
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add any extra parameters?')
+        await ctx.send(embed=embed)
+
+    @commands.command(aliases=['number'])
+    async def number_fact(self, ctx, number: int):
+        """Get a fact about a number."""
+        if not number:
+            await ctx.send(f'Usage: `{ctx.prefix}numberfact <number>`')
+            return
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.get(f'http://numbersapi.com/{number}?json') as resp:
+                    file = await resp.json()
+                    fact = file['text']
+                    await ctx.send(f"**Did you know?**\n*{fact}*")
+        except KeyError:
+            await ctx.send("No facts are available for that number.")
+
+    @number_fact.error
+    async def number_fact_error(self, ctx, error):
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add the number to get a fact from?')
+        await ctx.send(embed=embed)
+
+    @commands.command(aliases=['trump', 'trumpquote'])
+    async def ask_trump(self, ctx, *, question):
+        """Ask Donald Trump a question!"""
+        async with aiohttp.ClientSession() as session:
+            async with session.get(
+                    f'https://api.whatdoestrumpthink.com/api/v1/quotes/personalized?q={question}') as resp:
+                file = await resp.json()
+        quote = file['message']
+        em = discord.Embed(color=discord.Color.green())
+        em.title = "What does Trump say?"
+        em.description = quote
+        em.set_footer(text="Made possible by whatdoestrumpthink.com", icon_url="http://www.stickpng.com/assets/images"
+                                                                               "/5841c17aa6515b1e0ad75aa1.png")
+        await ctx.send(embed=em)
+
+    @ask_trump.error
+    async def ask_trump_error(self, ctx, error):
+        embed = discord.Embed(title='Syntax Error',
+                              colour=discord.Colour(0x9013fe),
+                              description='Did you add a question for Trump?')
         await ctx.send(embed=embed)
 
 
