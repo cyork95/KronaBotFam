@@ -1,12 +1,14 @@
 import json
-from urllib.request import Request, urlopen
 import discord
 from discord.ext import commands, tasks
 import requests
-from datetime import datetime
-from .warframe_api import warframe_api as wf_api
-from .warframe_api_embeds import *
+from src.bots.cogs.warframe_api import warframe_api as wf_api
+from src.bots.cogs.warframe_api_embeds import *
 from dhooks import Webhook
+import importlib
+
+moduleName = input('warframe_aoi.py')
+importlib.import_module(moduleName)
 
 with open('./cogs/cog_resources/farming.json') as json_file:
     farming_data = json.load(json_file)

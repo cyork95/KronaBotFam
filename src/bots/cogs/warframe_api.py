@@ -171,6 +171,13 @@ class warframe_api(object):
             raise StatusCodeError(response.status_code, 'get_alert_info')
         return response.json()
 
+    def get_arcane_info(self):
+        path = 'https://api.warframestat.us/arcane'.format(platform=self.platform)
+        response = session.get(path)
+        if response.status_code != 200:
+            raise StatusCodeError(response.status_code, 'get_alert_info')
+        return response.json()
+
     def get_void_trader_info(self):
         path = 'https://api.warframestat.us/{platform}/voidTrader'.format(platform=self.platform)
         response = session.get(path)
