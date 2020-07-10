@@ -1,286 +1,491 @@
 {
-    "plastids": {
-        "BestLocationName": "Piscinas (Saturn)",
-        "OtherLocations": [
-            "Ophelia (Uranus)",
-            "Phobos",
-            "Pluto",
-            "Akkad (Eris)"
-        ]
-    },
-    "oxium": {
-        "BestLocationName": "IO (Jupiter)",
-        "OtherLocations": [
-            "Outer Terminus (Pluto)",
-            "Gulliver (Phobos)"
-        ]
-    },
-    "neurodes": {
-        "BestLocationName": "Plato (Lua)",
-        "OtherLocations": [
-            "Orokin Derelict Assassinations (Lephantis)",
-            "Neuroptic Masses (Earth)"
-        ]
-    },
-    "neural sensor": {
-        "BestLocationName": "Elara and Sinai (Jupiter)",
-        "OtherLocations": [
-            "Taveuni (Kuva Fortress)"
-        ]
-    },
-    "hexenon": {
-        "BestLocationName": "Cameria or Sinai (Jupiter)",
-        "OtherLocations": [
-
-        ]
-    },
-    "polymer bundle": {
-        "BestLocationName": "Assur (Uranus)",
-        "OtherLocations": [
-            "Ophelia (Uranus)",
-            "Mercury"
-        ]
-    },
-    "argon crystal": {
-        "BestLocationName": "Mot (Void)",
-        "OtherLocations": [
-            "Ani (Void)",
-            "Void nodes"
-        ]
-    },
-    "gallium": {
-        "BestLocationName": "Kadesh (Mars)",
-        "OtherLocations": [
-            "Mars nodes"
-        ]
-    },
-    "orokin cell": {
-        "BestLocationName": "Gabii (Ceres)",
-        "OtherLocations": [
-            "Helen (Saturn)",
-            "Telesto (Saturn)"
-        ]
-    },
-    "ferrite": {
-        "BestLocationName": "Void Survival",
-        "OtherLocations": [
-            "Any Void Mission"
-        ]
-    },
-     "axidrol alloy": {
-        "BestLocationName": "Foundry",
-        "OtherLocations": [
-            "Recipe from Smokefinger in Fortuna"
-        ]
-    },
-     "fieldron sample": {
-        "BestLocationName": "Kelashin (Neptune)",
-        "OtherLocations": [
-
-        ]
-    },
-     "detonite ampule": {
-        "BestLocationName": "Gabii (Ceres)",
-        "OtherLocations": [
-
-        ]
-    },
-     "mutagen sample": {
-        "BestLocationName": "Orokin Derelict Survival",
-        "OtherLocations": [
-
-        ]
-    },
-     "cryotic": {
-        "BestLocationName": "Excavation",
-        "OtherLocations": [
-
-        ]
-    },
-    "travocyte alloy": {
-        "BestLocationName": "Foundry",
-        "OtherLocations": [
-            "Recipe from Smokefinger in Fortuna"
-        ]
-    },
-    "vernedo alloy": {
-        "BestLocationName": "Foundry",
-        "OtherLocations": [
-            "Recipe from Smokefinger in Fortuna"
-        ]
-    },
-    "tellurium": {
-        "BestLocationName": "Ophelia (Uranus)",
-        "OtherLocations": [
-
-        ]
-    },
-    "plustrals": {
-        "BestLocationName": "Railjack",
-        "OtherLocations": [
-
-        ]
-    },
-    "tracons": {
-        "BestLocationName": "Railjack",
-        "OtherLocations": [
-
-        ]
-    },
-    "braccid": {
-        "BestLocationName": "Railjack",
-        "OtherLocations": [
-
-        ]
-    },
-    "copernics": {
-        "BestLocationName": "Railjack",
-        "OtherLocations": [
-
-        ]
-    },
-    "titanium": {
-        "BestLocationName": "Railjack",
-        "OtherLocations": [
-
-        ]
-    },
-    "asturite": {
-        "BestLocationName": "Railjack",
-        "OtherLocations": [
-
-        ]
-    },
-    "synthula": {
-        "BestLocationName": "Dojo Research",
-        "OtherLocations": [
-
-        ]
-    },
-    "gallos rods": {
-        "BestLocationName": "Railjack",
-        "OtherLocations": [
-
-        ]
-    },
-    "nullstones": {
-        "BestLocationName": "Railjack",
-        "OtherLocations": [
-
-        ]
-    },
-    "rubido": {
-        "BestLocationName": "Stickney (Phobos)",
-        "OtherLocations": [
-
-        ]
-    },
-    "nano spores": {
-        "BestLocationName": "Titan (Saturn)",
-        "OtherLocations": [
-
-        ]
-    },
-     "salvage": {
-        "BestLocationName": "Elara (Jupiter)",
-        "OtherLocations": [
-
-        ]
-    },
-     "morphics": {
-        "BestLocationName": "Wahiba (Mars)",
-        "OtherLocations": [
-
-        ]
-    },
-    "alloy plate": {
-        "BestLocationName": "Gabii (Ceres)",
-        "OtherLocations": [
-
-        ]
-    },
-    "carbides": {
-        "BestLocationName": "Railjack",
-        "OtherLocations": [
-
-        ]
-    },
-    "control module": {
-        "BestLocationName": "Ani (Void)",
-        "OtherLocations": [
-            "Other Void Survival"
-        ]
-    },
-    "isos": {
-        "BestLocationName": "Railjack",
-        "OtherLocations": [
-
-        ]
-    },
-    "komms": {
-        "BestLocationName": "Railjack",
-        "OtherLocations": [
-
-        ]
-    },
-    "kuva": {
-        "BestLocationName": "Kuva Siphon (Mission)",
-        "OtherLocations": [
-
-        ]
-    },
-    "cubic diodes": {
-        "BestLocationName": "Larzac (Europa)",
-        "OtherLocations": [
-
-        ]
-    },
-    "circuits": {
-        "BestLocationName": "Gabii (Ceres)",
-        "OtherLocations": [
-
-        ]
-    },
-    "kesslers": {
-        "BestLocationName": "Railjack",
-        "OtherLocations": [
-
-        ]
-    },
-    "fresnals": {
-        "BestLocationName": "Railjack",
-        "OtherLocations": [
-
-        ]
-    },
-    "antiserum injector": {
-        "BestLocationName": "Foundry",
-        "OtherLocations": [
-            "Clan Research"
-        ]
-    },
-    "credits": {
-        "BestLocationName": "Index",
-        "OtherLocations": [
-
-        ]
-    },
-    "vitus essence": {
-        "BestLocationName": "Arbitration",
-        "OtherLocations": [
-
-        ]
-    },
-     "pyrol": {
-        "BestLocationName": "Mining in Plains of Eidolon",
-        "OtherLocations": [
-
-        ]
-    },
-     "azurite": {
-        "BestLocationName": "Mining in Plains of Eidolon",
-        "OtherLocations": [
-
-        ]
-    }
+  "Kuaka Spinal Claw": {
+    "BestLocationName": "Found by killing Kuakas in the Plains of Eidolon.",
+    "OtherLocations": [
+    ]
+  },
+  "alloy plate": {
+    "BestLocationName": "Gabii (Ceres)",
+    "OtherLocations": [
+    ]
+  },
+  "amarast": {
+    "BestLocationName": "Mined from blue mineral veins in Orb Vallis with the Sunpoint Plasma Drill.",
+    "OtherLocations": [
+      "Dropped from storage containers found in Orb Vallis, yielding varying units."
+    ]
+  },
+  "antiserum injector": {
+    "BestLocationName": "Foundry",
+    "OtherLocations": [
+      "Clan Research"
+    ]
+  },
+  "argon crystal": {
+    "BestLocationName": "Mot (Void)",
+    "OtherLocations": [
+      "Ani (Void)",
+      "Void nodes"
+    ]
+  },
+  "asturite": {
+    "BestLocationName": "Railjack",
+    "OtherLocations": [
+    ]
+  },
+  "axidite": {
+    "BestLocationName": "This resource is obtainable by Mining the red mineral veins in Orb Vallis.",
+    "OtherLocations": [
+    ]
+  },
+  "axidrol alloy": {
+    "BestLocationName": "Foundry",
+    "OtherLocations": [
+      "Recipe from Smokefinger in Fortuna"
+    ]
+  },
+  "azurite": {
+    "BestLocationName": "Mining in Plains of Eidolon",
+    "OtherLocations": [
+    ]
+  },
+  "braccid": {
+    "BestLocationName": "Railjack",
+    "OtherLocations": [
+    ]
+  },
+  "calda toroid": {
+    "BestLocationName": "Acquired in caves or as a rare drop from enemies near the Enrichment Labs in Orb Vallis or any Mite Raknoid",
+    "OtherLocations": [
+      "Go to Enrichment Labs. Try to get one of the enemies to put down a Reinforcement Beacon and wait until the beacon hits Alert Level 4. From this point, unlimited enemies will spawn."
+    ]
+  },
+  "carbides": {
+    "BestLocationName": "Railjack",
+    "OtherLocations": [
+      "dropped by Eximus units found in the Grineer Shipyard tileset, primarily Ceres."
+    ]
+  },
+  "cetus wisp": {
+    "BestLocationName": "Found hovering on the edge of most bodies of water in the Plains of Eidolon.",
+    "OtherLocations": [
+      "Purchasable from The Quills for 2,000 (available at the rank of Architect )",
+      "During Operation: Plague Star from Operational Supply for 750 + Credits"
+    ]
+  },
+  "charc electroplax": {
+    "BestLocationName": "Extracted from Charc Eels, slimy freshwater fish common in lakes around the Plains of Eidolon.",
+    "OtherLocations": [
+    ]
+  },
+  "circuits": {
+    "BestLocationName": "Gabii (Ceres)",
+    "OtherLocations": [
+    ]
+  },
+  "condroc wing": {
+    "BestLocationName": "Found from Condrocs in the Plains of Eidolon.",
+    "OtherLocations": [
+    ]
+  },
+  "control module": {
+    "BestLocationName": "Ani (Void)",
+    "OtherLocations": [
+      "Other Void Survival"
+    ]
+  },
+  "copernics": {
+    "BestLocationName": "Railjack",
+    "OtherLocations": [
+      "Dropped by Eximus units found in the Orokin Moon tileset, primarily Lua."
+    ]
+  },
+  "coprite alloy": {
+    "BestLocationName": "Coprite Alloy can be obtained as a drop from Tusk Thumper. ",
+    "OtherLocations": [
+      "The reusable blueprint can be purchased at Offworlder rank for 5,000 Ostron at Old Man Suumbaat's Gem Store at Cetus, Earth."
+    ]
+  },
+  "credits": {
+    "BestLocationName": "Index",
+    "OtherLocations": [
+    ]
+  },
+  "crimzion": {
+    "BestLocationName": "A gem that can be mined from blue mineral veins on the Plains of Eidolon. ",
+    "OtherLocations": [
+    ]
+  },
+  "crisma toroid": {
+    "BestLocationName": "A resource that drops after defeating the Profit-Taker Orb during Phase 4 Heist in Orb Vallis",
+    "OtherLocations": [
+    ]
+  },
+  "cryotic": {
+    "BestLocationName": "Excavation",
+    "OtherLocations": [
+    ]
+  },
+  "cubic diodes": {
+    "BestLocationName": "Larzac (Europa)",
+    "OtherLocations": [
+      "Railjack"
+    ]
+  },
+  "detonite ampule": {
+    "BestLocationName": "Gabii (Ceres)",
+    "OtherLocations": [
+      "Most Grineer missions."
+    ]
+  },
+  "devar": {
+    "BestLocationName": "Devar is a gem that can be mined from blue mineral veins on the Plains of Eidolon. ",
+    "OtherLocations": [
+    ]
+  },
+  "esher devar": {
+    "BestLocationName": "Esher Devar can only be obtained by crafting at the foundry. The reusable blueprint can be purchased by Offworlders for 5,000 Ostron standing at Old Man Suumbaat's Gem Store at Cetus, Earth.",
+    "OtherLocations": [
+    ]
+  },
+  "exceptional sentient core": {
+    "BestLocationName": "Dropped by Eidolon Teralysts, Eidolon Gantulysts and Eidolon Hydrolysts on the Plains of Eidolon, one for each Teralyst Synovia that is destroyed.",
+    "OtherLocations": [
+      "The Exceptional Sentient Core Conversion, a reusable Blueprint to upgrade Intact Sentient Cores to Exceptional ones, is available as an Offering from The Quills that costs 500."
+    ]
+  },
+  "ferrite": {
+    "BestLocationName": "Void Survival",
+    "OtherLocations": [
+      "Any Void Mission"
+    ]
+  },
+  "fieldron sample": {
+    "BestLocationName": "Kelashin (Neptune)",
+    "OtherLocations": [
+      "Most Corpus missions."
+    ]
+  },
+  "fish meat": {
+    "BestLocationName": "Can be acquired by taking fish to Fisher Hai-Luk to have them filleted.",
+    "OtherLocations": [
+    ]
+  },
+  "fish oil": {
+    "BestLocationName": "Acquired by speaking to Fisher Hai-Luk with fish in your inventory and choosing Cut Fish.",
+    "OtherLocations": [
+    ]
+  },
+  "flawless sentient core": {
+    "BestLocationName": "dropped upon successfully capturing (not defeating) a Teralyst, Gantulyst and Hydrolyst while it is tethered by the required amount of Eidolon Lures; both the Shards and the Flawless Core will be dropped by the Lures upon self-destruction, not by the Eidolon itself.",
+    "OtherLocations": [
+    ]
+  },
+  "fresnals": {
+    "BestLocationName": "Railjack",
+    "OtherLocations": [
+    ]
+  },
+  "gallium": {
+    "BestLocationName": "Kadesh (Mars)",
+    "OtherLocations": [
+      "Mars nodes"
+    ]
+  },
+  "gallos rods": {
+    "BestLocationName": "Railjack",
+    "OtherLocations": [
+    ]
+  },
+  "gorgaricus spore": {
+    "BestLocationName": "Gorgaricus Spore is resource that can be found all over Orb Vallis, being purple sacs that can be found hanging beneath the caps of the giant mushrooms.",
+    "OtherLocations": [
+    ]
+  },
+  "grokdrul": {
+    "BestLocationName": "Can be found in Grineer camps on Plains of Eidolon, stored in drums.",
+    "OtherLocations": [
+      "Grokdrul is also rewarded by Bounties."
+    ]
+  },
+  "heart nyth": {
+    "BestLocationName": "The reusable blueprint for Heart Nyth can be purchased by players with the Ostron rank of Surah for 20,000 from Old Man Suumbaat's Gem Store at Cetus on Earth.",
+    "OtherLocations": [
+    ]
+  },
+  "hespazym alloy": {
+    "BestLocationName": "Acquired in caves or as a rare drop from enemies near the Temple of Profit in Orb Vallis  or any Kyta Raknoid",
+    "OtherLocations": [
+    ]
+  },
+  "hesperon": {
+    "BestLocationName": "This resource is obtainable by Mining the red mineral veins in Orb Vallis.",
+    "OtherLocations": [
+    ]
+  },
+  "hexenon": {
+    "BestLocationName": "Sinai (Jupiter)",
+    "OtherLocations": [
+      "Cameria (Jupiter)"
+    ]
+  },
+  "intact sentient core": {
+    "BestLocationName": "Dropped by Eidolon Vomvalysts",
+    "OtherLocations": [
+      "Battalysts and Conculysts on Lua can also drop.",
+      "The Sentients aboard the Murex, either during Scarlet Spear or during Sentient Anomaly's in Veil Proxima, can also drop."
+    ]
+  },
+  "iradite": {
+    "BestLocationName": "Coprite Alloy can be obtained as a drop from Tusk Thumper. ",
+    "OtherLocations": [
+      "The reusable blueprint can be purchased at Offworlder rank for 5,000 Ostron at Old Man Suumbaat's Gem Store at Cetus, Earth."
+    ]
+  },
+  "isos": {
+    "BestLocationName": "Railjack",
+    "OtherLocations": [
+    ]
+  },
+  "kavat genetic code": {
+    "BestLocationName": "Can be earned when scanning Feral Kavats at a 25.0% chance. ",
+    "OtherLocations": [
+      "Alternatively, they can be bought for 5p in the Market or with the Kavat Starter Kit for 95p"
+    ]
+  },
+  "kesslers": {
+    "BestLocationName": "Railjack",
+    "OtherLocations": [
+    ]
+  },
+  "komms": {
+    "BestLocationName": "Railjack",
+    "OtherLocations": [
+    ]
+  },
+  "kuva": {
+    "BestLocationName": "Kuva Siphon (Mission)",
+    "OtherLocations": [
+    ]
+  },
+  "lazulite toroid": {
+    "BestLocationName": "A resource that drops from the Exploiter Orb during the Deck 12 portion of Operation: Buried Debts",
+    "OtherLocations": [
+    ]
+  },
+  "marquise thyst": {
+    "BestLocationName": "Can only be obtained by crafting at the foundry. The reusable blueprint can be purchased from Solaris United's Smokefinger at Fortuna, Venus for 12,000",
+    "OtherLocations": [
+    ]
+  },
+  "morphics": {
+    "BestLocationName": "Wahiba (Mars)",
+    "OtherLocations": [
+    ]
+  },
+  "murkray liver": {
+    "BestLocationName": "Extracted from Murkray, saltwater fish rarely found in coastlines around Cetus.",
+    "OtherLocations": [
+    ]
+  },
+  "mutagen sample": {
+    "BestLocationName": "Orokin Derelict Survival",
+    "OtherLocations": [
+      "Most Orokin Derelict missions."
+    ]
+  },
+  "mytocardia spore": {
+    "BestLocationName": "Can be found all over Orb Vallis, growing beneath the giant mushrooms.",
+    "OtherLocations": [
+      "It is also rewarded by Fortuna Bounties."
+    ]
+  },
+  "nano spores": {
+    "BestLocationName": "Titan (Saturn)",
+    "OtherLocations": [
+    ]
+  },
+  "neural sensor": {
+    "BestLocationName": "Elara and Sinai (Jupiter)",
+    "OtherLocations": [
+      "Taveuni (Kuva Fortress)"
+    ]
+  },
+  "neurodes": {
+    "BestLocationName": "Plato (Lua)",
+    "OtherLocations": [
+      "Orokin Derelict Assassinations (Lephantis)",
+      "Neuroptic Masses (Earth)"
+    ]
+  },
+  "nitain extract": {
+    "BestLocationName": "Five Nitain Extracts are sold in Nightwave offerings for 15.",
+    "OtherLocations": [
+      "Gift of the Lotus alerts.",
+      "Part of Resource Cache Rotation C reward (finding all three caches) in Reactor Sabotage.",
+      "Part of Cetus Bounty's reward pool during a Ghoul Purge.",
+      "Can very rarely be dropped by the Zealoid Prelate on the Orokin Derelict assassination node and the Wolf of Saturn Six."
+    ]
+  },
+  "nullstones": {
+    "BestLocationName": "Railjack",
+    "OtherLocations": [
+    ]
+  },
+  "nyth": {
+    "BestLocationName": "Nyth is a resource acquired through mining in the Plains of Eidolon. The Advanced Nosam Cutter or Sunpoint Plasma Drill is required to mine this gem. The gem has a 15-30% chance to drop from blue mining nodes, depending on the quality of the cut.",
+    "OtherLocations": [
+    ]
+  },
+  "orokin cell": {
+    "BestLocationName": "Gabii (Ceres)",
+    "OtherLocations": [
+      "Helen (Saturn)",
+      "Telesto (Saturn)"
+    ]
+  },
+  "oxium": {
+    "BestLocationName": "IO (Jupiter)",
+    "OtherLocations": [
+      "Outer Terminus (Pluto)",
+      "Gulliver (Phobos)"
+    ]
+  },
+  "plastids": {
+    "BestLocationName": "Piscinas (Saturn)",
+    "OtherLocations": [
+      "Ophelia (Uranus)",
+      "Phobos",
+      "Pluto",
+      "Akkad (Eris)"
+    ]
+  },
+  "plustrals": {
+    "BestLocationName": "Railjack",
+    "OtherLocations": [
+    ]
+  },
+  "polymer bundle": {
+    "BestLocationName": "Assur (Uranus)",
+    "OtherLocations": [
+      "Ophelia (Uranus)",
+      "Mercury"
+    ]
+  },
+  "pyrol": {
+    "BestLocationName": "Mining in Plains of Eidolon",
+    "OtherLocations": [
+    ]
+  },
+  "pyrotic alloy": {
+    "BestLocationName": "The reusable blueprint can be purchased at neutral rank for 1,000 Ostron at Old Man Suumbaat's Gem Store at Cetus, Earth",
+    "OtherLocations": [
+    ]
+  },
+  "radian sentirum": {
+    "BestLocationName": "The reusable blueprint for Radian Sentirum can be purchased by players with the Ostron rank of Surah for 20,000 at Old Man Suumbaat's Gem Store at Cetus on Earth.",
+    "OtherLocations": [
+    ]
+  },
+  "radiant zodian": {
+    "BestLocationName": " The reusable blueprint can be purchased from Solaris United's Smokefinger at Fortuna, Venus for 8,000. The blueprint requires Doer rank with Solaris United standing.",
+    "OtherLocations": [
+    ]
+  },
+  "rubido": {
+    "BestLocationName": "Stickney (Phobos)",
+    "OtherLocations": [
+    ]
+  },
+  "salvage": {
+    "BestLocationName": "Elara (Jupiter)",
+    "OtherLocations": [
+    ]
+  },
+  "sentirum": {
+    "BestLocationName": "A gem acquired through mining in the Plains of Eidolon that can be acquired from blue veines.",
+    "OtherLocations": [
+    ]
+  },
+  "sola toroid": {
+    "BestLocationName": "Acquired in caves or as a rare drop from enemies near the Temple of Profit in Orb Vallis  or any Kyta Raknoid",
+    "OtherLocations": [
+      "Go to Temple of Profit. Try to get one of the enemies to put down a Reinforcement Beacon and wait until the beacon hits Alert Level 4. From this point, unlimited enemies will spawn."
+    ]
+  },
+  "star amarast": {
+    "BestLocationName": "Star Amarast can only be obtained by crafting at the foundry. The reusable blueprint can be purchased by Rapscallions from Solaris United's Smokefinger at Fortuna, Venus for 4,000.",
+    "OtherLocations": [
+    ]
+  },
+  "star crimzion": {
+    "BestLocationName": "The reusable blueprint can be acquired from Old Man Sumbaat at Cetus on Earth for 15,000, provided players have an Ostron reputation rank of Trusted or higher.",
+    "OtherLocations": [
+    ]
+  },
+  "synthula": {
+    "BestLocationName": "Dojo Research",
+    "OtherLocations": [
+    ]
+  },
+  "tellurium": {
+    "BestLocationName": "Ophelia (Uranus)",
+    "OtherLocations": [
+    ]
+  },
+  "thermal sludge": {
+    "BestLocationName": "Can be found in special containers located in Corpus encampments all over Orb Vallis.",
+    "OtherLocations": [
+      "It is also rewarded by Fortuna Bounties."
+    ]
+  },
+  "thyst": {
+    "BestLocationName": "Mined from blue mineral veins in Orb Vallis with the Sunpoint Plasma Drill, each yielding 1 unit.",
+    "OtherLocations": [
+      "Dropped as a common loot of Exploiter Orb, each loot yielding 7-8 units."
+    ]
+  },
+  "titanium": {
+    "BestLocationName": "Railjack",
+    "OtherLocations": [
+    ]
+  },
+  "tracons": {
+    "BestLocationName": "Railjack",
+    "OtherLocations": [
+    ]
+  },
+  "tralok eyes": {
+    "BestLocationName": "Extracted from Tralok, a saltwater fish found in coastlines near Cetus",
+    "OtherLocations": [
+    ]
+  },
+  "travocyte alloy": {
+    "BestLocationName": "Foundry",
+    "OtherLocations": [
+      "Recipe from Smokefinger in Fortuna"
+    ]
+  },
+  "tromyzon entroplasma": {
+    "BestLocationName": "Entroplasma is a Resource extracted from Tromyzon, a Servofish found in pond hotspots during cold weather in Orb Vallis.",
+    "OtherLocations": [
+    ]
+  },
+  "vega toroid": {
+    "BestLocationName": "Acquired in caves or as a rare drop from enemies near Spaceport in Orb Vallis or any Mite Raknoid",
+    "OtherLocations": [
+      "Go to Spaceport. Try to get one of the enemies to put down a Reinforcement Beacon and wait until the beacon hits Alert Level 4. From this point, unlimited enemies will spawn."
+    ]
+  },
+  "vernedo alloy": {
+    "BestLocationName": "Foundry",
+    "OtherLocations": [
+      "Recipe from Smokefinger in Fortuna"
+    ]
+  },
+  "vitus essence": {
+    "BestLocationName": "Arbitration",
+    "OtherLocations": [
+    ]
+  }
 }

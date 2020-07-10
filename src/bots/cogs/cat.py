@@ -19,19 +19,12 @@ class Cats(commands.Cog):
         cat_url = 'http://aws.random.cat/meow'
         with urllib.request.urlopen(cat_url) as url:
             cat_data = json.loads(url.read().decode())
-        em = discord.Embed(title="Random Cat!", colour=discord.Colour.dark_green())
+        em = discord.Embed(title="Random Cat!", colour=discord.Color.purple())
         em.set_image(url=cat_data["file"])
         em.set_footer(text="Powered by aws.random.cat", icon_url=f"https://cdn.discordapp.com/avatars/"
                                                                  f"{self.client.user.id}/"
                                                                  f"{self.client.user.avatar}.png?size=64")
         await ctx.send(embed=em)
-
-    @random_cat.error
-    async def random_cat_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you add parameters you don\'t need?')
-        await ctx.send(embed=embed)
 
 
 def setup(client):

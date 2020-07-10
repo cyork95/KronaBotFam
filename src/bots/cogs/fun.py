@@ -104,37 +104,16 @@ class Fun(commands.Cog):
         embed.add_field(name="Total:", value=sum(dice_roll_ints))
         await ctx.send("", embed=embed)
 
-    @dice.error
-    async def dice_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you give the number of dice and then the number of sides?')
-        await ctx.send(embed=embed)
-
     @commands.command(aliases=['8ball'])
     async def eight_ball(self, ctx, *, question):
         await ctx.message.delete()
         await ctx.send(f'Question:    {question}\nAnswer:    {random.choice(ball_response)}')
-
-    @eight_ball.error
-    async def eight_ball_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you give it a question?')
-        await ctx.send(embed=embed)
 
     @commands.command(pass_context=True, aliases=['pick'])
     async def choose(self, ctx, *, choices: str):
         """Choose randomly from the options you give. [p]choose this | that"""
         await ctx.message.delete()
         await ctx.send('I choose: ``{}``'.format(random.choice(choices.split(","))))
-
-    @choose.error
-    async def choose_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you make sure to have only a \",\" separating the choices?')
-        await ctx.send(embed=embed)
 
     @commands.command()
     async def flip_coin(self, ctx):
@@ -143,13 +122,6 @@ class Fun(commands.Cog):
         await ctx.send('*Flipping...*')
         await asyncio.sleep(3)
         await ctx.send(content=random.choice(('Heads!', 'Tails!')))
-
-    @flip_coin.error
-    async def flip_coin_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you add any extra parameters?')
-        await ctx.send(embed=embed)
 
     @commands.command(aliases=['slots', 'bet'])
     async def slot(self, ctx):
@@ -168,13 +140,6 @@ class Fun(commands.Cog):
         else:
             await ctx.send(f"{slot_machine} No match, you lost 😢")
 
-    @slot.error
-    async def slot_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you add any extra parameters?')
-        await ctx.send(embed=embed)
-
     @commands.command(aliases=['xkcd', 'comic'])
     async def random_comic(self, ctx):
         """Get a comic from xkcd."""
@@ -192,13 +157,6 @@ class Fun(commands.Cog):
         em.set_image(url=data['img'])
         await ctx.send(embed=em)
 
-    @random_comic.error
-    async def random_comic_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you add any extra parameters?')
-        await ctx.send(embed=embed)
-
     @commands.command(aliases=['number'])
     async def number_fact(self, ctx, number: int):
         """Get a fact about a number."""
@@ -214,14 +172,7 @@ class Fun(commands.Cog):
         except KeyError:
             await ctx.send("No facts are available for that number.")
 
-    @number_fact.error
-    async def number_fact_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you add the number to get a fact from?')
-        await ctx.send(embed=embed)
-
-    @commands.command(aliases=['trump', 'trumpquote'])
+    @commands.command(aliases=['trump'])
     async def ask_trump(self, ctx, *, question):
         """Ask Donald Trump a question!"""
         async with aiohttp.ClientSession() as session:
@@ -235,14 +186,6 @@ class Fun(commands.Cog):
         em.set_footer(text="Made possible by whatdoestrumpthink.com", icon_url="http://www.stickpng.com/assets/images"
                                                                                "/5841c17aa6515b1e0ad75aa1.png")
         await ctx.send(embed=em)
-
-    @ask_trump.error
-    async def ask_trump_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you add a question for Trump?')
-        await ctx.send(embed=embed)
-
 
 def setup(client):
     client.add_cog(Fun(client))

@@ -27,28 +27,12 @@ async def krona_load(ctx, extension):
     ctx.send(f'The extension {extension} was loaded!')
 
 
-@krona_load.error
-async def krona_load_error(self, ctx, error):
-    embed = discord.Embed(title='Syntax Error',
-                          colour=discord.Colour(0x9013fe),
-                          description='Did you mistype the extension name?')
-    await ctx.send(embed=embed)
-
-
 @krona.command()
 @commands.has_permissions(administrator=True)
 async def krona_unload(ctx, extension):
     await ctx.message.delete()
     krona.unload_extension(f'cogs.{extension}')
     await ctx.send(f'The extension {extension} was unloaded!')
-
-
-@krona_unload.error
-async def krona_unload_error(self, ctx, error):
-    embed = discord.Embed(title='Syntax Error',
-                          colour=discord.Colour(0x9013fe),
-                          description='Did you mistype the extension name?')
-    await ctx.send(embed=embed)
 
 
 @krona.command()
@@ -58,14 +42,6 @@ async def krona_reload(ctx, extension):
     krona.unload_extension(f'cogs.{extension}')
     krona.load_extension(f'cogs.{extension}')
     await ctx.send(f'The extension {extension} was reloaded!')
-
-
-@krona_reload.error
-async def krona_reload_error(self, ctx, error):
-    embed = discord.Embed(title='Syntax Error',
-                          colour=discord.Colour(0x9013fe),
-                          description='Did you mistype the extension name?')
-    await ctx.send(embed=embed)
 
 
 @krona.event
@@ -88,26 +64,10 @@ async def krona_ping(ctx):
     await ctx.send(f'Pong! My latency is: {round(krona.latency * 1000)}ms')
 
 
-@krona_ping.error
-async def krona_ping_error(self, ctx, error):
-    embed = discord.Embed(title='Syntax Error',
-                          colour=discord.Colour(0x9013fe),
-                          description='Did you add parameters you don\'t need?')
-    await ctx.send(embed=embed)
-
-
 @krona.command()
 async def lazy(ctx):
     await ctx.message.delete()
     await ctx.send("\"The way to get started is to quit talking and begin doing.\" -Walt Disney")
-
-
-@krona_load.error
-async def krona_unload_error(self, ctx, error):
-    embed = discord.Embed(title='Syntax Error',
-                          colour=discord.Colour(0x9013fe),
-                          description='Did you add parameters you don\'t need.')
-    await ctx.send(embed=embed)
 
 
 @krona.event

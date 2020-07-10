@@ -496,45 +496,10 @@ async def tpb(ctx):
     await ctx.send(random.choice(trailer_park_boys_quotes))
 
 
-@tpb.error
-async def tpb_error(self, ctx, error):
-    embed = discord.Embed(title='Syntax Error',
-                          colour=discord.Colour(0x9013fe),
-                          description='Did you add parameters you don\'t need?')
-    await ctx.send(embed=embed)
-
-
-@ricky.command(aliases=['joke'])
-async def tell_joke(ctx):
-    await ctx.message.delete()
-    joke_call = get_joke()
-
-    if not joke_call:
-        await ctx.send("Sorry I can't think of a joke right now try again sometime!")
-    else:
-        await ctx.send(joke_call['setup'] + '\n' + joke_call['punchline'])
-
-
-@tell_joke.error
-async def tell_joke_error(self, ctx, error):
-    embed = discord.Embed(title='Syntax Error',
-                          colour=discord.Colour(0x9013fe),
-                          description='Did you add parameters you don\'t need?')
-    await ctx.send(embed=embed)
-
-
 @ricky.command()
 async def ricky_ping(ctx):
     await ctx.message.delete()
     await ctx.send(f'Pong! My latency is: {round(ricky.latency * 1000)}ms')
-
-
-@ricky_ping.error
-async def ricky_ping_error(self, ctx, error):
-    embed = discord.Embed(title='Syntax Error',
-                          colour=discord.Colour(0x9013fe),
-                          description='Did you add parameters you don\'t need?')
-    await ctx.send(embed=embed)
 
 
 @tasks.loop(seconds=60)

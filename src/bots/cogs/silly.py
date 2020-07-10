@@ -21,13 +21,6 @@ class Silly(commands.Cog):
             msg = f'No, it is not Christmas today. There are {(CHRISTMAS - date.today()).days} days until Christmas.'
             await ctx.send(msg)
 
-    @is_it_christmas.error
-    async def is_it_christmas_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='Did you not have the Christmas Spirit? (Or too many parameters.)')
-        await ctx.send(embed=embed)
-
     @commands.command(aliases=['halloween', 'hween', 'hwn'])
     async def is_it_halloween(self, ctx):
         """Is it Halloween yet?"""
@@ -36,13 +29,6 @@ class Silly(commands.Cog):
         else:
             msg = f'No, it is not Halloween today. There are {(HALLOWEEN - date.today()).days} days until Halloween.'
             await ctx.send(msg)
-
-    @is_it_halloween.error
-    async def is_it_halloween_error(self, ctx, error):
-        embed = discord.Embed(title='Syntax Error',
-                              colour=discord.Colour(0x9013fe),
-                              description='BOO! You have too many parameters maybe.')
-        await ctx.send(embed=embed)
 
     @commands.command(aliases=['newyear', 'ny'])
     async def is_it_new_year(self, ctx):

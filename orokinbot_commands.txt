@@ -1,22 +1,57 @@
-Command			Parameters															Cog						Description
------------------------------------------------------------------------------------------------------------------------
-orokin_load		(extension)																					This takes a cog and loads it to use the commands of that cog.
-orokin_unload	(extension)																					This takes a cog and unloads it so it can no longer be used.
-orokin_reload	(extension)																					This refreshes a cog if there was a code change.
-orokin_ping																									Returns the bot latency
-earth																				warframe				Returns Earth's Day/Night cycle
-baro																				warframe				Returns all information regarding baro
-orb_vallis																			warframe				Returns the Warm/Cold cycle
-ef																					warframe				Returns the endless fissure missions
-f																					warframe				Returns all the fissure missions
-darvo																				warframe				Returns all information regarding the daily deal
-price			(item name)															warframe				Returns the community price in platinum of the item name given.
-nw																					warframe				Returns the weekly nightwave info
-sortie																				warframe				Returns the daily sortie missions.
-arby																				warframe				Returns the arbitration mission
-farm			(resource name)														warframe				Returns the best places to farm for a particular resource given
-search			(item name)															warframe_search				Returns information on the item given
-spector			(Warframe) (Weapon Name or TotalDMG) (CurrentLevel) (MissionLevel)	warframe_calculators	Returns the Specter details given the fields provided.
-enemy			(enemy name) (primary or melee) (current level) (mission level)		warframe_calculators	Returns the Enemy details given the fields provided.
-ehp				(total health) (total armour) (total shields)						warframe_calculators	Returns the Effective Health
-status			(base status) (status to add)										warframe_calculators	Returns the total status
+>orokin_load <extension>     #This takes a cog and loads it to use the commands of that cog.
+
+>orokin_unload <extension>     #This takes a cog and unloads it so it can no longer be used.
+
+>orokin_reload <extension>	#This refreshes a cog if there was a code change.
+
+>orokin_ping     #Returns the bot latency
+
+>alerts[alert]   #Returns the current Warframe Alerts
+
+>earth[cetus]	    #Returns Earth's Day/Night cycle (warframe)
+
+>conclave_challenges[cc, challenges]    #Returns the current Conclave Challenges (warframe)
+
+>construction_progress[progress]    #Returns Current Construction Progress (warframe)
+
+>current_events[events, event]  #Returns the current Warframe Events (warframe)
+
+>endless_fissure[ef]    #Returns the endless fissure missions (warframe)
+
+>fissure[f]     #Shows the current Warframe fissure missions (warframe)
+
+>marketplace_sales[flash, sales, flash_sales, sale, marketplace]    #Returns the current Marketplace Sales (warframe)
+
+>invasions[i]   #Returns the current Warframe Invasions (warframe)
+
+>news[n]    #Returns the current Warframe News (warframe)
+
+>nightwave[nw]  #Returns the weekly Nightwave challenges (warframe)
+
+>sentient_outpost[so] #Returns the current Sentient Outpost (warframe)
+
+>simaris[hunter_target, sanctuary]  #Returns the current Cephalon Simaris target info (warframe)
+
+>syndicate_missions[sm, syndicate]  #Returns the current Syndicate Missions (warframe)
+
+>orb_vallis[ov, orb, vallis]    #Returns the current Hot/Cold Cycle on Orb Vallis (warframe)
+
+>world_cycles[cycle, temp, world]   #Returns both Orb Vallis and Cetus Cycles (warframe)
+
+>kuva_missions[km, kuva]    #Returns the current Kuva Missions (warframe)
+
+>price <tradable part name> #Returns the community price in platinum of the item name given (warframe)
+
+>farm_resource[farm] <resource> #Returns where to farm the given resource (warframe)
+
+>arbitration[arby]  #Returns the current arbitration missions (warframe)
+
+>darvo[dd]     #Returns Darvo's daily deal (warframe)
+
+>sortie[s]  #Returns the daily sortie (warframe)
+
+>barro[b]   #Returns Barro's Inventory and status (warframe)
+
+>baro	#Returns all information regarding baro (warframe)
+
+>search <item>  #Returns information on provided item  (warframe_search)
