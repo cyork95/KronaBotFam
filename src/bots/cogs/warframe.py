@@ -1,11 +1,9 @@
 import json
-from urllib.request import Request, urlopen
 import discord
 from discord.ext import commands, tasks
 import requests
-from datetime import datetime
-from .warframe_api import warframe_api as wf_api
-from .warframe_api_embeds import *
+from cogs.warframe_api  import warframe_api as wf_api
+from cogs.warframe_api_embeds import *
 from dhooks import Webhook
 
 with open('./cogs/cog_resources/farming.json') as json_file:
@@ -15,6 +13,8 @@ xbox_api_wrapper = wf_api('xb1')
 
 hook = Webhook("https://discordapp.com/api/webhooks/729232543316181033/NKbfGyxaDJ2qRAbAd6GN515s18UDZmCCBP4TSgH2X"
                "Gg1DLKpB3v3A4ntC1vdbSHvMtmV")
+orokin_vault_hook = Webhook("https://discordapp.com/api/webhooks/731180983549689937/tI8yJjRkH8Oy9rdKkU-VqIRjbFwEGY-"
+                            "YUHC_nIIz5laIz3v2T-pxyUCnQZVDp8OB19gh")
 
 
 class Warframe(commands.Cog):
@@ -389,7 +389,7 @@ class Warframe(commands.Cog):
         await ctx.send(embed=arby_embed)
 
     @commands.command(aliases=['dd'])
-    async def darvo(self):
+    async def darvo(self,ctx):
         """This command returns the Daily Darvo Deal in Warframe."""
         darvo_json = xbox_api_wrapper.get_daily_deals_info()
         darvo_embed = discord.Embed(title="Darvo Deal", color=discord.Colour(0xfbfb04))
@@ -402,7 +402,7 @@ class Warframe(commands.Cog):
             hook.send(embed=darvo_embed)
 
     @commands.command(aliases=['s'])
-    async def sortie(self):
+    async def sortie(self, ctx):
         """Returns the daily sortie missions"""
         sortie_json = xbox_api_wrapper.get_sortie_info()
         sortie_embed = discord.Embed(title="Daily Sortie",
@@ -411,7 +411,7 @@ class Warframe(commands.Cog):
         hook.send(embed=sortie_embed)
 
     @commands.command(aliases=['b'])
-    async def barro(self):
+    async def barro(self, ctx):
         """Returns Barro's Inventory and status"""
         barro_json = xbox_api_wrapper.get_void_trader_info()
         embed = discord.Embed(title="Barro's Inventory", description='The Void Trader is currently at {0} and '
@@ -432,11 +432,12 @@ class Warframe(commands.Cog):
             await hook.send(embed=embed)
 
     @tasks.loop(hours=24)  # should be triggered at 12:05 because thats when the sorties reset
-    async def sortie_time(self):
+    async def sortie_time(self, ctx):
         sortie_json = xbox_api_wrapper.get_sortie_info()
         sortie_embed = discord.Embed(title="Daily Sortie",
                                      colour=discord.Colour(0xfbfb04))
         sortie_embed = get_sortie_api_embed(sortie_json, sortie_embed)
+        orokin_vault_hook.send(embed=sortie_embed)
         hook.send(embed=sortie_embed)
 
     @tasks.loop(hours=24)  # Can be triggered with sorties
@@ -450,7 +451,8 @@ class Warframe(commands.Cog):
                 'Darvo has sold out.  {0} is no longer available at a lower price.'.format(darvo_json['item']))
         else:
             darvo_embed = get_darvo_api_embed(darvo_json[0], darvo_embed)
-            hook.send(embed=darvo_embed)
+            await orokin_vault_hook.send(embed=darvo_embed)
+            await hook.send(embed=darvo_embed)
 
     @tasks.loop(hours=168)  # send every 168 (7 days) hours form friday at Noon
     async def barro_store(self):
@@ -463,6 +465,7 @@ class Warframe(commands.Cog):
                                                                          f"{barro_json['location']}** in __"
                                                                          f"{barro_json['startString']}__",
                                   color=discord.Colour(0xfbfb04))
+            await orokin_vault_hook.send(embed=embed)
             await hook.send(embed=embed)
         if barro_json['active']:
             baro_inventory = barro_json['inventory']
@@ -470,6 +473,7 @@ class Warframe(commands.Cog):
                 item_name = disapointment['item']
                 embed.add_field(name=f'{item_name}:', value='*Ducats:* __{1}__  *Credits:* __{2}__'.format(
                     disapointment['item'], disapointment['ducats'], disapointment['credits']))
+            await orokin_vault_hook.send(embed=embed)
             await hook.send(embed=embed)
 
 

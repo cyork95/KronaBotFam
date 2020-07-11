@@ -1,6 +1,11 @@
+import json
+
 import discord
 from discord.ext import commands
 import requests
+
+with open('./cogs/cog_resources/relic_drops.json') as json_file:
+    relic_data = json.load(json_file)
 
 
 def filter_components(components_name, components):
@@ -350,9 +355,7 @@ class WarframeSearch(commands.Cog):
         response_iterator = 0
         if len(response) > 0:
             for each in response:
-                print(response[response_iterator]['name'].lower())
                 if item == response[response_iterator]['name'].lower():
-                    print(response[response_iterator]['category'])
                     if response[response_iterator]['category'] == 'Primary':
                         if response[response_iterator]['type'] == 'Bow':
                             embedCard = bow_display(response[response_iterator], is_prime)
@@ -425,6 +428,31 @@ class WarframeSearch(commands.Cog):
                 response_iterator += 1
         else:
             await ctx.send(f"No results found for the item {item}")
+
+    @commands.command(aliases=['relic'])
+    async def relic_search(self, ctx, era, code):
+        """This command allows you to search for Relic Drops"""
+        era = era.lower()
+        code = code.lower()
+        relic_embed = discord.Embed(title="Relic Drop Details", color=discord.Colour(0xfbfb04))
+        relic_iterator = 0
+        drop_iterator = 0
+        for relic in relic_data:
+            if era == relic_data[relic_iterator]['era'] and code == relic_data[relic_iterator]['code']:
+                for drop in relic_data[relic_iterator]['drops']:
+                    if relic_data[relic_iterator]['drops'][drop_iterator]['rarity'] == 0:
+                        relic_rarity = "bronze"
+                    elif relic_data[relic_iterator]['drops'][drop_iterator]['rarity'] == 1:
+                        relic_rarity = "silver"
+                    else:
+                        relic_rarity = "gold"
+                    relic_embed.add_field(name=relic_data[relic_iterator]['drops'][drop_iterator]['name'],
+                                          value=f"Rarity: {relic_rarity}")
+                    drop_iterator += 1
+            relic_iterator += 1
+        await ctx.send(embed=relic_embed)
+
+
 
 
 def setup(client):
