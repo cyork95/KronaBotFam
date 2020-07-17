@@ -7805,11 +7805,41 @@
       "code":"n10",
       "drops":[
          {
-            "name":"Nova Prime Chassis Blueprint",
+            "name":"Nami Skyla Prime Blade",
             "rarity":2
          },
          {
-            "name":"Soma Prime Receiver",
+            "name":"Ballistica Prime Upper Limb",
+            "rarity":1
+         },
+         {
+            "name":"Tipedo Prime Ornament",
+            "rarity":1
+         },
+         {
+            "name":"Forma Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Redeemer Prime Blade",
+            "rarity":0
+         },
+         {
+            "name":"Zephyr Prime Neuroptics Blueprint",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"neo",
+      "code":"n11",
+      "drops":[
+         {
+            "name":"Nekros Prime Systems Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Oberon Prime Systems Blueprint",
             "rarity":1
          },
          {
@@ -7817,21 +7847,49 @@
             "rarity":1
          },
          {
-            "name":"Mag Prime Neuroptics Blueprint",
+            "name":"Tigris Prime Stock",
             "rarity":0
          },
          {
-            "name":"Boar Prime Blueprint",
+            "name":"Braton Prime Barrel",
             "rarity":0
          },
          {
-            "name":"Dakra Prime Handle",
+            "name":"Sybaris Prime Blueprint",
             "rarity":0
          }
       ]
    },
-   n11
-   n12
+   {
+      "era":"neo",
+      "code":"n12",
+      "drops":[
+         {
+            "name":"Nova Prime Chassis Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Dual Kamas Prime Handle",
+            "rarity":1
+         },
+         {
+            "name":"Kavasa Prime Band",
+            "rarity":1
+         },
+         {
+            "name":"Trinity Prime Systems Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Soma Prime Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Vasto Prime Receiver",
+            "rarity":0
+         }
+      ]
+   },
    {
       "era":"neo",
       "code":"o1",
@@ -7862,11 +7920,156 @@
          }
       ]
    },
-   p1
-   r1
-   r2
-   r3
-   r4
+   {
+      "era":"neo",
+      "code":"p1",
+      "drops":[
+         {
+            "name":"Pangolin Prime Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Akjagara Prime Receiver",
+            "rarity":1
+         },
+         {
+            "name":"Rubico Prime Stock",
+            "rarity":1
+         },
+         {
+            "name":"Ninkondi Prime Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Paris Prime Lower Limb",
+            "rarity":0
+         },
+         {
+            "name":"Redeemer Prime Blade",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"neo",
+      "code":"r1",
+      "drops":[
+         {
+            "name":"Rhino Prime Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Boltor Prime Receiver",
+            "rarity":1
+         },
+         {
+            "name":"Nyx Prime Chassis Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Hikou Prime Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Ankyros Prime Gauntlet",
+            "rarity":0
+         },
+         {
+            "name":"Forma Blueprint",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"neo",
+      "code":"r2",
+      "drops":[
+         {
+            "name":"Rubico Prime Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Paris Prime Grip",
+            "rarity":1
+         },
+         {
+            "name":"Tiberon Prime Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Ninkondi Prime Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Braton Prime Stock",
+            "rarity":0
+         },
+         {
+            "name":"Forma Blueprint",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"neo",
+      "code":"r3",
+      "drops":[
+         {
+            "name":"Redeemer Prime Handle",
+            "rarity":2
+         },
+         {
+            "name":"Paris Prime Grip",
+            "rarity":1
+         },
+         {
+            "name":"Ninkondi Prime Chain",
+            "rarity":1
+         },
+         {
+            "name":"Baza Prime Receiver",
+            "rarity":0
+         },
+         {
+            "name":"Limbo Prime Systems Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Burston Prime Blueprint",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"neo",
+      "code":"r4",
+      "drops":[
+         {
+            "name":"Redeemer Prime Handle",
+            "rarity":2
+         },
+         {
+            "name":"Corinth Prime Receiver",
+            "rarity":1
+         },
+         {
+            "name":"Ninkondi Prime Chain",
+            "rarity":1
+         },
+         {
+            "name":"Aksomati Prime Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Braton Prime Stock",
+            "rarity":0
+         },
+         {
+            "name":"Mesa Prime Chassis Blueprint",
+            "rarity":0
+         }
+      ]
+   },
    {
       "era":"neo",
       "code":"s1",
@@ -8077,11 +8280,156 @@
          }
       ]
    },
-   s9
-   s10
-   s11
-   s12
-   s13
+   {
+      "era":"neo",
+      "code":"s9",
+      "drops":[
+         {
+            "name":"Silva & Aegis Prime Guard",
+            "rarity":2
+         },
+         {
+            "name":"Destreza Prime Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Forma Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Akjagara Prime Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Bronco Prime Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Mirage Prime Neuroptics Blueprint",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"neo",
+      "code":"s10",
+      "drops":[
+         {
+            "name":"Saryn Prime Chassis Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Nikana Prime Blade",
+            "rarity":1
+         },
+         {
+            "name":"Spira Prime Blade",
+            "rarity":1
+         },
+         {
+            "name":"Saryn Prime Systems Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Braton Prime Stock",
+            "rarity":0
+         },
+         {
+            "name":"Lex Prime Blueprint",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"neo",
+      "code":"s11",
+      "drops":[
+         {
+            "name":"Stradavar Prime Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Kronen Prime Handle",
+            "rarity":1
+         },
+         {
+            "name":"Forma Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Fang Prime Blade",
+            "rarity":0
+         },
+         {
+            "name":"Bronco Prime Receiver",
+            "rarity":0
+         },
+         {
+            "name":"Hydroid Prime Chassis Blueprint",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"neo",
+      "code":"s12",
+      "drops":[
+         {
+            "name":"Stradavar Prime Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Wukong Prime Chassis Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Mirage Prime Systems Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Fang Prime Blade",
+            "rarity":0
+         },
+         {
+            "name":"Redeemer Prime Blade",
+            "rarity":0
+         },
+         {
+            "name":"Paris Prime Upper Limb",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"neo",
+      "code":"s13",
+      "drops":[
+         {
+            "name":"Saryn Prime Chassis Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Cernos Prime Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Forma Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Saryn Prime Systems Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Spira Prime Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Nikana Prime Blueprint",
+            "rarity":0
+         }
+      ]
+   },
    {
       "era":"neo",
       "code":"t1",
@@ -8112,8 +8460,66 @@
          }
       ]
    },
-   t2
-   t3
+   {
+      "era":"neo",
+      "code":"t2",
+      "drops":[
+         {
+            "name":"Tekko Prime Blade",
+            "rarity":2
+         },
+         {
+            "name":"Dethcube Prime Carapace",
+            "rarity":1
+         },
+         {
+            "name":"Forma Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Akbronco Prime Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Wukong Prime Neuroptics Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Fang Prime Blueprint",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"neo",
+      "code":"t3",
+      "drops":[
+         {
+            "name":"Titania Prime Systems Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Inaros Prime Chassis Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Atlas Prime Chassis Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Redeemer Prime Blade",
+            "rarity":0
+         },
+         {
+            "name":"Braton Prime Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Forma Blueprint",
+            "rarity":0
+         }
+      ]
+   },
    {
       "era":"neo",
       "code":"v1",
@@ -8324,7 +8730,36 @@
          }
       ]
    },
-   v8
+   {
+      "era":"neo",
+      "code":"v8",
+      "drops":[
+         {
+            "name":"Volt Prime Neuroptics Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Bo Prime Handle",
+            "rarity":1
+         },
+         {
+            "name":"Forma Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Loki Prime Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Odonata Prime Harness Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Wyrm Prime Blueprint",
+            "rarity":0
+         }
+      ]
+   },
    {
       "era":"neo",
       "code":"z1",
@@ -8355,8 +8790,244 @@
          }
       ]
    },
-   z2
-   z3
-   z4
-   z5
+   {
+      "era":"neo",
+      "code":"z2",
+      "drops":[
+         {
+            "name":"Zephyr Prime Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Mesa Prime Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Pyrana Prime Receiver",
+            "rarity":1
+         },
+         {
+            "name":"Lex Prime Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Akbolto Prime Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Braton Prime Stock",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"neo",
+      "code":"z3",
+      "drops":[
+         {
+            "name":"Zhuge Prime Barrel",
+            "rarity":2
+         },
+         {
+            "name":"Mesa Prime Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Akjagara Prime Receiver",
+            "rarity":1
+         },
+         {
+            "name":"Bronco Prime Receiver",
+            "rarity":0
+         },
+         {
+            "name":"Zephyr Prime Neuroptics Blueprint",
+            "rarity":0
+         },
+         {
+            "name":"Forma Blueprint",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"neo",
+      "code":"z4",
+      "drops":[
+         {
+            "name":"Zephyr Prime Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Forma Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Redeemer Prime Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Paris Prime String",
+            "rarity":0
+         },
+         {
+            "name":"Burston Prime Stock",
+            "rarity":0
+         },
+         {
+            "name":"Kronen Prime Blueprint",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"neo",
+      "code":"z5",
+      "drops":[
+         {
+            "name":"Zhuge Prime Barrel",
+            "rarity":2
+         },
+         {
+            "name":"Aksomati Prime Barrel",
+            "rarity":1
+         },
+         {
+            "name":"Forma Blueprint",
+            "rarity":1
+         },
+         {
+            "name":"Lex Prime Barrel",
+            "rarity":0
+         },
+         {
+            "name":"Burston Prime Stock",
+            "rarity":0
+         },
+         {
+            "name":"Akjagara Prime Blueprint",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"requiem",
+      "code":"i",
+      "drops":[
+         {
+            "name":"Exilus Weapon Adapter Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Lohk",
+            "rarity":1
+         },
+         {
+            "name":"Xata",
+            "rarity":1
+         },
+         {
+            "name":"1200X Kuva",
+            "rarity":0
+         },
+         {
+            "name":"Ayatan Amber Star",
+            "rarity":0
+         },
+         {
+            "name":"Riven Sliver",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"requiem",
+      "code":"ii",
+      "drops":[
+         {
+            "name":"Exilus Weapon Adapter Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Jahu",
+            "rarity":1
+         },
+         {
+            "name":"Vome",
+            "rarity":1
+         },
+         {
+            "name":"1200X Kuva",
+            "rarity":0
+         },
+         {
+            "name":"Ayatan Amber Star",
+            "rarity":0
+         },
+         {
+            "name":"Riven Sliver",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"requiem",
+      "code":"iii",
+      "drops":[
+         {
+            "name":"Exilus Weapon Adapter Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Ris",
+            "rarity":1
+         },
+         {
+            "name":"Fass",
+            "rarity":1
+         },
+         {
+            "name":"1200X Kuva",
+            "rarity":0
+         },
+         {
+            "name":"Ayatan Amber Star",
+            "rarity":0
+         },
+         {
+            "name":"Riven Sliver",
+            "rarity":0
+         }
+      ]
+   },
+   {
+      "era":"requiem",
+      "code":"iv",
+      "drops":[
+         {
+            "name":"Exilus Weapon Adapter Blueprint",
+            "rarity":2
+         },
+         {
+            "name":"Netra",
+            "rarity":1
+         },
+         {
+            "name":"Khra",
+            "rarity":1
+         },
+         {
+            "name":"1200X Kuva",
+            "rarity":0
+         },
+         {
+            "name":"Ayatan Amber Star",
+            "rarity":0
+         },
+         {
+            "name":"Riven Sliver",
+            "rarity":0
+         }
+      ]
+   }
 ]
