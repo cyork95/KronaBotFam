@@ -2,7 +2,7 @@ import json
 import discord
 from discord.ext import commands, tasks
 import requests
-from cogs.warframe_api  import warframe_api as wf_api
+from cogs.warframe_api import warframe_api as wf_api
 from cogs.warframe_api_embeds import *
 from dhooks import Webhook
 
@@ -93,7 +93,6 @@ class Warframe(commands.Cog):
         for event_item in event_json:
             event_embed = get_event_api_embed(event_json[event_iterator], event_embed)
             event_iterator += 1
-
         await ctx.send(embed=event_embed)
 
     @commands.command(aliases=['endless', 'ef'])
@@ -389,7 +388,7 @@ class Warframe(commands.Cog):
         await ctx.send(embed=arby_embed)
 
     @commands.command(aliases=['dd'])
-    async def darvo(self,ctx):
+    async def darvo(self, ctx):
         """This command returns the Daily Darvo Deal in Warframe."""
         darvo_json = xbox_api_wrapper.get_daily_deals_info()
         darvo_embed = discord.Embed(title="Darvo Deal", color=discord.Colour(0xfbfb04))
@@ -447,8 +446,10 @@ class Warframe(commands.Cog):
         darvo_embed = discord.Embed(title="Darvo Deal", color=discord.Colour(0xfbfb04))
         total_left = int(darvo_json[0]['total'] - darvo_json[0]['sold'])
         if total_left == 0:
-            hook.send(
-                'Darvo has sold out.  {0} is no longer available at a lower price.'.format(darvo_json['item']))
+            await orokin_vault_hook.send('Darvo has sold out.  {0} is no longer available at a lower price.'
+                                         .format(darvo_json['item']))
+            await hook.send('Darvo has sold out.  {0} is no longer available at a lower price.'
+                                         .format(darvo_json['item']))
         else:
             darvo_embed = get_darvo_api_embed(darvo_json[0], darvo_embed)
             await orokin_vault_hook.send(embed=darvo_embed)

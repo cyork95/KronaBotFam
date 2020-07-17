@@ -7,6 +7,9 @@ import requests
 with open('./cogs/cog_resources/relic_drops.json') as json_file:
     relic_data = json.load(json_file)
 
+with open('./cogs/cog_resources/farming.json') as json_file:
+    farming_data = json.load(json_file)
+
 
 def filter_components(components_name, components):
     return list(filter(lambda x: x['name'] in components_name, components))
@@ -342,7 +345,7 @@ class WarframeSearch(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command(aliases=['super'])
+    @commands.command()
     async def search(self, ctx, *, item: str):
         """This command allows you to search for Warframe items"""
         item = item.lower()
@@ -422,8 +425,10 @@ class WarframeSearch(commands.Cog):
                         await ctx.send(embed=embedCard)
                         return
                     elif response[response_iterator]['category'] == 'Resources':
+                        farming_embed = get_farm_info(item)
                         embedCard = resource_display(response[response_iterator])
                         await ctx.send(embed=embedCard)
+                        await ctx.send(embed=farming_embed)
                         return
                 response_iterator += 1
         else:
@@ -453,6 +458,19 @@ class WarframeSearch(commands.Cog):
         await ctx.send(embed=relic_embed)
 
 
+def get_farm_info(item):
+    """This returns where to farm the given resource"""
+    if item in farming_data:
+        item_json = farming_data[item]
+        embed_card = discord.Embed(title=f'{item.title()}', color=discord.Colour(0xfbfb04))
+        embed_card.add_field(name='Best Location', value=item_json['BestLocationName'], inline=False)
+        if len(item_json['OtherLocations']) > 0:
+            embed_card.add_field(name='Other Locations', value=', '.join(item_json['OtherLocations']), inline=False)
+        else:
+            pass
+        return embed_card
+    else:
+        pass
 
 
 def setup(client):
